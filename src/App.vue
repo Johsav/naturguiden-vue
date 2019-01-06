@@ -22,12 +22,12 @@
           <v-btn flat :to="{path: item.link}">{{ item.title }}</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <router-link to="about">
+      <router-link to="/about">
         <v-btn icon>
           <v-icon>credit_card</v-icon>
         </v-btn>
       </router-link>
-      <router-link to="./about">
+      <router-link to="/about">
         <v-btn icon>
           <v-icon>apps</v-icon>
         </v-btn>
@@ -37,10 +37,10 @@
       </v-btn>
     </v-toolbar>
 
-    <v-content app>
-      <v-container fluid>
+    <v-content app class="bg-red">
+      
         <router-view></router-view>
-      </v-container>
+    
     </v-content>
 
     <v-footer dark app absolute height="auto" color="secondary">
@@ -63,14 +63,14 @@ export default {
     return {
       drawer: null,
       drawerLinks: [
-        { title: "Home", icon: "dashboard", link: "./" },
-        { title: "About", icon: "question_answer", link: "./about" },
-        { icon: "date_range", title: "Event Calendar", link: "/calendar" }
+        { title: "Home", icon: "dashboard", link: "/" },
+        { title: "About", icon: "question_answer", link: "/about" },
+        { icon: "date_range", title: "Event Calendar", link: "calendar" }
       ],
       toolbarLinks: [
-        { title: "Our adventures", link: "adventures" },
-        { title: "Information", link: "info" },
-        { title: "About us", link: "about" }
+        { title: "Our adventures", link: "/adventures" },
+        { title: "Information", link: "/info" },
+        { title: "About us", link: "/about" }
       ],
       mini: false,
       right: null
@@ -80,7 +80,7 @@ export default {
 </script>
 
 <style scoped>
-v-footer {
+.bg-red {
   background-color: red;
 }
 </style>

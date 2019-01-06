@@ -1,3 +1,3 @@
 <template>
-  <div>Info</div>
+  <div>Info perfect outdoor</div>
 </template>
