@@ -16,7 +16,9 @@
     <v-toolbar dark app color="primary">
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title style="margin-right:30px">
-        <span>Naturguiden</span>
+        <router-link to="/">
+        <span><img src="./images/name.png" height="50px" align="middle"/></span>
+        </router-link>
       </v-toolbar-title>
       <v-toolbar-items v-for="item in toolbarLinks" :key="item.title" class="hidden-sm-and-down">
           <v-btn flat :to="{path: item.link}">{{ item.title }}</v-btn>
@@ -37,7 +39,7 @@
       </v-btn>
     </v-toolbar>
 
-    <v-content app class="bg-red">
+    <v-content app class="bg-red" style="max-width: 1200px;">
       
         <router-view></router-view>
     
@@ -83,4 +85,8 @@ export default {
 .bg-red {
   background-color: red;
 }
+</style>
+
+<style lang="scss" src="./globals.scss">
+
 </style>
