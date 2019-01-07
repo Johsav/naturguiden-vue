@@ -15,13 +15,11 @@
 
     <v-toolbar dark app color="primary">
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title style="margin-right:30px">
-        <router-link to="/">
-        <span><img src="./assets/images/name.png" height="50px" align="middle"/></span>
-        </router-link>
-      </v-toolbar-title>
+      <router-link to="/">
+        <v-img :src="require('./assets/name.png')" height="48" width="156" contain></v-img>
+      </router-link>
       <v-toolbar-items v-for="item in toolbarLinks" :key="item.title" class="hidden-sm-and-down">
-          <v-btn flat :to="{path: item.link}">{{ item.title }}</v-btn>
+        <v-btn flat :to="{path: item.link}">{{ item.title }}</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
       <router-link to="/about">
@@ -31,18 +29,13 @@
       </router-link>
       <router-link to="/about">
         <v-btn icon>
-          <v-icon>apps</v-icon>
+          <v-icon>chat</v-icon>
         </v-btn>
       </router-link>
-      <v-btn icon>
-        <v-icon>chat</v-icon>
-      </v-btn>
     </v-toolbar>
 
-    <v-content app class="bg-red" style="max-width: 1200px;">
-      
-        <router-view></router-view>
-    
+    <v-content app class="bg-red">
+      <router-view></router-view>
     </v-content>
 
     <v-footer dark app absolute height="auto" color="secondary">
@@ -88,5 +81,4 @@ export default {
 </style>
 
 <style lang="scss" src="./globals.scss">
-
 </style>

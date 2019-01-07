@@ -4,9 +4,8 @@
       <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src">
         <v-container :fill-height="!$vuetify.breakpoint.smAndDown">
           <v-layout white--text align-end column justify-center :fill-height="!$vuetify.breakpoint.smAndDown">
-            <h1 class="display-3 text-shadow">{{ item.title }}</h1>
-            <h2 class="display-2">{{ item.subtitle }}</h2>
-            {{hightValue}} {{$vuetify.breakpoint.smAndDown}}
+            <h1 class="display-3 font-weight-bold text-shadow">{{ item.title }}</h1>
+            <h2 class="headline text-shadow">{{ item.subtitle }}</h2>
           </v-layout>
         </v-container>
       </v-carousel-item>
