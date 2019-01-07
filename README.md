@@ -1,4 +1,4 @@
-# naturguiden-vue
+# naturguiden-vueProject
 
 ## Project setup
 ```
