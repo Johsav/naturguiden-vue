@@ -17,7 +17,7 @@
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <v-toolbar-title style="margin-right:30px">
         <router-link to="/">
-        <span><img src="./images/name.png" height="50px" align="middle"/></span>
+        <span><img src="./assets/images/name.png" height="50px" align="middle"/></span>
         </router-link>
       </v-toolbar-title>
       <v-toolbar-items v-for="item in toolbarLinks" :key="item.title" class="hidden-sm-and-down">
@@ -83,7 +83,7 @@ export default {
 
 <style scoped>
 .bg-red {
-  background-color: red;
+  /*background-color: red;*/
 }
 </style>
 
