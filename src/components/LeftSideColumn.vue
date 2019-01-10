@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="no-padding">
     <v-layout row>
-      <v-flex xl3 lg4 md4 class="hidden-sm-and-down">
+      <v-flex xl3 lg3 md4 class="hidden-sm-and-down">
         <v-container fluid grid-list-md class="no-padding-right">
           <v-layout column>
             <v-flex>
@@ -38,7 +38,7 @@
           </v-layout>
         </v-container>
       </v-flex>
-      <v-flex xs12 sm12 md8 lg8 xl9>
+      <v-flex xs12 sm12 md8 lg7 xl8>
         <slot></slot>
       </v-flex>
     </v-layout>
