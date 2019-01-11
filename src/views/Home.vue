@@ -20,6 +20,36 @@
     <LeftSideColumn>
       <v-container fluid grid-list-md>
         <v-layout column>
+          <v-flex>
+            <v-layout fill-height>
+              <v-flex md6 lg6 sm6 xl6 d-flex>
+                <v-card>
+                  <v-img
+                    class="white--text"
+                    height="300px"
+                    src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+                  ></v-img>
+                </v-card>
+              </v-flex>
+              <v-flex md6 lg6 sm6 xl6 d-flex>
+                <v-card color="blue-grey darken-2" class="white--text" >
+                  <v-card-title primary-title>
+                    <div>
+                      <h3 class="headline">Adventure Tours in Sweden</h3>
+                      <blockquote class="blockquote">
+                        Join us on our tours. We have gathered our best outdoor experiences and are now offering all inclusive guided tours. We offer tours for small groups where we tailor each tour after the interests and wishes of the participants. Join a scheduled tour or book your own private tour together with your friends or family.
+                      </blockquote>
+                    </div>
+                  </v-card-title>
+                  <v-spacer></v-spacer>
+                  <v-card-actions>
+                    <v-btn flat color="orange">Share</v-btn>
+                    <v-btn flat color="orange">Explore</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-flex>
           <v-flex v-for="item in packages" :key="item.link">
             <v-card :to="item.link">
               <v-img class="white--text" height="200px" :src="getImgUrl(item.imageSrc)">
@@ -41,7 +71,7 @@ export default {
   components: {
     LeftSideColumn
   },
-    methods: {
+  methods: {
     getImgUrl(img) {
       return require("@/assets/images/" + img);
     }
