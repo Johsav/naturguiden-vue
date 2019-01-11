@@ -46,9 +46,19 @@ export default {
       drawer: null,
       packages: [
         {
-          title: "Ice-skating",
-          link: "/",
+          title: "Ice-skating - weekend tours",
+          link: "/adventures/skating/weekend",
           imageSrc: "1400/Skating_1413_3.jpg",
+          text: `Eight adventurous days filled with mountain peak tours,
+          glacier hiking and magnificent nature! The details are not set,
+          we decide from day to day how the trip will develop. We bring our
+          own tents (which will be provided) and all the food we need. We are totally free
+          to experience the wild, outside all regular tracks and mountain lodges.`
+        },
+        {
+          title: "Ice-skating - private tours",
+          link: "/adventures/skating/private",
+          imageSrc: "1400/Skating_1413_2.jpg",
           text: `Eight adventurous days filled with mountain peak tours,
           glacier hiking and magnificent nature! The details are not set,
           we decide from day to day how the trip will develop. We bring our
