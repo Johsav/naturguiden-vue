@@ -1,7 +1,23 @@
 <template>
   <v-app>
     <v-navigation-drawer v-model="drawer" temporary app>
-      <v-list>
+           <v-toolbar flat color="accent" dark>
+        <v-list class="pa-0">
+          <v-list-tile avatar>
+            <v-list-tile-avatar>
+              <img src=".\assets\images\manifest\icon-96x96.png">
+            </v-list-tile-avatar>
+
+            <v-list-tile-content>
+              <v-list-tile-title>Menu</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </v-list>
+      </v-toolbar>
+
+      <v-list class="pt-0" dense>
+        <v-divider></v-divider>
+
         <v-list-tile v-for="item in drawerLinks" :key="item.title" :to="{path: item.link}">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -58,9 +74,10 @@ export default {
     return {
       drawer: null,
       drawerLinks: [
-        { title: "Home", icon: "dashboard", link: "/" },
-        { title: "About", icon: "question_answer", link: "/about" },
-        { icon: "date_range", title: "Event Calendar", link: "calendar" }
+        { title: "Home", icon: "home", link: "/" },
+        { title: "About us", icon: "pets", link: "/about" },
+        { title: "Information", icon: "info", link: "/info" },
+        { title: "Our Adventures", icon: "terrain", link: "/adventures" },
       ],
       toolbarLinks: [
         { title: "Our adventures", link: "/adventures" },
