@@ -1,16 +1,15 @@
 <template>
   <v-app>
     <v-navigation-drawer v-model="drawer" temporary app>
-           <v-toolbar flat color="accent" dark>
+      <v-toolbar flat color="accent" dark>
         <v-list class="pa-0">
-          <v-list-tile avatar>
-            <v-list-tile-avatar>
-              <img src=".\assets\images\manifest\icon-96x96.png">
-            </v-list-tile-avatar>
-
+          <v-list-tile>
             <v-list-tile-content>
-              <v-list-tile-title>Menu</v-list-tile-title>
+              <v-list-tile-title class="text-xs-center">Menu</v-list-tile-title>
             </v-list-tile-content>
+            <v-list-tile-action>
+              <v-icon @click.stop="drawer = false">close</v-icon>
+            </v-list-tile-action>
           </v-list-tile>
         </v-list>
       </v-toolbar>
@@ -77,7 +76,7 @@ export default {
         { title: "Home", icon: "home", link: "/" },
         { title: "About us", icon: "pets", link: "/about" },
         { title: "Information", icon: "info", link: "/info" },
-        { title: "Our Adventures", icon: "terrain", link: "/adventures" },
+        { title: "Our Adventures", icon: "terrain", link: "/adventures" }
       ],
       toolbarLinks: [
         { title: "Our adventures", link: "/adventures" },
