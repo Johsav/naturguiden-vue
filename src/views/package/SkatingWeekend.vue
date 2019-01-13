@@ -1,8 +1,277 @@
 <template>
   <PackageLayout :carouselItems="carouselItems">
-    Skating - weekend tour
-  </PackageLayout>
+    <v-container fluid grid-list-lg>
+      <v-layout column>
+        <v-flex>
+          <v-card>
+            <v-card-title>
+              <h1>Nordic Skating - the weekend tour for you</h1>
+            </v-card-title>
+            <v-card-text class="text-xs-left">
+              <p class="quotation">
+                Nordic skating in Sweden, an all inclusive guided tour with a lot of good skating. We travel by minibus
+                in small groups of maximum eight persons and one guide. Your guide picks you up at the airport/train
+                station and if possible we go directly for skating on a good lake nearby. All needed equipment for
+                skating is provided. We sleep in hostels and are making the dinner together in the evenings. At breakfast
+                we also prepare our lunch that we bring in our backpacks.
+              </p>
+              <p>
+                Where we skate depends on the ice and weather situation, we always choose the area that provides the
+                best skating conditions. The accommodations are located in the area but could change from day to
+                day depending on where we choose to go skating.
+              </p>
+              <p>
+                <i>
+                  If you come together with your friends or family and you are 4-6 persons or more consider the options
+                  for your own private tour.
+                  <a
+                    href="/adventures/skating-yourown"
+                  >Read more here..</a>
+                </i>
+              </p>
+              <p>
+                As the speed and the distance we like to skate differs depending on our guests' previous skating experience
+                and fitness level we offer some weekends for those with more experience and other weekends for those
+                with less. You don't need to be a champion to join the tour for more experienced skaters but you
+                should be able to skate on ice skates or rollerblades without difficulties and be reasonable fit.
+              </p>
+              <p>
+                Below you have all information you need, but if you still have some more questions, don't hesitate to
+                contact us on info@naturguiden.se or on +46 70 53 53 630.
+              </p>
 
+              <h2>Join us on any of our weekend trips 2019</h2>
+              <h4>
+                Price: 695 EUR (
+                <b>40 EUR</b> early season discount before 4 February)
+              </h4>
+              <p>Everything included, accommodation in hostels, shared double room
+                <br>Single room +75 EUR, sheets and towel +25 EUR (blanket and pillow is provided)
+              </p>
+
+              <dl>
+                <dt>24 - 27 January</dt>
+                <dd>Weekend for good and normal skaters - two groups</dd>
+                <dt>31 Jan - 3 Febr</dt>
+                <dd>Weekend for good and normal skaters - two groups
+                  <!-- <span class="not">Fully booked</span>  -->
+                </dd>
+                <dt>7 - 10 February</dt>
+                <dd>Weekend for normal skaters</dd>
+                <dt>14 - 17 February</dt>
+                <dd>Weekend with a little longer skating</dd>
+                <dt>21 - 24 February</dt>
+                <dd>Weekend Beginner / Family</dd>
+                <dt>28 Febr - 3 March</dt>
+                <dd>Weekend for good and normal skaters - two groups</dd>
+              </dl>
+
+              <p>
+                If there is an interest for other weekends do not hesitate to contact us. We do have groups coming every
+                weekend from early January to mid March, it might be possible to join a group with less than eight
+                participants.
+              </p>
+
+              <h3>A normal day on the ice</h3>
+              <p>
+                We start with breakfast where we also prepare our lunch packages. As soon as everyone is ready we head
+                off for skating. If we are lucky we can walk from our accomodation directly out on the ice. Otherwise
+                we take the minibus to the lake. The guide is always first, checking the ice and looking out for
+                weak spots. The speed and distance is adjusted to the group and the ice condition. Now and then we
+                take short stops to admire the beautiful landscape, chat for a while or just rest. During the day
+                we go ashore from time to time, for the first or second lunch break or for walking to another lake
+                nearby. At the end of the day we return to the minibus and head back to the hotel/hostel. A nice
+                sauna before the dinner is a pleasant experience. If the conditions are right we might go for another
+                skating trip in moonlight late in the evening.
+              </p>
+
+              <h3>Pick up</h3>
+              <p>
+                At Stockholm/Arlanda airport. Other locations possible after agreement i.e. Stockholm South/Skavsta (RyanAir) or at your
+                hotel. Read more here
+                <a
+                  href="/info/how-get-here"
+                >How to get here&gt;&gt;&gt;</a>
+              </p>
+
+              <h3>Time for arrival and departure:</h3>
+              <b>Arlanda:</b>
+              <p>
+                Choose your time, if possible before 17:00 (confirm with us before booking the ticket). Our normal pick-up times are 11:00
+                and 17:00, but we are flexible and can arrange another pick-up time. If you arrive mid day we find
+                a place close to the airport to go for skating. If other guests arrive later we then go back to the
+                airport and pick them up. Late afternoon we head off for the the place to stay the first night.
+              </p>
+
+              <p>Departure not before 18:00. We drop you off at the airport 16:30 or later depending on depature time.</p>
+
+              <b>Skavsta:</b>
+              <p>Pick up around 09:00.
+                <br>Drop off around 18:30
+              </p>
+
+              <h3>Accommodation: Youth Hostel, Self Catering</h3>
+              <p>
+                Youth hostels with two or four bed dormitory room with shared shower and toilet (normally two persons
+                in each room). You need to bring sheets or duvet covers and towels. (Or you can have it included
+                for 25 EUR extra) We prepare the meals together. All food is provided and included in the price.
+              </p>
+
+              <h3>Personal equipment</h3>
+              <p>Clothing suitable for skating, a complete set of clothes to bring in provided backpack.</p>
+              <p>Good to have but not necessary: Sun glasses, dry bag for your mobile/camera, indoor shoes</p>
+
+              <h3>Equipment included</h3>
+              <p>Skates, boots, backpack and required safety equipment, thermos, lunch box and sit pad</p>
+
+              <h3>Extra equipment that we can provide</h3>
+
+              <p>We can provide you with the following but you need to make a reservation for it when you place your order:</p>
+              <ul>
+                <li>Extra safety equipment: Helmet, knee pad, wrist and arm bow protectors -free of charge.</li>
+                <li>Sheets and towel: +25 EUR extra.</li>
+              </ul>
+
+              <p>
+                <b>Not included:</b> alcoholic drinks.
+              </p>
+
+              <h3>About the skates</h3>
+              <div class="right-image image-width-sm">
+                <img src="/images/200/sweskate.jpg" class="full-width">
+                <img src="/images/200/schoen.jpg" class="full-width">
+              </div>
+
+              <p>
+                We use special skates well adopted for Nordic skating. They are longer than hockey or figure skates.
+                The front has a long curve compared to speed skates with sharp front, which is necessary if the ice
+                in not completely smooth. And most important, the skate and the boot are separate so you can take
+                off the skate when walking to and from the ice. If you have suitable skates, for example the Salomon
+                skates, you may use them if you like.
+              </p>
+
+              <h3>About safety</h3>
+              <img width="300" src="/images/500/safety_eq.jpg" class="right-image image-width-md">
+              <p>
+                Safety is an important issue. We cover great distances on the ice during a day. The whole time we keep track of the quality
+                of the ice and avoid all weak areas. If someone should break through the ice the safety equipment
+                we have helps us to pick the person up in a minute. And soon all wet clothes are changed to dry and
+                warm clothes. The skating trip can continue.
+              </p>
+              <p>PS: The only time we had a person falling into the water, they did not follow the given instructions.</p>
+
+              <p>Safety equipment we carry: backpack, safety line, ice nails and poles</p>
+
+              <h3>Included in the price</h3>
+              <dl>
+                <dt>Day I</dt>
+                <dd>Transfer, dinner, guide, rent of equipment, share in double room</dd>
+                <dt>Day I</dt>
+                <dd>Breakfast, lunch, dinner, guide, rent of equipment, share in double room</dd>
+                <dt>Day III</dt>
+                <dd>Breakfast, lunch, dinner, guide, rent of equipment, share in double room</dd>
+                <dt>Day IV</dt>
+                <dd>Breakfast, lunch, guide, rent of equipment, transfer</dd>
+              </dl>
+<h3>Program for the four days</h3>
+  <v-timeline dense>
+    <v-timeline-item
+      v-for="(day, i) in days"
+      color="primary"
+      :key="i"
+      small
+      right
+    >
+      <span
+        slot="opposite"
+        :class="`headline font-weight-bold primary--text`"
+        v-text="day.day"
+      ></span>
+      <div class="py-3">
+        <h2 :class="`headline font-weight-light mb-3 primary--text`">{{day.title}}</h2>
+        <div>
+          {{day.text}}
+        </div>
+      </div>
+    </v-timeline-item>
+<h3>Program for the four days</h3>
+  </v-timeline>
+    <v-timeline>
+    <v-timeline-item
+      v-for="(day, i) in days"
+      color="primary"
+      :key="i"
+      small
+      right
+    >
+      <span
+        slot="opposite"
+        :class="`headline font-weight-bold primary--text`"
+        v-text="day.day"
+      ></span>
+      <div class="py-3">
+        <h2 :class="`headline font-weight-light mb-3 primary--text`">{{day.title}}</h2>
+        <div>
+          {{day.text}}
+        </div>
+      </div>
+    </v-timeline-item>
+  </v-timeline>
+
+<h3>Program for the four days</h3>
+    <v-timeline>
+    <v-timeline-item
+      v-for="(day, i) in days"
+      color="primary"
+      :key="i"
+      small
+    >
+      <span
+        slot="opposite"
+        :class="`headline font-weight-bold primary--text`"
+        v-text="day.day"
+      ></span>
+      <div class="py-3">
+        <h2 :class="`headline font-weight-light mb-3 primary--text`">{{day.title}}</h2>
+        <div>
+          {{day.text}}
+        </div>
+      </div>
+    </v-timeline-item>
+  </v-timeline>
+
+              <h3>Program for the four days</h3>
+              <h3>Day I</h3>
+              <p>
+                Arrival at the airport. The guide will meet you and if possible we start skating already in the afternoon.
+                We start with a safety and security briefing and then hand out all equipment. Time to change to proper
+                clothes if you have not yet done that. Late afternoon we drive towards the chosen skating area. Arriving
+                to the hostel/hotel you check in and then we have dinner at the hostel/hotel.
+              </p>
+              <h3>Day II – III</h3>
+              <p>
+                We have breakfast and also time to prepare the lunch packages. Depending on distance we walk or take
+                the minibus towards the ice. At the lake we start by examining the ice before we put on the skates
+                and step out on the ice. We skate in a row, the guide always first, checking the ice and looking
+                out for weak spots. The speed and distance is adjusted to the group and the ice condition. Now and
+                then we take short stops to admire the beauty, chat for a while or just rest. During the day we go
+                ashore from time to time to take something to eat or walk to another lake nearby. At the end of the
+                day we return to the minibus and head back to the hotel/hostel. A nice sauna before the dinner is
+                a pleasant experience. If the conditions are right we might go for another skating trip in moonlight
+                late in the evening.
+              </p>
+              <h3>Day IV</h3>
+              <p>
+                After breakfast we head off to another day on ice, skating as long as possible depending on the scheduled departure times.
+                On our way back to the airport we stop for a shower and to change clothes and maybe for something
+                to eat. The guide then drives you back to the airport.
+              </p>
+            </v-card-text>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </PackageLayout>
 </template>
 
 <script>
@@ -35,9 +304,38 @@ export default {
           title: "Ice-skating",
           subtitle: "Ice-skating is fun"
         }
+      ],
+            days: [
+        {
+          day: 'Day 1',
+          title: 'Arive and skate',
+          text: `Arrival at the airport. The guide will meet you and if possible we start skating already in the afternoon.
+                We start with a safety and security briefing and then hand out all equipment. Time to change to proper
+                clothes if you have not yet done that. Late afternoon we drive towards the chosen skating area. Arriving
+                to the hostel/hotel you check in and then we have dinner at the hostel/hotel.`
+        },
+        {
+          day: 'Day 2 & 3',
+          title: 'Skate some more',
+          text: `We have breakfast and also time to prepare the lunch packages. Depending on distance we walk or take
+                the minibus towards the ice. At the lake we start by examining the ice before we put on the skates
+                and step out on the ice. We skate in a row, the guide always first, checking the ice and looking
+                out for weak spots. The speed and distance is adjusted to the group and the ice condition. Now and
+                then we take short stops to admire the beauty, chat for a while or just rest. During the day we go
+                ashore from time to time to take something to eat or walk to another lake nearby. At the end of the
+                day we return to the minibus and head back to the hotel/hostel. A nice sauna before the dinner is
+                a pleasant experience. If the conditions are right we might go for another skating trip in moonlight
+                late in the evening.`
+        },
+        {
+          day: 'Day 4',
+          title: 'Skate and leave',
+          text: `After breakfast we head off to another day on ice, skating as long as possible depending on the scheduled departure times.
+                On our way back to the airport we stop for a shower and to change clothes and maybe for something
+                to eat. The guide then drives you back to the airport.`
+        }
       ]
     };
   }
 };
 </script>
-

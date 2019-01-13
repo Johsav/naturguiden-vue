@@ -10,33 +10,39 @@
         <slot></slot>
       </v-flex>
       <v-flex xl3 lg3 md4 class="hidden-sm-and-down">
-        <v-container fluid grid-list-md class="no-padding-right">
+        <v-container fluid grid-list-md class="no-padding-sides">
           <v-layout column>
+            <h4 class="grey--text text-xs-left pl-3">Highlights</h4>
             <v-flex>
               <v-card>
-                <v-img
-                  class="white--text"
-                  height="300px"
-                  src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
-                >
-                  <v-container fill-height fluid>
-                    <v-layout fill-height>
-                      <v-flex xs12 align-end flexbox>
-                        <span class="headline">Great</span>
-                      </v-flex>
-                    </v-layout>
-                  </v-container>
-                </v-img>
-                <v-card-title>
-                  <div>
-                    <span>Most weekends are almost fully booked already, but we do have some vacancies. And we can also offer skating tours during the first half of the week - Monday until Wednesday.</span>
-                  </div>
+                <v-card-title class="d-block">
+                  <h2 class="title">Nordic Skating</h2>
+                  <h3 class="subheading">weekend tour</h3>
                 </v-card-title>
+                <v-card-text class="text-xs-left">
+                  <dl class="dl-horizontal">
+                    <dt>Season:</dt>
+                    <dd>January - mid March</dd>
+                  </dl>
+                  <dl>
+                    <dt>Days:</dt>
+                    <dd>4 days/ 3 nights&gt;</dd>
+                  </dl>
+                  <dl>
+                    <dt>Price:</dt>
+                    <dd>From €655</dd>
+                  </dl>
+                  <dl>
+                    <dt>Lodging:</dt>
+                    <dd>Hostel, double room with shared toilet and shower</dd>
+                  </dl>
+                </v-card-text>
                 <v-card-actions>
                   <v-btn flat color="orange">Nordic Skating</v-btn>
                 </v-card-actions>
               </v-card>
             </v-flex>
+            <h4 class="grey--text text-xs-left pl-3">Other simular packages</h4>
             <v-flex v-for="item in carouselItems" :key="item.src">
               <v-card color="indigo" dark height="200">
                 <v-card-title primary class="title">{{item.src}}</v-card-title>
@@ -65,7 +71,8 @@ export default {
 </script>
 
 <style scoped>
-.no-padding-right {
+.no-padding-sides {
+  padding-left: 0;
   padding-right: 0;
 }
 .no-padding {
