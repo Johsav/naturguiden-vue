@@ -38,6 +38,16 @@ export default new Router({
       component: () => import(/* webpackChunkName: "adventures" */ './views/Adventures.vue')
     },
     {
+      path: '/contact',
+      name: 'contact-us',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/Contactus.vue')
+    },
+    {
+      path: '/adventures/skating/private',
+      name: 'skating-private',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/SkatingPrivate.vue')
+    },
+    {
       path: '/adventures/skating/weekend',
       name: 'skating-weekend',
       // route level code-splitting
@@ -46,12 +56,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "skating-weekend" */ './views/package/SkatingWeekend.vue')
     },
     {
-      path: '/adventures/skating/private',
-      name: 'skating-private',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/SkatingPrivate.vue')
+      path: '/adventures/kayak/private',
+      name: 'kayak-private',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/KayakPrivate.vue')
     }
+    
   ]
 })
