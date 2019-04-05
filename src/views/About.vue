@@ -21,10 +21,10 @@
               <v-flex xs12 md9 lg10 sm12 xl10 d-flex>
                 <v-card  class="text-xs-left">
                   <v-card-title primary-title>
-                      <h3 class="headline">Naturguiden your adventure guide</h3>
+                      <h2 class="headline">Naturguiden your guide to great adventures</h2>
                   </v-card-title>
-                  <v-card-text>
-                    <p>Adventures, outdoor in the nature, is our passion. All inclusive adventure-packages with an experienced guide, transfer, food and accommodation are what we offer.</p>
+                  <v-card-text class="text-md-left">
+                    <p>Adventures, outdoor in the nature, is our passion. All inclusive adventure-packages with an experienced guide, all equipment, food and accommodation (everything that you need) are what we offer.</p>
                  
                     <P>Our most common adventures are</P>
                     <v-list>

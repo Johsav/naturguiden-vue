@@ -49,7 +49,7 @@
       </router-link>
     </v-toolbar>
 
-    <v-content app class="bg-red">
+    <v-content app class="bg-red">  <!-- Innanför v-content ligger koden för de olika sidorna -->
       <router-view></router-view>
     </v-content>
 

@@ -9,37 +9,22 @@
       <v-flex xs12 sm12 md8 lg7 xl8>
         <slot></slot>
       </v-flex>
-      <v-flex xl3 lg3 md4 class="hidden-sm-and-down">
+    
+      <v-flex xl3 lg3 md4 class="hide-sm-and-down">
         <v-container fluid grid-list-md class="no-padding-sides">
           <v-layout column>
-            <h4 class="grey--text text-xs-left pl-3">Highlights</h4>
             <v-flex>
               <v-card>
                 <v-card-title class="d-block">
-                  <h2 class="title">Nordic Skating</h2>
+                  <h2 class="title">Nordic skating</h2>
                   <h3 class="subheading">weekend tour</h3>
                 </v-card-title>
                 <v-card-text class="text-xs-left">
-                  <dl class="dl-horizontal">
-                    <dt>Season:</dt>
-                    <dd>January - mid March</dd>
-                  </dl>
-                  <dl>
-                    <dt>Days:</dt>
-                    <dd>4 days/ 3 nights&gt;</dd>
-                  </dl>
-                  <dl>
-                    <dt>Price:</dt>
-                    <dd>From €655</dd>
-                  </dl>
-                  <dl>
-                    <dt>Lodging:</dt>
-                    <dd>Hostel, double room with shared toilet and shower</dd>
-                  </dl>
+                  <v-list-tile v-for="item in packageItems" :key="item.type">
+                    <v-list-tile-content>{{item.type}}</v-list-tile-content>
+                    <v-list-tile-content class="align-end">{{item.content}}</v-list-tile-content>
+                  </v-list-tile> 
                 </v-card-text>
-                <v-card-actions>
-                  <v-btn flat color="orange">Nordic Skating</v-btn>
-                </v-card-actions>
               </v-card>
             </v-flex>
             <h4 class="grey--text text-xs-left pl-3">Other simular packages</h4>
@@ -66,7 +51,19 @@ export default {
   props: {
     carouselItems: Array
   },
-  data: () => ({})
+ 
+
+   data() {
+    return {
+      packageItems:  [
+        {type: "Season:", content: "January - mid March"},
+        {type: "Days:", content: "4 days/3 nights"},
+        {type: "Price:", content: "from 655 EUR"},
+        
+       
+      ]
+    }
+   }    
 };
 </script>
 
