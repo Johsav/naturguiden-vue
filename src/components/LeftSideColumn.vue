@@ -9,32 +9,75 @@
                 <v-img
                   class="white--text"
                   height="300px"
-                  src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+                  :src="require('@/assets/images/500/kayak002.jpg')"
                 >
-                  <v-container fill-height fluid>
-                    <v-layout fill-height>
-                      <v-flex xs12 align-end flexbox>
-                        <span class="headline">Great</span>
-                      </v-flex>
-                    </v-layout>
-                  </v-container>
                 </v-img>
-                <v-card-title>
-                  <div>
-                    <span>Most weekends are almost fully booked already, but we do have some vacancies. And we can also offer skating tours during the first half of the week - Monday until Wednesday.</span>
-                  </div>
-                </v-card-title>
+                <v-card-text>
+                  Enjoy a guided kayak tour in the archipelago. Camping on the islands, cocking over open fire.
+                </v-card-text>
                 <v-card-actions>
-                  <v-btn flat color="orange">Nordic Skating</v-btn>
+                  <v-btn flat color="orange" router-link to="/kayak">Join our kayak tours!</v-btn>
                 </v-card-actions>
               </v-card>
             </v-flex>
             <v-flex>
-              <v-card color="indigo" dark height="200">
-                <v-card-title primary class="title">Lorem</v-card-title>
-                <v-card-text>andra card uppifrån till vänster</v-card-text>
+              <v-card>
+                <iframe
+                  src="https://www.youtube.com/embed/b5CztALMDsU" 
+                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <v-card-actions>
+                  <v-btn flat color="orange" router-link to="/video">>> more videos</v-btn>
+                </v-card-actions>
               </v-card>
             </v-flex>
+
+
+            <v-flex>
+              <v-card>
+                <v-card-title primary class="title">They write about our tours ..</v-card-title>
+                <v-flex>
+                  <v-layout row class="ma-0 pa-0">
+                    <a href="https://www.independent.co.uk/travel/europe/sweden-go-with-the-floe-this-winter-8959544.html">
+                      <v-flex>
+                        <v-img
+                          class="round-img"
+                          contain
+                          width="100px"
+                          :src="require('@/assets/images/100/independent001.jpg')" >
+                        </v-img>
+                      </v-flex>
+                    </a>  
+                    <v-flex>
+                      <v-card-title class="ma-0 pa-0 font-weight-bold text--center">The Independent</v-card-title>
+                      <v-card-text to="/about" class="ma-0 pa-0 font-italic">It was the question on all of our minds, but I asked it: "How do you know when the ice isn't safe to skate on?</v-card-text>                    
+                    </v-flex>
+                  </v-layout>
+                </v-flex>   
+                <v-flex >                
+                  <v-layout row class="ma-0 pa-0" >
+                    <a href="https://www.theguardian.com/travel/2012/nov/09/european-winter-breaks-with-twist">
+                      <v-flex>
+                        <v-img
+                          class="round-img"
+                          contain
+                          width="100px"
+                          :src="require('@/assets/images/100/guardian001.jpg')" >
+                        </v-img>
+                      </v-flex>
+                    </a>
+                    <v-flex >
+                      <v-card-title class="ma-0 pa-0 font-weight-bold text--center">The Guardian</v-card-title>
+                      <v-card-text class="ma-0 pa-0 font-italic">Escape the circle-skating crowds at Somerset House and ice-skate with a sense of purpose on a four-day trek</v-card-text>
+                    </v-flex>
+                  </v-layout>
+                </v-flex>
+                <v-card-actions>
+                  <v-btn flat color="orange" router-link to="/articles">more articles >>>></v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-flex>
+            
           </v-layout>
         </v-container>
       </v-flex>
@@ -60,5 +103,8 @@ export default {
 }
 .no-padding-bottom{
   padding-bottom: 0;
+}
+.round-img{
+    border-radius:50px;
 }
 </style>

@@ -7,16 +7,16 @@
         <v-layout column>
           <v-flex>
             <v-layout fill-height>
-              <v-flex md6 lg6 sm6 xl6 d-flex hidden-xs-only class="hidden-p-xs-only">
+              <v-flex sm6 md6 lg6 xl6 d-flex hidden-xs-only class="hidden-p-xs-only">
                 <v-card>
                   <v-img
                     class="white--text"
                     min-height="400px"
-                    src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+                    :src="require('@/assets/images/500/happy_w001.jpg')"
                   ></v-img>
                 </v-card>
               </v-flex>
-              <v-flex xs12 md6 lg6 sm6 xl6 d-flex>
+              <v-flex xs12 sm6 md6 lg6 xl6 d-flex>
                 <v-card color="blue-grey darken-2" class="white--text text-xs-left">
                   <v-card-title primary-title>
                       <h3 class="headline">Adventure Tours in Sweden</h3>
@@ -29,6 +29,90 @@
                     <v-btn flat color="orange">Explore</v-btn>
                   </v-card-actions>
                 </v-card>
+              </v-flex>
+            </v-layout>
+          </v-flex>
+          <h3 class="headline">Our different activities</h3>
+          <v-flex>
+            <v-layout column>
+              <v-flex>
+                <v-layout row>
+                  <v-flex xs3 sm3 md3 lg3 xl3>
+                    <v-card>
+                      <v-img
+                        class="white--text"
+                        :src="require('@/assets/images/500/clean-bandit001.jpg')"
+                      >
+                        <v-card-title>Nordic Skating</v-card-title>
+                      </v-img>
+                    </v-card>
+                  </v-flex>
+                  <v-flex xs3 sm3 md3 lg3 xl3>
+                    <v-card>
+                      <v-img
+                        class="white--text"
+                        :src="require('@/assets/images/500/kayak001.jpg')"
+                      >
+                        <v-card-title>Kayak</v-card-title>
+                      </v-img>
+                    </v-card>
+                  </v-flex>
+                  <v-flex xs3 sm3 md3 lg3 xl3>
+                    <v-card>
+                      <v-img
+                        class="white--text"
+                        :src="require('@/assets/images/500/hiking007.jpg')"
+                      >
+                        <v-card-title>Hiking</v-card-title>
+                      </v-img>
+                    </v-card>
+                  </v-flex>
+                  <v-flex xs3 sm3 md3 lg3 xl3>
+                    <v-card>
+                      <v-img
+                        class="white--text"
+                        :src="require('@/assets/images/500/skiing004.jpg')"
+                      >
+                        <v-card-title>Back Country Skiing</v-card-title>
+                      </v-img>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+              </v-flex>  
+            </v-layout>
+          </v-flex>
+          <v-text-field></v-text-field>
+          <v-flex>
+            <v-layout column>
+              <v-flex>
+                <v-layout row>
+                  <v-flex xs6 sm6 md6 lg6 xl6>
+                    <v-card router-link to="/about">
+                      <v-img
+                        class="white--text"
+                        :src="require('@/assets/images/1000/open_group.jpg')"
+                      >
+                        <v-card-title>Scheduled tours</v-card-title>
+                      </v-img>
+                      <v-card-text>
+                        Book one of our scheduled tours and enjoy the tour together with new friends. You find all our scheduled tours here.
+                      </v-card-text>  
+                    </v-card>
+                  </v-flex>
+                  <v-flex xs6 sm6 md6 lg6 xl6>
+                    <v-card router-link to="/about">
+                      <v-img
+                        class="white--text"
+                        :src="require('@/assets/images/1000/private_group.jpg')"
+                      >
+                        <v-card-title>Private tour</v-card-title>
+                      </v-img>
+                      <v-card-text>
+                        Book your own private tour together with friends or family, choose any date you like.
+                      </v-card-text>  
+                    </v-card>
+                  </v-flex>
+                </v-layout>
               </v-flex>
             </v-layout>
           </v-flex>
@@ -64,24 +148,24 @@ export default {
     return {
       carouselItems: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+          src: require("@/assets/images/1400/Skating_1413_2.jpg"),
           title: "Ice-skating",
-          subtitle: "Ice-skating is fun"
+          subtitle: "Fantastic skating on the lakes of Sweden"
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+          src: require("@/assets/images/1400/hiking_1413_4.jpg"),
           title: "Hiking",
-          subtitle: "walk walk"
+          subtitle: "Walk in the wilderness of northern Sweden"
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+          src: require("@/assets/images/1400/kayak_1413_3.jpg"),
           title: "Kayak",
-          subtitle: "paddle paddle"
+          subtitle: "Paddle among the islands of the Swedish arcepelago"
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
-          title: "Ice-skating",
-          subtitle: "Ice-skating is fun"
+          src: require("@/assets/images/1400/Skating_1413_4.jpg"),
+          title: "Skiing",
+          subtitle: "Back country skiing in the mountains"
         }
       ],
       packages: [

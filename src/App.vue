@@ -56,9 +56,9 @@
     <v-footer dark app absolute height="auto" color="secondary">
       <v-container fluid>
         <v-layout align-center justify-start row fill-height wrap>
-          <v-flex xs12 sm4>Naturguiden1</v-flex>
-          <v-flex xs12 sm4>Naturguiden2</v-flex>
-          <v-flex xs12 sm4>Naturguiden3</v-flex>
+          <v-flex xs12 sm4>Naturguiden<br />Munkhagsgatan 120B<br />587 25 LINKÖPING<br />SWEDEN</v-flex>
+          <v-flex xs12 sm4>+46 70 53 53 630<br />info@naturguiden.com<br />www.naturguiden.com</v-flex>
+          <v-flex xs12 sm4>About Naturguiden<br />Send an inquiry</v-flex>
         </v-layout>
       </v-container>
     </v-footer>

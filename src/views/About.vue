@@ -8,23 +8,23 @@
    
         
             <v-layout row fill-height>
-              <v-flex md3 lg2  xl2 d-flex  class="hidden-p-xs-only">
-                <v-card>
+              <v-flex sm3 md3 lg2  xl2 d-flex  >
+                <v-card class="hidden-xs-only">
                   <v-img
-                    class="white--text"
                     contain
-                    
-                    :src="getImgUrl('Logo_RGB.jpg')"
+                    :src="require('@/assets/images/Logo_RGB.jpg')"
                   ></v-img>
+
+                  <configured-carousel :carouselItems="carouselItems"></configured-carousel>
                 </v-card>
               </v-flex>
-              <v-flex xs12 md9 lg10 sm12 xl10 d-flex>
+              <v-flex xs12 sm9 md9 lg10 xl10 >
                 <v-card  class="text-xs-left">
                   <v-card-title primary-title>
-                      <h2 class="headline">Naturguiden your guide to great adventures</h2>
+                      <h2>Naturguiden your guide to great adventures</h2>
                   </v-card-title>
-                  <v-card-text class="text-md-left">
-                    <p>Adventures, outdoor in the nature, is our passion. All inclusive adventure-packages with an experienced guide, all equipment, food and accommodation (everything that you need) are what we offer.</p>
+                  <v-card-text >
+                    <p class="subheading" >Adventures, outdoor in the nature, is our passion. All inclusive adventure-packages with an experienced guide, all equipment, food and accommodation (everything that you need) are what we offer.</p>
                  
                     <P>Our most common adventures are</P>
                     <v-list>
@@ -38,15 +38,28 @@
                       </v-list-tile-content>
                       </v-list-tile>
                     </v-list>  
-
-                    <h3>Private or a scheduled tour</h3>
-                    <p>You can book one of our scheduled tours.<br />Or you can plan your own private tour together with friends or family.</p>
-                    <div class="not">Did you know that our speciality is to create custom tours. What are you dreaming of? Try us!</div>
+                    <br />
+                    <h3>Private or a scheduled tour?</h3>
+                    <p>You can book one of our scheduled tours and enjoy the tour together with new friends.<br />Or you can make your own private tour together with friends or family, choose any date you like.</p>
+                    <div class="red--text">Did you know that our speciality is to create custom tours. What are you dreaming of? Try us!</div>
                     <p>Naturguiden was founded in 1996 and since then has given thousands of people a great time in the Swedish
                     nature.<br /></p>
 
-                    <h3>Ecoturism</h3>
-                    <p>Ecotourism or a nature friendly approach is important for us. We are member of the Swedish ecotourist organisation and try to minimize our impact on the environment.</p>    
+                    <h3>Ecoturism!</h3>
+                    <p>Ecotourism or a nature friendly approach is important for us. We are member of the Swedish ecotourist organisation and try to minimize our impact on the environment.</p>
+                    <v-img
+                    class="right"
+                    width="100"                
+                    :src="require('@/assets/images/naturturismforetagen-logo.svg')">
+                    </v-img>
+                    <p>You will also find our adventure tours on the <a href="https://naturesbestsweden.com/en/home/">Nature's best Sweden</a> site. The best outdoor activities in Sweden.</p>
+                    <v-img
+                    class="right"
+                    width="100"                
+                    :src="require('@/assets/images/logga_upplevelser.svg')">
+                    </v-img>
+
+                    <h3>Where in Sweden?</h3>
                     <p>We are located in Linköping, 200 km south of Stockholm, in the county of Östergötland but our activities
                     take place all over Sweden. We always try to find the best possible places for our different outdoor
                     activities.
@@ -55,7 +68,8 @@
                     <p>The Hiking and Skiing tours are in a remote part of Sweden. We start the tours in Ljungdalen and here we have the mountain almost by ourselves.</p>
                     <p><i>But of course different locations are possible.</i></p>
                     <br />
-                    <p>We have found the most beautiful places for you, we have all equipment you need. We have done all preparation, you just have to show up and enjoy.</p>
+
+                    <p class="font-weight-bold" >We have found the most beautiful places for you, we have all equipment you need. We have done all preparation, you just have to show up and enjoy.</p>
                     <br />
                     <p>Welcome to join us on our tours</p>
                     <br />
@@ -63,8 +77,6 @@
                     Naturguiden<br />
                     +46 70 53 53 630<br />
                     <a href="mailto:john@naturguiden.se">john@naturguiden.se</a></p>
-
-                    <p>LÄGG TILL LOGGA FÖR NATURENS BÄSTA OCH EKOTURISMFÖRENINGEN HÄR ^^^^^^^^^^</p>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -74,8 +86,12 @@
 </template>
 
 <script>
+import ConfiguredCarousel from "@/components/ConfiguredCarousel.vue";
 
 export default {
+  components: {
+    ConfiguredCarousel
+  },
   
   methods: {
     getImgUrl(img) {
@@ -93,9 +109,6 @@ export default {
         },
         { title: "Contact us",
           link: "/contact"
-        },
-        { title: "Send an inquiry",
-          link: "/inquiry"
         }
       ],
       l_element: [
@@ -115,6 +128,28 @@ export default {
         { title: "Back Country skiing",
          text: "Spring in the mountain, they call it the fifth season. Still winter but with long lasting days.",
           link: "/skiing"
+        }
+      ],
+      carouselItems: [
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+          title: "Ice-skating",
+          subtitle: "Ice-skating is fun"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+          title: "Hiking",
+          subtitle: "walk walk"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+          title: "Kayak",
+          subtitle: "paddle paddle"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+          title: "Ice-skating",
+          subtitle: "Ice-skating is fun"
         }
       ]
     }
