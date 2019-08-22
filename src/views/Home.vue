@@ -1,132 +1,202 @@
 <template>
   <div>
     <configured-carousel :carouselItems="carouselItems"></configured-carousel>
+    <v-container fluid grid-list-lg>
+      <v-layout column>
+        <v-flex>
+          <v-layout fill-height row>
 
-    <LeftSideColumn>
-      <v-container fluid grid-list-lg>
-        <v-layout column>
-          <v-flex>
-            <v-layout fill-height>
-              <v-flex sm6 md6 lg6 xl6 d-flex hidden-xs-only class="hidden-p-xs-only">
-                <v-card>
-                  <v-img
-                    class="white--text"
-                    min-height="400px"
-                    :src="require('@/assets/images/500/happy_w001.jpg')"
-                  ></v-img>
-                </v-card>
-              </v-flex>
-              <v-flex xs12 sm6 md6 lg6 xl6 d-flex>
-                <v-card color="blue-grey darken-2" class="white--text text-xs-left">
-                  <v-card-title primary-title>
-                      <h3 class="headline">Adventure Tours in Sweden</h3>
-                  </v-card-title>
-                  <v-card-text>
-                        Join us on our tours. We have gathered our best outdoor experiences and are now offering all inclusive guided tours. We offer tours for small groups where we tailor each tour after the interests and wishes of the participants. Join a scheduled tour or book your own private tour together with your friends or family.
-                  </v-card-text>
-                  <v-card-actions>
-                    <v-btn flat color="orange">Share</v-btn>
-                    <v-btn flat color="orange">Explore</v-btn>
-                  </v-card-actions>
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </v-flex>
-          <h3 class="headline">Our different activities</h3>
-          <v-flex>
-            <v-layout column>
-              <v-flex>
+            <v-flex lg2 xl2  class="hidden-p-xs-only">
+              <v-card>
+                <v-img class="white--text" :src="require('@/assets/images/500/happy_w001.jpg')"></v-img>
+              </v-card>
+            </v-flex>
+
+            <v-flex xs12 sm12 md12 lg10 xl10 d-flex>
+              <v-card color="blue-grey darken-2" class="white--text text-xs-left">
                 <v-layout row>
-                  <v-flex xs3 sm3 md3 lg3 xl3>
-                    <v-card>
-                      <v-img
-                        class="white--text"
-                        :src="require('@/assets/images/500/clean-bandit001.jpg')"
-                      >
-                        <v-card-title>Nordic Skating</v-card-title>
-                      </v-img>
-                    </v-card>
-                  </v-flex>
-                  <v-flex xs3 sm3 md3 lg3 xl3>
-                    <v-card>
-                      <v-img
-                        class="white--text"
-                        :src="require('@/assets/images/500/kayak001.jpg')"
-                      >
-                        <v-card-title>Kayak</v-card-title>
-                      </v-img>
-                    </v-card>
-                  </v-flex>
-                  <v-flex xs3 sm3 md3 lg3 xl3>
-                    <v-card>
-                      <v-img
-                        class="white--text"
-                        :src="require('@/assets/images/500/hiking007.jpg')"
-                      >
-                        <v-card-title>Hiking</v-card-title>
-                      </v-img>
-                    </v-card>
-                  </v-flex>
-                  <v-flex xs3 sm3 md3 lg3 xl3>
-                    <v-card>
-                      <v-img
-                        class="white--text"
-                        :src="require('@/assets/images/500/skiing004.jpg')"
-                      >
-                        <v-card-title>Back Country Skiing</v-card-title>
-                      </v-img>
-                    </v-card>
-                  </v-flex>
+                  <v-card-title primary-title class="display-2">Adventure tours in Sweden</v-card-title>
                 </v-layout>
-              </v-flex>  
-            </v-layout>
+                <v-card-text
+                  class="mb-5 subheading"
+                >Join us on our tours. We have gathered our best outdoor experiences and are now offering all inclusive guided tours. We offer tours for small groups where we tailor each tour after the interests and wishes of the participants. Join a scheduled tour or book your own private tour together with your friends or family.</v-card-text>
+              </v-card>
+            </v-flex>
+
+          </v-layout>
+        </v-flex>
+        <!--  <v-card color="primary" class="white--text headline">
+              <v-card-text>
+                Our activities
+              </v-card-text>  
+        </v-card>-->
+        <v-flex>
+          <v-layout column>
+            <v-flex>
+              <v-layout row wrap>
+                <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
+                  <v-card>
+                    <v-img
+                      class="white--text"
+                      :src="require('@/assets/images/500/clean-bandit001.jpg')"
+                    >
+                      <v-card-title class="display-1">Nordic Skating</v-card-title>
+                    </v-img>
+                  </v-card>
+                </v-flex>
+                <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
+                  <v-card>
+                    <v-img class="white--text" :src="require('@/assets/images/500/kayak001.jpg')">
+                      <v-card-title class="display-1">Kayak</v-card-title>
+                    </v-img>
+                  </v-card>
+                </v-flex>
+                <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
+                  <v-card>
+                    <v-img class="white--text" :src="require('@/assets/images/500/hiking007.jpg')">
+                      <v-card-title class="display-1">Hiking</v-card-title>
+                    </v-img>
+                  </v-card>
+                </v-flex>
+                <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
+                  <v-card>
+                    <v-img class="white--text" :src="require('@/assets/images/500/skiing004.jpg')">
+                      <v-card-title class="display-1">Back Country Skiing</v-card-title>
+                    </v-img>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-flex>
+          </v-layout>
+        </v-flex>
+        <v-text-field></v-text-field>
+
+        <v-flex>
+          <v-layout column>
+            <v-flex>
+              <v-layout row wrap>
+                <v-flex xs12 sm6 md4 lg4 xl4>
+                  <v-card height="100%">
+                    <iframe
+                      aspect-ratio
+                      class="mt-2"
+                      height="80%"
+                      src="https://www.youtube.com/embed/BhAMkDSoREs"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                    <v-layout row>
+                      <v-card-actions>
+                        <v-btn flat color="orange" router-link to="/video">more videos</v-btn>
+                      </v-card-actions>
+                      <v-card-text class="text-xs-left ml-4">Skating in the mountains, November 2018</v-card-text>
+                    </v-layout>
+                  </v-card>
+                </v-flex>
+
+                <v-flex md4 lg4 xl4 class="hidden-sm-and-down">
+                  <v-card height="100%">
+                    <v-img
+                      class="white--text"
+                      height="300px"
+                      :src="require('@/assets/images/500/kayak002.jpg')"
+                    ></v-img>
+                    <v-card-text>Enjoy a guided kayak tour in the archipelago. Camping on the islands, cocking over open fire.</v-card-text>
+                    <v-card-actions>
+                      <v-btn flat color="orange" router-link to="/kayak">Join our kayak tours!</v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-flex>
+
+                <v-flex xs12 sm6 md4 lg4 xl4>
+                  <v-card height="100%">
+                    <v-card-title primary class="title">They write about our tours ..</v-card-title>
+                    <v-flex>
+                      <v-layout row class="ma-0 pa-0">
+                        <a
+                          href="https://www.independent.co.uk/travel/europe/sweden-go-with-the-floe-this-winter-8959544.html"
+                        >
+                          <v-flex>
+                            <v-img
+                              class="round-img"
+                              contain
+                              width="100px"
+                              :src="require('@/assets/images/100/independent001.jpg')"
+                            ></v-img>
+                          </v-flex>
+                        </a>
+                        <v-flex>
+                          <v-card-title
+                            class="ma-0 pa-0 font-weight-bold text--center"
+                          >The Independent</v-card-title>
+                          <v-card-text
+                            to="/about"
+                            class="ma-0 pa-0 font-italic text-xs-left"
+                          >It was the question on all of our minds, but I asked it: "How do you know when the ice isn't safe to skate on?</v-card-text>
+                        </v-flex>
+                      </v-layout>
+                    </v-flex>
+                    <v-flex>
+                      <v-layout row class="ma-0 pa-0">
+                        <a
+                          href="https://www.theguardian.com/travel/2012/nov/09/european-winter-breaks-with-twist"
+                        >
+                          <v-flex>
+                            <v-img
+                              class="round-img"
+                              contain
+                              width="100px"
+                              :src="require('@/assets/images/100/guardian001.jpg')"
+                            ></v-img>
+                          </v-flex>
+                        </a>
+                        <v-flex>
+                          <v-card-title class="ma-0 pa-0 font-weight-bold text--center">The Guardian</v-card-title>
+                          <v-card-text
+                            class="ma-0 pa-0 font-italic text-xs-left"
+                          >Escape the circle-skating crowds at Somerset House and ice-skate with a sense of purpose on a four-day trek</v-card-text>
+                        </v-flex>
+                      </v-layout>
+                    </v-flex>
+                    <v-card-actions>
+                      <v-btn flat color="orange" router-link to="/articles">more articles</v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-flex>
+          </v-layout>
+        </v-flex>
+        <v-layout row wrap>
+          <v-flex xs12 sm12 md6 lg6 xl6 d-flex>
+            <v-card color="blue-grey darken-2" class="white--text text-xs-left">
+              <v-card-title primary-title class="display-2">Adventure tours in Sweden</v-card-title>
+              <v-card-text
+                class="mb-5 subheading"
+              >Join us on our tours. We have gathered our best outdoor experiences and are now offering all inclusive guided tours. We offer tours for small groups where we tailor each tour after the interests and wishes of the participants. Join a scheduled tour or book your own private tour together with your friends or family.</v-card-text>
+            </v-card>
           </v-flex>
-          <v-text-field></v-text-field>
-          <v-flex>
-            <v-layout column>
-              <v-flex>
-                <v-layout row>
-                  <v-flex xs6 sm6 md6 lg6 xl6>
-                    <v-card router-link to="/about">
-                      <v-img
-                        class="white--text"
-                        :src="require('@/assets/images/1000/open_group.jpg')"
-                      >
-                        <v-card-title>Scheduled tours</v-card-title>
-                      </v-img>
-                      <v-card-text>
-                        Book one of our scheduled tours and enjoy the tour together with new friends. You find all our scheduled tours here.
-                      </v-card-text>  
-                    </v-card>
-                  </v-flex>
-                  <v-flex xs6 sm6 md6 lg6 xl6>
-                    <v-card router-link to="/about">
-                      <v-img
-                        class="white--text"
-                        :src="require('@/assets/images/1000/private_group.jpg')"
-                      >
-                        <v-card-title>Private tour</v-card-title>
-                      </v-img>
-                      <v-card-text>
-                        Book your own private tour together with friends or family, choose any date you like.
-                      </v-card-text>  
-                    </v-card>
-                  </v-flex>
-                </v-layout>
-              </v-flex>
-            </v-layout>
+          <v-flex xs12 sm12 md6 lg6 xl6 d-flex>
+            <v-card color="blue-grey darken-2" class="white--text text-xs-left">
+              <v-card-title primary-title class="display-2">Adventure tours in Sweden</v-card-title>
+              <v-card-text
+                class="mb-5 subheading"
+              >Join us on our tours. We have gathered our best outdoor experiences and are now offering all inclusive guided tours. We offer tours for small groups where we tailor each tour after the interests and wishes of the participants. Join a scheduled tour or book your own private tour together with your friends or family.</v-card-text>
+            </v-card>
           </v-flex>
-          <v-flex v-for="item in packages" :key="item.link">
+        </v-layout>
+
+        <!--     <v-flex v-for="item in packages" :key="item.link">
             <v-card :to="item.link">
               <v-img class="white--text" height="200px" :src="getImgUrl(item.imageSrc)">
                 <v-card-title>{{item.title}}</v-card-title>
               </v-img>
               <v-card-text>{{item.text}}</v-card-text>
             </v-card>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </LeftSideColumn>
+        </v-flex>-->
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
@@ -210,7 +280,7 @@ export default {
   text-shadow: 0 0 0.4em #000;
 }
 @media only screen and (max-width: 600px) {
-  .hidden-p-xs-only{
+  .hidden-p-xs-only {
     padding: 0 !important;
   }
 }
