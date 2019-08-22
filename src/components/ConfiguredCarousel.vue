@@ -2,7 +2,7 @@
 
   <v-carousel hide-delimiters :height="$vuetify.breakpoint.smAndDown ? '200' : '400'">
     <v-carousel-item v-for="(item,i) in carouselItems" :key="i" :src="item.src">
-      <v-container :fill-height="!$vuetify.breakpoint.smAndDown" class="pr-5">
+      <v-container :fill-height="!$vuetify.breakpoint.smAndDown" >
         <v-layout
           white--text
           align-end
