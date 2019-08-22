@@ -1,88 +1,106 @@
 <template>
-  <v-container fluid grid-list-md style="background-color: #00ff00" class="no-padding-bottom">
-      <v-card>
-        <v-tabs fixed-tabs grow>
-          <v-tab v-for="item in m_element" :key="item.link" :to="item.link" replace>{{item.title}}</v-tab>
-        </v-tabs>
-      </v-card>
-   
-        
-            <v-layout row fill-height>
-              <v-flex sm3 md3 lg2  xl2 d-flex  >
-                <v-card class="hidden-xs-only">
-                  <v-img
-                    contain
-                    :src="require('@/assets/images/Logo_RGB.jpg')"
-                  ></v-img>
+  <v-container fluid grid-list-md  class="no-padding-bottom">
+    <v-card>
+      <v-tabs fixed-tabs grow slider-color="primary">
+        <v-tab v-for="item in m_element" :key="item.link" :to="item.link" replace>{{item.title}}</v-tab>
+      </v-tabs>
+    </v-card>
 
-                  <configured-carousel :carouselItems="carouselItems"></configured-carousel>
-                </v-card>
-              </v-flex>
-              <v-flex xs12 sm9 md9 lg10 xl10 >
-                <v-card  class="text-xs-left">
-                  <v-card-title primary-title>
-                      <h2>Naturguiden your guide to great adventures</h2>
-                  </v-card-title>
-                  <v-card-text >
-                    <p class="subheading" >Adventures, outdoor in the nature, is our passion. All inclusive adventure-packages with an experienced guide, all equipment, food and accommodation (everything that you need) are what we offer.</p>
-                 
-                    <P>Our most common adventures are</P>
-                    <v-list>
-                      <v-list-tile v-for="item in l_element" :key="item.link" router :to="item.link">
-                        <v-list-tile-action>
-                          <v-icon color="red">brightness_7</v-icon>
-                        </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-                      <v-list-tile-sub-title> {{ item.text }}</v-list-tile-sub-title>
-                      </v-list-tile-content>
-                      </v-list-tile>
-                    </v-list>  
-                    <br />
-                    <h3>Private or a scheduled tour?</h3>
-                    <p>You can book one of our scheduled tours and enjoy the tour together with new friends.<br />Or you can make your own private tour together with friends or family, choose any date you like.</p>
-                    <div class="red--text">Did you know that our speciality is to create custom tours. What are you dreaming of? Try us!</div>
-                    <p>Naturguiden was founded in 1996 and since then has given thousands of people a great time in the Swedish
-                    nature.<br /></p>
+    <v-layout row fill-height>
+      <v-flex sm3 md3 lg2 xl2 d-flex>
+        <v-card class="hidden-xs-only">
+          <v-img contain :src="require('@/assets/images/Logo_RGB.jpg')"></v-img>
+          <configured-carousel contain :carouselItems="carouselItems"></configured-carousel>
+        </v-card>
+      </v-flex>
 
-                    <h3>Ecoturism!</h3>
-                    <p>Ecotourism or a nature friendly approach is important for us. We are member of the Swedish ecotourist organisation and try to minimize our impact on the environment.</p>
-                    <v-img
-                    class="right"
-                    width="100"                
-                    :src="require('@/assets/images/naturturismforetagen-logo.svg')">
-                    </v-img>
-                    <p>You will also find our adventure tours on the <a href="https://naturesbestsweden.com/en/home/">Nature's best Sweden</a> site. The best outdoor activities in Sweden.</p>
-                    <v-img
-                    class="right"
-                    width="100"                
+      <v-flex xs12 sm9 md9 lg10 xl10>
+        <v-card class="text-xs-left">
+          <v-card-title primary-title>
+            <h2>Naturguiden your guide to great adventures</h2>
+          </v-card-title>
+          <v-card-text>
+            <p
+              class="subheading"
+            >Adventures, outdoor in the nature, is our passion. All inclusive adventure-packages with an experienced guide, all equipment, food and accommodation (everything that you need) are what we offer.</p>
+
+            <P>Our most common adventures are</P>
+            <v-list>
+              <v-list-tile v-for="item in l_element" :key="item.link" router :to="item.link">
+                <v-list-tile-action>
+                  <v-icon color="red">brightness_7</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                  <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                  <v-list-tile-sub-title>{{ item.text }}</v-list-tile-sub-title>
+                </v-list-tile-content>
+              </v-list-tile>
+            </v-list>
+            <br>
+            <h3>Private or a scheduled tour?</h3>
+            <p>
+              You can book one of our scheduled tours and enjoy the tour together with new friends.
+              <br>Or you can make your own private tour together with friends or family, choose any date you like.
+            </p>
+            <div
+              class="red--text"
+            >Did you know that our speciality is to create custom tours. What are you dreaming of? Try us!</div>
+            <p>
+              Naturguiden was founded in 1996 and since then has given thousands of people a great time in the Swedish
+              nature.
+              <br>
+            </p>
+
+<v-img
+                    width="100"
+                    class="left"   
+                     contain          
                     :src="require('@/assets/images/logga_upplevelser.svg')">
                     </v-img>
+            <h3>Ecoturism!</h3>
+            <p>Ecotourism or a nature friendly approach is important for us. We are member of the Swedish ecotourist organisation and try to minimize our impact on the environment.</p>
+           
+            <p>
+              You will also find our adventure tours on the
+              <a href="https://naturesbestsweden.com/en/home/">Nature's best Sweden</a> site. The best outdoor activities in Sweden.
+            </p>
+          
 
-                    <h3>Where in Sweden?</h3>
-                    <p>We are located in Linköping, 200 km south of Stockholm, in the county of Östergötland but our activities
-                    take place all over Sweden. We always try to find the best possible places for our different outdoor
-                    activities.
-                    </p>
-                    <p>Our kayak tours are normally in the archipelago south of Stockholm.  On the skating tours we meet you at Stockholm airport / Arlanda.</p>
-                    <p>The Hiking and Skiing tours are in a remote part of Sweden. We start the tours in Ljungdalen and here we have the mountain almost by ourselves.</p>
-                    <p><i>But of course different locations are possible.</i></p>
-                    <br />
 
-                    <p class="font-weight-bold" >We have found the most beautiful places for you, we have all equipment you need. We have done all preparation, you just have to show up and enjoy.</p>
-                    <br />
-                    <p>Welcome to join us on our tours</p>
-                    <br />
-                    <p>/John Savelid<br />
-                    Naturguiden<br />
-                    +46 70 53 53 630<br />
-                    <a href="mailto:john@naturguiden.se">john@naturguiden.se</a></p>
-                  </v-card-text>
-                </v-card>
-              </v-flex>
-            </v-layout>
-      </v-container>
+            
 
+            
+            <h3>Where in Sweden?</h3>
+            <p>
+              We are located in Linköping, 200 km south of Stockholm, in the county of Östergötland but our activities
+              take place all over Sweden. We always try to find the best possible places for our different outdoor
+              activities.
+            </p>
+            <p>Our kayak tours are normally in the archipelago south of Stockholm. On the skating tours we meet you at Stockholm airport / Arlanda.</p>
+            <p>The Hiking and Skiing tours are in a remote part of Sweden. We start the tours in Ljungdalen and here we have the mountain almost by ourselves.</p>
+            <p>
+              <i>But of course different locations are possible.</i>
+            </p>
+            <br>
+
+            <p
+              class="font-weight-bold"
+            >We have found the most beautiful places for you, we have all equipment you need. We have done all preparation, you just have to show up and enjoy.</p>
+            <br>
+            <p>Welcome to join us on our tours</p>
+            <br>
+            <p>
+              /John Savelid
+              <br>Naturguiden
+              <br>+46 70 53 53 630
+              <br>
+              <a href="mailto:john@naturguiden.se">john@naturguiden.se</a>
+            </p>
+          </v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
@@ -92,7 +110,7 @@ export default {
   components: {
     ConfiguredCarousel
   },
-  
+
   methods: {
     getImgUrl(img) {
       return require("@/assets/images/" + img);
@@ -107,9 +125,7 @@ export default {
           title: "About us",
           link: "/about"
         },
-        { title: "Contact us",
-          link: "/contact"
-        }
+        { title: "Contact us", link: "/contact" }
       ],
       l_element: [
         {
@@ -117,45 +133,103 @@ export default {
           text: "It's fantastic and sometimes little scary.",
           link: "/skating"
         },
-        { title: "Kayak",
-         text: "All those islands in the archipelago, amazing.",
+        {
+          title: "Kayak",
+          text: "All those islands in the archipelago, amazing.",
           link: "/kayak"
         },
-        { title: "Hiking",
-         text: "Find the way and yourself up in the mountain.",
+        {
+          title: "Hiking",
+          text: "Find the way and yourself up in the mountain.",
           link: "/hiking"
         },
-        { title: "Back Country skiing",
-         text: "Spring in the mountain, they call it the fifth season. Still winter but with long lasting days.",
+        {
+          title: "Back Country skiing",
+          text:
+            "Spring in the mountain, they call it the fifth season. Still winter but with long lasting days.",
           link: "/skiing"
         }
       ],
       carouselItems: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
-          title: "Ice-skating",
-          subtitle: "Ice-skating is fun"
+          src: require("@/assets/images/500/clean-bandit001.jpg"),
+          title: "",
+          subtitle: ""
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
-          title: "Hiking",
-          subtitle: "walk walk"
+          src: require("@/assets/images/500/forest001.jpg"),
+          title: "",
+          subtitle: ""
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          src: require("@/assets/images/500/happy_w001.jpg"),
+          title: "",
+          subtitle: ""
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
-          title: "Ice-skating",
-          subtitle: "Ice-skating is fun"
+          src: require("@/assets/images/500/hiking001.jpg"),
+          title: "",
+          subtitle: ""
+        },
+         {
+          src: require("@/assets/images/500/kayak002.jpg"),
+          title: "",
+          subtitle: ""
+        },
+         {
+          src: require("@/assets/images/500/skating_2018_002.jpg"),
+          title: "",
+          subtitle: ""
+        },
+         {
+          src: require("@/assets/images/500/skiing002.jpg"),
+          title: "",
+          subtitle: ""
+        },
+         {
+          src: require("@/assets/images/500/hiking007.jpg"),
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: require("@/assets/images/500/kayak003.jpg"),
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: require("@/assets/images/500/skating002.jpg"),
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: require("@/assets/images/500/tent003.jpg"),
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: require("@/assets/images/500/lake001.jpg"),
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: require("@/assets/images/500/skating005.jpg"),
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: require("@/assets/images/500/skiing004.jpg"),
+          title: "",
+          subtitle: ""
+        },
+        {
+          src: require("@/assets/images/500/kayak001.jpg"),
+          title: "",
+          subtitle: ""
         }
       ]
-    }
-  }    
+    };
+  }
 };
-
 </script>
 
 <style scoped>
