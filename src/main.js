@@ -14,13 +14,13 @@ Vue.use(VueYouTubeEmbed)
 
 Vue.use(Vuetify, {
   theme: {
-    primary: '#3f51b5',
-    secondary: '#616161',
-    accent: '#f44336',
-    error: '#ff5722',
-    warning: '#ff9800',
-    info: '#03a9f4',
-    success: '#8bc34a'
+    primary: '#3f51b5',   //Moderate blue
+    secondary: '#616161', //Very dark gray
+    accent: '#f44336',    //Bright red
+    error: '#ff5722',     //Vivid red
+    warning: '#ff9800',   //Pure orange
+    info: '#03a9f4',      //Vivid blue
+    success: '#8bc34a'    //Moderate green
   }
 })
 
