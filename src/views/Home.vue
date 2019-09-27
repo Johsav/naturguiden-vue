@@ -35,34 +35,57 @@
             <v-flex>
               <v-layout row wrap>
                 <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
-                  <v-card>
+                  <v-card height="100%" router-link to="/adventures/skating/weekend">
                     <v-img
                       class="white--text"
-                      :src="require('@/assets/images/500/clean-bandit001.jpg')"
-                    >
-                      <v-card-title class="display-1">Nordic Skating</v-card-title>
+                      :src="require('@/assets/images/500/clean-bandit001.jpg')">
+                      <v-card-title class="display-1">   </v-card-title>
                     </v-img>
+                    <v-card-title class="headline py-1">Nordic Skating</v-card-title>
+                    <v-card-text align="left" class="pt-0 px-2">
+                      It's great adventure, it's fun, it's skating on natural ice.
+                    </v-card-text> 
+                    <v-btn text small color="primary">Read more  /  Book now</v-btn> 
                   </v-card>
                 </v-flex>
                 <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
-                  <v-card>
+                  <v-card height="100%" router-link to="/adventures/kayak/weekend">
                     <v-img class="white--text" :src="require('@/assets/images/500/kayak001.jpg')">
-                      <v-card-title class="display-1">Kayak</v-card-title>
+                      <v-card-title class="display-1">   </v-card-title>
                     </v-img>
+                    <v-card-title class="headline py-1">Kayak</v-card-title>
+                    <v-card-text align="left" class="pt-0 px-2">
+                      Kayak between islands and skerries in the beautiful archipelago of tha Baltic sea.
+                    </v-card-text> 
+                    <v-btn text small color="primary">Read more  /  Book now</v-btn>
                   </v-card>
                 </v-flex>
                 <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
-                  <v-card>
+                  <v-card height="100%" router-link to="/adventures/hiking/weekend">
                     <v-img class="white--text" :src="require('@/assets/images/500/hiking007.jpg')">
-                      <v-card-title class="display-1">Hiking</v-card-title>
+                      <v-card-title class="display-1">    </v-card-title>
                     </v-img>
+                    <v-card-title class="headline py-1">Hiking</v-card-title>
+                    
+                    <v-card-text height="100%" align="left" class="pt-0 px-2">
+                      Hiking in the mountains of Sweden.
+                    </v-card-text> 
+                   
+                    <v-btn text small color="primary">Read more  /  Book now</v-btn>
                   </v-card>
                 </v-flex>
                 <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
-                  <v-card>
+                  <v-card height="100%" router-link to="/adventures/skiing/weekend">
                     <v-img class="white--text" :src="require('@/assets/images/500/skiing004.jpg')">
-                      <v-card-title class="display-1">Back Country Skiing</v-card-title>
+                      <v-card-title class="display-1">    </v-card-title>
                     </v-img>
+                    <v-card-title class="headline py-1">Back Country Skiing</v-card-title>
+                     
+                    <v-card-text align="left" class="pt-0 px-2">
+                      Experience the fifth season. Cross country skiing in Swedish mountains.
+                    </v-card-text>
+                     
+                    <v-btn text small color="primary">Read more  /  Book now</v-btn>
                   </v-card>
                 </v-flex>
               </v-layout>
