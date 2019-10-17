@@ -194,18 +194,22 @@
         <v-layout row wrap>
           <v-flex xs12 sm12 md6 lg6 xl6 d-flex>
             <v-card color="blue-grey darken-2" class="white--text text-xs-left">
-              <v-card-title primary-title class="display-2">Adventure tours in Sweden</v-card-title>
+              <v-card-title primary-title class="display-2">Ecotourism</v-card-title>
               <v-card-text
-                class="mb-5 subheading"
-              >Join us on our tours. We have gathered our best outdoor experiences and are now offering all inclusive guided tours. We offer tours for small groups where we tailor each tour after the interests and wishes of the participants. Join a scheduled tour or book your own private tour together with your friends or family.</v-card-text>
+                class="mb-2 subheading"
+              >Naturguiden is a Nature´s Best eco-certified tour operator
+                Travel experience with quality, combined with strict environment and nature conservation measures, as well as a clear local connection.<br />
+                Nature´s Best is a Swedish quality label for nature tourism and have six basic principals. <a class="white--text" href="https://naturesbestsweden.com/en/about-natures-best/">Read more about Nature´s Best</a><br />
+                We have the regulated travel guarantees according to the requirements of the Package travel and linked travel arrangements regulations that allows you to get full refund of your payment to us if the tour will be cancelled by any reason.</v-card-text>
             </v-card>
           </v-flex>
           <v-flex xs12 sm12 md6 lg6 xl6 d-flex>
             <v-card color="blue-grey darken-2" class="white--text text-xs-left">
-              <v-card-title primary-title class="display-2">Adventure tours in Sweden</v-card-title>
+              <v-card-title primary-title class="display-2">Your very own adventure</v-card-title>
               <v-card-text
-                class="mb-5 subheading"
-              >Join us on our tours. We have gathered our best outdoor experiences and are now offering all inclusive guided tours. We offer tours for small groups where we tailor each tour after the interests and wishes of the participants. Join a scheduled tour or book your own private tour together with your friends or family.</v-card-text>
+                class="mb-2 subheading"
+              >Create your own adventure. Maybe you like to combine ice skating with ice climbing. Building a base camp in the forest. Ice skating and hiking in November.<br />
+              We have for many years created unique adventures on requests from a lot of different groups.</v-card-text>
             </v-card>
           </v-flex>
         </v-layout>
