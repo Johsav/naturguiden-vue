@@ -126,6 +126,7 @@ export default {
         { title: "About us", link: "/about" }
       ],
       dropdownLinks: [
+        {title: "All our adventures", link: "/adventures/" },
         {title: "Nordic skating", link: "/adventures/skating/weekend" },
         {title: "Kayak", link: "/adventures/kayak" },
         {title: "Hiking", link: "/adventures/hiking" },
