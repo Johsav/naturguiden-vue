@@ -56,30 +56,31 @@
     <v-footer dark app absolute height="auto" color="secondary">
       <v-container fluid>
         <v-layout align-center justify-start row fill-height wrap>
-          <v-flex xs6 sm4 md3 lg2 xl2>
+          <v-flex xs6 sm4 md4 lg2 xl2>
             <v-img
+                    class="ma-auto"
                     width="100"
-                    class="text-xs-center"
                     :src="require('@/assets/images/Logo_RGB.png')"
                   >
                   </v-img>
           </v-flex>        
           <v-flex xs6 sm4 md4 lg2 xl2>Naturguiden<br />Munkhagsgatan 120B<br />587 25 LINKÖPING<br />SWEDEN</v-flex>
           <v-flex xs6 sm4 md4 lg2 xl2>+46 70 53 53 630<br />info@naturguiden.com<br />www.naturguiden.com</v-flex>
-          <v-flex xs6 sm4 md4 lg2 xl2>About Naturguiden<br />Send an inquiry</v-flex>
+          <v-flex xs6 sm4 md4 lg2 xl2>
+            <router-link to="/about" class="white--text">About us</router-link><br />
+            <router-link to="/contact" class="white--text">Send an inquiry</router-link>
+          </v-flex>
           <v-flex xs6 sm4 md4 lg2 xl2> 
             <v-img
-                    width="100" 
-                    justify-center
-                    align-center             
+                    class="ma-auto"
+                    width="100"           
                     :src="require('@/assets/images/naturturismforetagen-logo.svg')">
                     </v-img>
           </v-flex>
-          <v-flex xs6 sm4 md3 lg2 xl2> 
+          <v-flex xs6 sm4 md4 lg2 xl2> 
             <v-img
-                    width="100"   
-                    justify-center
-                    align-center              
+                    class="ma-auto"
+                    width="100"           
                     :src="require('@/assets/images/logga_upplevelser.svg')">
                     </v-img>
           </v-flex>                
