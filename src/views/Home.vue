@@ -2,7 +2,6 @@
   <div>
     <configured-carousel :carouselItems="carouselItems"></configured-carousel>
     <v-container fluid grid-list-lg>
-      <div>
       <v-layout column>
         <v-flex>
           <v-layout fill-height row>
@@ -232,7 +231,6 @@
           </v-flex>
         </v-layout>
       </v-layout>
-      </div>
     </v-container>
   </div>
 </template>

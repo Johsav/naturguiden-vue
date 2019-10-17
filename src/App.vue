@@ -33,9 +33,26 @@
       <router-link to="/">
         <v-img :src="require('./assets/name.png')" height="48" width="156" contain></v-img>
       </router-link>
+      
+  
+      <v-menu offset-y>
+        <v-btn flat slot="activator">
+          <v-icon left>expand_more</v-icon>
+          <span>Our Adventures</span>
+        </v-btn>
+        <v-list>
+      
+          <v-list-tile v-for="item in dropdownLinks" :key="item.title" router :to="item.link">
+          <v-list-tile-title>{{item.title}}</v-list-tile-title>
+          </v-list-tile>
+
+        </v-list>
+      </v-menu>
+
       <v-toolbar-items v-for="item in toolbarLinks" :key="item.title" class="hidden-sm-and-down">
         <v-btn flat :to="{path: item.link}">{{ item.title }}</v-btn>
       </v-toolbar-items>
+
       <v-spacer></v-spacer>
       <router-link to="/about">
         <v-btn icon>
@@ -105,9 +122,14 @@ export default {
         { title: "Our Adventures", icon: "terrain", link: "/adventures" }
       ],
       toolbarLinks: [
-        { title: "Our adventures", link: "/adventures" },
         { title: "Information", link: "/info" },
         { title: "About us", link: "/about" }
+      ],
+      dropdownLinks: [
+        {title: "Nordic skating", link: "/adventures/skating/weekend" },
+        {title: "Kayak", link: "/adventures/kayak" },
+        {title: "Hiking", link: "/adventures/hiking" },
+        {title: "Back country skiing", link: "/adventures/skiing" }
       ],
       mini: false,
       right: null
