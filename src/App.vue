@@ -52,7 +52,7 @@
     <v-content app class="bg-red">  <!-- Innanför v-content ligger koden för de olika sidorna -->
       <router-view></router-view>
     </v-content>
-
+    <div>   <!-- Needed to avoid footer overwrite lower part of page -->
     <v-footer dark app absolute height="auto" color="secondary">
       <v-container fluid>
         <v-layout align-center justify-start row fill-height wrap>
@@ -87,6 +87,7 @@
         </v-layout>
       </v-container>
     </v-footer>
+    </div>
   </v-app>
 </template>
 

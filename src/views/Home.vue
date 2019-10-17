@@ -2,6 +2,7 @@
   <div>
     <configured-carousel :carouselItems="carouselItems"></configured-carousel>
     <v-container fluid grid-list-lg>
+      <div>
       <v-layout column>
         <v-flex>
           <v-layout fill-height row>
@@ -34,7 +35,7 @@
           <v-layout column>
             <v-flex>
               <v-layout row wrap>
-                <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
+                <v-flex elevation-5 xs6 sm6 md3 lg3 xl3>
                   <v-card height="100%" router-link to="/adventures/skating/weekend">
                     <v-img
                       class="white--text"
@@ -43,12 +44,16 @@
                     </v-img>
                     <v-card-title class="headline py-1">Nordic Skating</v-card-title>
                     <v-card-text align="left" class="pt-0 px-2">
-                      It's great adventure, it's fun, it's skating on natural ice.
+                      It's great adventure, it's fun, it's skating on natural ice. Enjoy skating on our lakes or on the Baltic.
                     </v-card-text> 
-                    <v-btn text small color="primary">Read more  /  Book now</v-btn> 
+                    <v-flex style="position: relative; margin-top: 25px;">
+                    <v-flex style="position: absolute; bottom: 0;">
+                    <v-btn text small color="blue-grey darken-2" class="white--text">Read more  /  Book now</v-btn> 
+                    </v-flex>
+                    </v-flex>
                   </v-card>
                 </v-flex>
-                <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
+                <v-flex elevation-5 xs6 sm6 md3 lg3 xl3>
                   <v-card height="100%" router-link to="/adventures/kayak/weekend">
                     <v-img class="white--text" :src="require('@/assets/images/500/kayak001.jpg')">
                       <v-card-title class="display-1">   </v-card-title>
@@ -56,11 +61,13 @@
                     <v-card-title class="headline py-1">Kayak</v-card-title>
                     <v-card-text align="left" class="pt-0 px-2">
                       Kayak between islands and skerries in the beautiful archipelago of tha Baltic sea.
-                    </v-card-text> 
-                    <v-btn text small color="primary">Read more  /  Book now</v-btn>
+                    </v-card-text>
+                    <v-flex style="position: absolute; bottom: 0;"> 
+                    <v-btn text small color="blue-grey darken-2" class="white--text">Read more  /  Book now</v-btn>
+                    </v-flex>                  
                   </v-card>
                 </v-flex>
-                <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
+                <v-flex elevation-5 xs6 sm6 md3 lg3 xl3>
                   <v-card height="100%" router-link to="/adventures/hiking/weekend">
                     <v-img class="white--text" :src="require('@/assets/images/500/hiking007.jpg')">
                       <v-card-title class="display-1">    </v-card-title>
@@ -70,24 +77,31 @@
                     <v-card-text height="100%" align="left" class="pt-0 px-2">
                       Hiking in the mountains of Sweden.
                     </v-card-text> 
-                   
-                    <v-btn text small color="primary">Read more  /  Book now</v-btn>
+                   <v-flex style="position: absolute; bottom: 0;">
+                    <v-btn  class="white--text"  text small color="blue-grey darken-2" >Read more  /  Book now</v-btn>
+                   </v-flex>
                   </v-card>
                 </v-flex>
-                <v-flex elevation-5 xs6 sm3 md3 lg3 xl3>
+
+                <v-flex elevation-5 xs6 sm6 md3 lg3 xl3>
                   <v-card height="100%" router-link to="/adventures/skiing/weekend">
-                    <v-img class="white--text" :src="require('@/assets/images/500/skiing004.jpg')">
+                    <v-img 
+                      class="white--text"
+                      :src="require('@/assets/images/500/skiing004.jpg')">
                       <v-card-title class="display-1">    </v-card-title>
                     </v-img>
-                    <v-card-title class="headline py-1">Back Country Skiing</v-card-title>
-                     
+                    <v-card-title
+                      class="headline py-1">Back Country Skiing
+                    </v-card-title>
                     <v-card-text align="left" class="pt-0 px-2">
                       Experience the fifth season. Cross country skiing in Swedish mountains.
                     </v-card-text>
-                     
-                    <v-btn text small color="primary">Read more  /  Book now</v-btn>
+                     <v-flex style="position: absolute; bottom: 0;">
+                    <v-btn text small color="blue-grey darken-2" class="white--text">Read more  /  Book now</v-btn>
+                     </v-flex>
                   </v-card>
                 </v-flex>
+
               </v-layout>
             </v-flex>
           </v-layout>
@@ -103,32 +117,36 @@
                     <iframe
                       aspect-ratio
                       class="mt-2"
-                      height="80%"
+                      height="70%"
                       src="https://www.youtube.com/embed/BhAMkDSoREs"
                       frameborder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
                     ></iframe>
-                    <v-layout row>
-                      <v-card-actions>
-                        <v-btn flat color="orange" router-link to="/video">more videos</v-btn>
-                      </v-card-actions>
-                      <v-card-text class="text-xs-left ml-4">Skating in the mountains, November 2018</v-card-text>
-                    </v-layout>
+                      <v-card-text>A great skating tour, November 2018</v-card-text>
+                       <v-flex style="position: absolute; bottom: 0;">
+                      <v-btn router-link to="/video" text small color="blue-grey darken-2" class="white--text">More videos</v-btn>
+                       </v-flex>
                   </v-card>
                 </v-flex>
 
                 <v-flex md4 lg4 xl4 class="hidden-sm-and-down">
-                  <v-card height="100%">
+                  <v-card router-link to="/adventures/kayak/weekend" height="100%">
                     <v-img
                       class="white--text"
                       height="300px"
                       :src="require('@/assets/images/500/kayak002.jpg')"
                     ></v-img>
-                    <v-card-text>Enjoy a guided kayak tour in the archipelago. Camping on the islands, cocking over open fire.</v-card-text>
-                    <v-card-actions>
-                      <v-btn flat color="orange" router-link to="/kayak">Join our kayak tours!</v-btn>
-                    </v-card-actions>
+                    <v-card-text>
+                      Enjoy a guided kayak tour in the archipelago. Camping on the islands, cocking over open fire.
+                    </v-card-text>
+                    <v-flex style="position: relative; margin-top: 25px;">
+                    <v-flex style="position: absolute; bottom: 0;">
+                    <v-btn text small color="blue-grey darken-2" class="white--text">
+                      Read more  /  Book now
+                    </v-btn>
+                    </v-flex>
+                    </v-flex>
                   </v-card>
                 </v-flex>
 
@@ -182,9 +200,9 @@
                         </v-flex>
                       </v-layout>
                     </v-flex>
-                    <v-card-actions>
-                      <v-btn flat color="orange" router-link to="/articles">more articles</v-btn>
-                    </v-card-actions>
+                     <v-flex style="position: absolute; bottom: 0;">
+                   <v-btn router-link to="/articles" text small color="blue-grey darken-2" class="white--text">More articles</v-btn>
+                     </v-flex>
                   </v-card>
                 </v-flex>
               </v-layout>
@@ -213,16 +231,8 @@
             </v-card>
           </v-flex>
         </v-layout>
-
-        <!--     <v-flex v-for="item in packages" :key="item.link">
-            <v-card :to="item.link">
-              <v-img class="white--text" height="200px" :src="getImgUrl(item.imageSrc)">
-                <v-card-title>{{item.title}}</v-card-title>
-              </v-img>
-              <v-card-text>{{item.text}}</v-card-text>
-            </v-card>
-        </v-flex>-->
       </v-layout>
+      </div>
     </v-container>
   </div>
 </template>
