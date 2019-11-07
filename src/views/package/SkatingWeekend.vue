@@ -135,6 +135,7 @@
 import AdventureMenu from "@/components/AdventureMenu.vue";
 import { nbind } from 'q';
 
+
 export default {
   components: {
     AdventureMenu
