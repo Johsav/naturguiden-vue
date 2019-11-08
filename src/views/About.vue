@@ -1,20 +1,15 @@
 <template>
   <v-container fluid grid-list-md  class="no-padding-bottom">
-    <v-card>
-      <v-tabs fixed-tabs grow slider-color="primary">
-        <v-tab v-for="item in m_element" :key="item.link" :to="item.link" replace>{{item.title}}</v-tab>
-      </v-tabs>
-    </v-card>
 
     <v-layout row fill-height>
-      <v-flex sm3 md3 lg2 xl2 d-flex>
-        <v-card class="hidden-xs-only">
+      <v-flex md3 lg3 xl3 d-flex>
+        <v-card class="hidden-sm-and-down">
           <v-img contain :src="require('@/assets/images/Logo_RGB.jpg')"></v-img>
           <configured-carousel contain :carouselItems="carouselItems"></configured-carousel>
         </v-card>
       </v-flex>
 
-      <v-flex xs12 sm9 md9 lg10 xl10>
+      <v-flex xs12 sm12 md9 lg9 xl9>
         <v-card class="text-xs-left">
           <v-card-title primary-title>
             <h2>Naturguiden your guide to great adventures</h2>

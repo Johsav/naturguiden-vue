@@ -1,20 +1,16 @@
 <template>
   <v-container fluid grid-list-md class="no-padding-bottom">
-    <v-card >
-      <v-tabs fixed-tabs grow slider-color="primary">
-        <v-tab v-for="item in m_element" :key="item.link" :to="item.link" replace>{{item.title}}</v-tab>
-      </v-tabs>
-    </v-card>
+    
 
     <v-layout row wrap fill-height>
 
-      <v-flex md3 lg2 xl2 d-flex class="hidden-p-xs-only">
-        
+      <v-flex md3 lg3 xl3 d-flex>
+        <v-card class="hidden-sm-and-down">
           <v-img class="top" contain :src="getImgUrl('Logo_RGB.jpg')"></v-img>
-        
+        </v-card>
       </v-flex>
 
-      <v-flex xs12 md9 lg10 sm12 xl10 d-flex>
+      <v-flex xs12 sm12 md9 lg9 xl9 d-flex>
         <v-flex>
           <v-card class="text-xs-left">
             <v-card-title primary-title>
@@ -107,21 +103,7 @@
       }
     },
 
-    /*data() {
-    return {
-      drawer: null,
-      m_element: [
-        {
-          title: "About us",
-          link: "/about"
-        },
-        { 
-          title: "Contact us", 
-          link: "/contact"
-        }
-      ]
-    };
-  }, */
+   
 
     data: function()  {
       name: ''
@@ -131,16 +113,6 @@
     
      return {
       drawer: null,
-      m_element: [
-        {
-          title: "About us",
-          link: "/about"
-        },
-        { 
-          title: "Contact us", 
-          link: "/contact"
-        }
-      ]
      }
     },
   
@@ -191,57 +163,6 @@
     }
   }
 
-
-
-
-
-
-
-
-/*export default {
-  methods: {
-    getImgUrl(img) {
-      return require("@/assets/images/" + img);
-    }
-  },
-
-  data() {
-    return {
-      drawer: null,
-      m_element: [
-        {
-          title: "About us",
-          link: "/about"
-        },
-        { title: "Contact us", link: "/contact" }
-      ],
-      l_element: [
-        {
-          title: "Nordic Skating",
-          text: "It's fantastic and sometimes little scary.",
-          link: "/skating"
-        },
-        {
-          title: "Kayak",
-          text: "All those islands in the archipelago, amazing.",
-          link: "/kayak"
-        },
-        {
-          title: "Hiking",
-          text: "Find the way and yourself up in the mountain.",
-          link: "/hiking"
-        },
-        {
-          title: "Back Country skiing",
-          text:
-            "Spring in the mountain, they call it the fifth season. Still winter but with long lasting days.",
-          link: "/skiing"
-        }
-      ]
-    };
-  }
-};
-*/
 
 </script>
 
