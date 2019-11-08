@@ -27,7 +27,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "info" */ './views/Info.vue')
+      component: () => import(/* webpackChunkName: "info" */ './views/info/Tours.vue')
     },
     {
       path: '/adventures',
@@ -84,7 +84,11 @@ export default new Router({
       path: '/adventures/skiing/weekend',
       name: 'skiing-weekend',
       component: () => import(/* webpackChunkName: "skating-private" */ './views/package/SkiingWeekend.vue')
+    },
+    {
+      path: '/info/tours',
+      name: 'tours',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/info/Tours.vue')
     }
-    
   ]
 })
