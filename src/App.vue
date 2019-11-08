@@ -117,20 +117,22 @@ export default {
       drawer: null,
       drawerLinks: [
         { title: "Home", icon: "home", link: "/" },
-        { title: "About us", icon: "pets", link: "/about" },
+        { title: "Our Adventures", icon: "terrain", link: "/adventures" },
         { title: "Information", icon: "info", link: "/info" },
-        { title: "Our Adventures", icon: "terrain", link: "/adventures" }
+        { title: "About us", icon: "pets", link: "/about" },
+        { title: "Contact us", icon: "phone", link: "/contact" }
       ],
       toolbarLinks: [
         { title: "Information", link: "/info" },
-        { title: "About us", link: "/about" }
+        { title: "About us", link: "/about" },
+        { title: "Contact us", link: "/contact" }
       ],
       dropdownLinks: [
         {title: "All our adventures", link: "/adventures/" },
         {title: "Nordic skating", link: "/adventures/skating/weekend" },
-        {title: "Kayak", link: "/adventures/kayak" },
-        {title: "Hiking", link: "/adventures/hiking" },
-        {title: "Back country skiing", link: "/adventures/skiing" }
+        {title: "Kayak", link: "/adventures/kayak/weekend" },
+        {title: "Hiking", link: "/adventures/hiking/weekend" },
+        {title: "Back country skiing", link: "/adventures/skiing/weekend" }
       ],
       mini: false,
       right: null

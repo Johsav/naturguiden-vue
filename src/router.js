@@ -39,7 +39,7 @@ export default new Router({
     },
     {
       path: '/contact',
-      name: 'contact-us',
+      name: 'contact',
       component: () => import(/* webpackChunkName: "skating-private" */ './views/Contactus.vue')
     },
     {
