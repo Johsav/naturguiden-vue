@@ -1,11 +1,17 @@
 <template>
   <AdventureMenu>
     <v-layout row wrap grid-list-md class="pt-2">
-      <v-flex xs12 sm12 md8 lg9 xl9>
-       
+      <v-flex xs12 sm12 md9 lg9 xl9>
+        <v-card color="grey lighten-1">
+          <v-card-text class="text-xs-left pt-1 subheading">
+            <router-link to="/adventures/skating/private">
+              Interested in a private tour instead ? >>
+            </router-link>  
+          </v-card-text>  
+        </v-card>
         
       <v-layout row wrap grid-list-md class="pt-2">
-      <v-flex xs12 sm12 md8 lg8 xl8>
+      <v-flex xs12 sm12 md7 lg5 xl5>
         
           <v-card class="grey lighten-3">
             <v-card-title class="pt-1 pb-0">
@@ -35,28 +41,33 @@
          <v-flex xs12 sm12 md4 lg4 xl4>
           <v-card class="grey lighten-3">
             <v-card-title class="pt-1 pb-0">
-              <h1>Private or Open tour</h1>
+              <h1>Nordic Skating in Sweden</h1>
             </v-card-title>
 
             <v-card-text class="text-xs-left pt-1 subheading">
-              
+              <v-img
+                contain
+                class="right"
+                width="100"
+                :src="require('@/assets/images/Logo_RGB.png')"
+              ></v-img>
               <div>
-                On our tours we are maximum eight skaters. Our open tours are open for anyone and you are very welcome to follow. But if you are a family or a couple of friends, maybe you rather want a private tour. You can then chose any date, and also the standard of accommodation.
+                It's great adventure, it's fun, it's skating on natural ice. Experience some amazing skating adventures in Sweden. The unspoiled countryside and the huge expanse of glossy ice – everything is here waiting for you.
+                Sweden is one of the best countries for Nordic skating. The variety of lakes and the Baltic sea gives us a lot of possibilities for ice-skating. No wonder that it have become very popular among all types of people in all ages.You don't need to be an expert on skates to come here for skating, but you need to be able to skate on some kind of skates, for example Rollerblades or figure skates.
               </div>
 
               <div>
-                <router-link to="/adventures/skating/private">
-                  Read more about our private skating tours here.
-                </router-link>
+                We relay like to share this fantastic experience with you.
+                <b>Join us on our weekend tours or book your own private tour</b>
               </div>
             </v-card-text>
           </v-card>
         </v-flex>
       </v-layout>
-<v-layout class="pt-2">
+
         <v-flex>
           <v-card>
-            <v-card-title class="pt-1 pb-0">
+            <v-card-title>
               <h1>Nordic Skating - the weekend tour for you</h1>
             </v-card-title>
 
@@ -79,7 +90,6 @@
             </v-card-text>
           </v-card>
         </v-flex>
-      </v-layout>
       </v-flex>
 
       <v-flex xl3 lg3 md4 sm12 xs12>
@@ -169,7 +179,28 @@ export default {
           link: "/adventures/skating/private"
         }
       ],
-      
+      carouselItems: [
+        {
+          src: require("@/assets/images/1400/Skating_1413_2.jpg"),
+          title: "Ice-skating",
+          subtitle: "Ice-skating is fun"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+          title: "Hiking",
+          subtitle: "walk walk"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+          title: "Kayak",
+          subtitle: "paddle paddle"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+          title: "Ice-skating",
+          subtitle: "Ice-skating is fun"
+        }
+      ],
       packageItems: [
         { type: "Season:", content: "January - mid March" },
         { type: "Days:", content: "4 days/3 nights" },

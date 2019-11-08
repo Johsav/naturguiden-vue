@@ -58,70 +58,70 @@ export default {
       carouselItems: [
         {
           src: require("@/assets/images/1400/hiking_1413_1.jpg"),
-          title: "Ice-skating",
-          subtitle: "Ice-skating is fun"
+          title: "", //"Ice-skating",
+          subtitle: ""//"Ice-skating is fun"
         },
         {
           src: require("@/assets/images/1400/Skating_1413_3.jpg"),
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          title: "", //"Kayak",
+          subtitle: ""//"paddle paddle"
         },
         {
           src: require("@/assets/images/1400/kayak_1413_4.jpg"),
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          title: "", //"Kayak",
+          subtitle: ""//"paddle paddle"
         },
         {
           src: require("@/assets/images/1400/hiking_1413_2.jpg"),
-          title: "Hiking",
-          subtitle: "walk walk"
+          title: "", //"Hiking",
+          subtitle: ""//"walk walk"
         },
         {
           src: require("@/assets/images/1400/kayak_1413_1.jpg"),
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          title: "", //"Kayak",
+          subtitle: ""//"paddle paddle"
         },
         {
           src: require("@/assets/images/1400/Skating_1413_2.jpg"),
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          title: "", //"Kayak",
+          subtitle: ""//"paddle paddle"
         },
         {
           src: require("@/assets/images/1400/hiking_1413_4.jpg"),
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          title: "", //"Kayak",
+          subtitle: ""//"paddle paddle"
         },
 
         {
           src: require("@/assets/images/1400/kayak_1413_2.jpg"),
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          title: "", //"Kayak",
+          subtitle: ""//"paddle paddle"
         },
         {
           src: require("@/assets/images/1400/Skating_1413_1.jpg"),
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          title: "", //"Kayak",
+          subtitle: ""//"paddle paddle"
         },
 
         {
           src: require("@/assets/images/1400/hiking_1413_3.jpg"),
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          title: "", //"Kayak",
+          subtitle: ""//"paddle paddle"
         },
         {
           src: require("@/assets/images/1400/kayak_1413_5.jpg"),
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          title: "", //"Kayak",
+          subtitle: ""//"paddle paddle"
         },
         {
           src: require("@/assets/images/1400/Skating_1413_4.jpg"),
-          title: "Ice-skating",
-          subtitle: "Ice-skating is fun"
+          title: "", //"Ice-skating",
+          subtitle: ""//"Ice-skating is fun"
         },
         {
           src: require("@/assets/images/1400/kayak_1413_3.jpg"),
-          title: "Kayak",
-          subtitle: "paddle paddle"
+          title: "", //"Kayak",
+          subtitle: ""//"paddle paddle"
         }
       ]
     };

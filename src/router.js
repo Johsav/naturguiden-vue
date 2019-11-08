@@ -59,6 +59,31 @@ export default new Router({
       path: '/adventures/kayak/private',
       name: 'kayak-private',
       component: () => import(/* webpackChunkName: "skating-private" */ './views/package/KayakPrivate.vue')
+    },
+    {
+      path: '/adventures/kayak/weekend',
+      name: 'kayak-weekend',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/KayakWeekend.vue')
+    },
+    {
+      path: '/adventures/hiking/private',
+      name: 'hiking-private',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/HikingPrivate.vue')
+    },
+    {
+      path: '/adventures/hiking/weekend',
+      name: 'hiking-weekend',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/HikingWeekend.vue')
+    },
+    {
+      path: '/adventures/skiing/private',
+      name: 'skiing-private',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/SkiingPrivate.vue')
+    },
+    {
+      path: '/adventures/skiing/weekend',
+      name: 'skiing-weekend',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/SkiingWeekend.vue')
     }
     
   ]
