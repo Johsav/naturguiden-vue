@@ -118,20 +118,30 @@
 
                   <v-list class="pt-1">
                     <v-list-tile class="list-height" v-for="item in p_element">
+                       <v-list-tile-action >
+                        <v-img 
+                          contain
+                          height="16px"
+                          :src="require('@/assets/postbullets.png')">
+                        </v-img>
+                      </v-list-tile-action>
                       <v-list-tile-content >
                         <v-list-tile-title>{{ item.title }}</v-list-tile-title>
                       </v-list-tile-content>
-                      <v-list-tile-content >
-                        <v-list-tile-title>{{ item.text }}</v-list-tile-title>
-                      </v-list-tile-content>
                     </v-list-tile>
                   </v-list>
+                  <v-card-text>
+                    <router-link to="/accommodation">
+                      More information in accommodation
+                    </router-link>
+                  </v-card-text>
 
                   <v-card-title class="title pb-0">
                     Food
                   </v-card-title> 
                   <v-card-text>
                     We offer full board meals to all our packages, in some of the packages meals are served in restaurants, in others they are prepared by the guide and in other packages preparing the food is a part of the experience. We often eat some of the meals outside during the tours – food always tastes very good out in nature!
+                    <br />
                     Information about, for example, vegetarians/vegans in the party, or about persons with allergies, needs to be provided well in advance.
                   </v-card-text>
 
@@ -140,22 +150,33 @@
                   </v-card-title> 
                   <v-card-text>
                     All our guided adventures are for smaller groups, normally between 6-10 persons. We claim the right to cancel a trip if there are less than 3 persons.
-
+                    <br />
                     For an entire group (at least 6 persons) you choose any date that suites you. Naturguiden has a high flexibility and can adjust any of the packages to meet the wishes of an entire group.
-
+                    <br />
                     If there is a group of less than 6 persons who would like to experience one of our packages without other participants that is possible with an agreed fee.
                   </v-card-text>
 
                   <v-card-title class="title pb-0">
                     Gradient
                   </v-card-title> 
+                  <v-card-text class="pb-0">
+                    The gradient on the packages is based on the needed condition rather than the technical skills.
+                  </v-card-text>
+                  <v-list class="pt-1">
+                    <v-list-tile class="list-height" v-for="item in p_element">
+                       <v-list-tile-action >
+                        <v-img 
+                          contain
+                          height="16px"
+                          :src="require('@/assets/postbullets.png')">
+                        </v-img>
+                      </v-list-tile-action>
+                      <v-list-tile-content >
+                        <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                      </v-list-tile-content>
+                    </v-list-tile>
+                  </v-list>  
                   <v-card-text>
-                   The gradient on the packages is based on the needed condition rather than the technical skills.
-
-    Easy: for everyone with “normal” physique
-    Middle: active people, but not necessary exercise regularly
-    Tough: nothing extreme, but recommended for people that exercise regularly.
-
                     The difficulty level of the activities and the tempo will of course be suited to match the group.
                   </v-card-text>
 
@@ -163,8 +184,11 @@
                     Environment
                   </v-card-title> 
                   <v-card-text>
-                    All of Naturguiden activities take place in our wonderful outdoors. To be able to continue doing this it is important to reduce the impact on our countryside as much as possible. Naturguiden is a member of the Swedish Ecotourism Society and we have products that are certified according to Natures Best, www.naturesbestsweden.com
-
+                    All of Naturguiden activities take place in our wonderful outdoors. To be able to continue doing this it is important to reduce the impact on our countryside as much as possible. Naturguiden is a member of the Swedish Ecotourism Society and we have products that are certified according to Natures Best, 
+                    <router-link to="https://naturesbestsweden.com/en/about-natures-best/">
+                      www.naturesbestsweden.com
+                    </router-link>  
+                    <br />
                     None of our packages contains activities that have a negative impact on the environment (like rib boats, snowmobiles, etc). We try to minimize the transports and use public transport as much as possible. Our goal is to leave no trace.
                   </v-card-text>
 
@@ -283,20 +307,35 @@ export default {
 
       p_element: [
         {
-          title: "Hotel",
-          text: "twin or double rooms with toilet and shower in each room. ",
+          title: "Hotel: Twin or double rooms with toilet and shower in each room. ",
+          text: "",
           link: ""
         },
-        { title: "Hostel",
-         text: "two or four bed dormitory rooms with shared toilets and shower. ",
+        { title: "Hostel: Two or four bed dormitory rooms with shared toilets and shower. ",
+         text: "",
           link: ""
         },
-        { title: "Tent",
-         text: "two persons in each tent, sleeping bag and sleeping pad is not provided, you can rent for 30 EUR",
+        { title: "Tent: Two persons in each tent, sleeping bag and sleeping pad is not provided, you can rent for 30 EUR",
+         text: "",
           link: ""
         }
       ],
 
+      q_element: [
+        {
+          title: "Easy: for everyone with “normal” physique.",
+          text: "",
+          link: ""
+        },
+        { title: "Middle: active people, but not necessary exercise regularly.",
+         text: "",
+          link: ""
+        },
+        { title: "Tough: nothing extreme, but recommended for people that exercise regularly.",
+         text: "",
+          link: ""
+        }
+      ],
 
       carouselItems: [
         {
