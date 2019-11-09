@@ -86,9 +86,14 @@ export default new Router({
       component: () => import(/* webpackChunkName: "skating-private" */ './views/package/SkiingWeekend.vue')
     },
     {
-      path: '/info/tours',
+      path: '/info',
       name: 'tours',
       component: () => import(/* webpackChunkName: "skating-private" */ './views/info/Tours.vue')
+    },
+    {
+      path: '/get-here',
+      name: 'get-here',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/info/GetHere.vue')
     }
   ]
 })
