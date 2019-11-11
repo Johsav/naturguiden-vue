@@ -54,13 +54,15 @@
           <v-card-text
             class="pb-0"
           >Our different activities take place on different place of Sweden, how to travel to get there differs.</v-card-text>
+
+
           <v-list class="pt-1">
-            <v-list-tile class="list-height" v-for="item in o_element">
+            <v-list-tile v-for="item in o_element">
               <v-list-tile-action>
                 <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                <v-list-tile-text>{{ item.title }}</v-list-tile-text>
               </v-list-tile-content>
             </v-list-tile>
           </v-list>
@@ -78,12 +80,12 @@
           </v-card-title>
 
           <v-list class="pt-1">
-            <v-list-tile class="list-height" v-for="item in p_element">
+            <v-list-tile v-for="item in p_element">
               <v-list-tile-action>
                 <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                <v-list-tile-text>{{ item.title }}</v-list-tile-text>
               </v-list-tile-content>
             </v-list-tile>
           </v-list>
