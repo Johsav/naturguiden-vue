@@ -94,6 +94,16 @@ export default new Router({
       path: '/get-here',
       name: 'get-here',
       component: () => import(/* webpackChunkName: "skating-private" */ './views/info/GetHere.vue')
+    },
+    {
+      path: '/accommodation',
+      name: 'accommodation',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/info/Accommodation.vue')
+    },
+    {
+      path: '/sweden',
+      name: 'About Sweden',
+      component: () => import(/* webpackChunkName: "skating-private" */ './views/info/Sweden.vue')
     }
   ]
 })

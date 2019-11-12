@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid grid-list-md class="no-padding-bottom">
+  <v-container fluid grid-list-md class="pa-3">
     <v-card>
       <v-tabs fixed-tabs grow slider-color="primary">
         <v-tab v-for="item in m_element" :key="item.link" :to="item.link" replace>{{item.title}}</v-tab>
@@ -29,7 +29,7 @@
                 <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                <v-list-tile-text>{{ item.title }}</v-list-tile-text>
               </v-list-tile-content>
             </v-list-tile>
           </v-list>
@@ -44,7 +44,7 @@
                 <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+                <v-list-tile-text>{{ item.title }}</v-list-tile-text>
               </v-list-tile-content>
             </v-list-tile>
           </v-list>
@@ -52,22 +52,17 @@
 
           <v-card-title class="title pb-0">Get here</v-card-title>
           <v-card-text
-            class="pb-0"
+            class="pb-1"
           >Our different activities take place on different place of Sweden, how to travel to get there differs.</v-card-text>
 
+          <v-flex v-for="item in o_element">
+            <v-card-text class="py-1">
+              <span v-html="item.text"></span>
+            </v-card-text>
+          </v-flex>
 
-          <v-list class="pt-1">
-            <v-list-tile v-for="item in o_element">
-              <v-list-tile-action>
-                <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
-              </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-text>{{ item.title }}</v-list-tile-text>
-              </v-list-tile-content>
-            </v-list-tile>
-          </v-list>
           <v-card-text class="pb-0">
-            <router-link to="/info/get-here">More information in "How to get here"</router-link>
+            <router-link to="/get-here">More information in "How to get here"</router-link>
           </v-card-text>
           <v-card-text>If you are a group of your own and would prefer another starting point, tell us and we will see what we can do.</v-card-text>
 
@@ -76,19 +71,14 @@
             class="pb-0"
           >We choose the best possible accommodation for each package depending on location and availability. In our packages often the accommodation is already chosen in advance. However for some of the packages it is possible to choose between several types of accommodations, although all participants need to make the same choice.</v-card-text>
           <v-card-title class="pb-0">
-            <b>We offer these types of accommodation:</b>
+            We offer these types of accommodation:
           </v-card-title>
 
-          <v-list class="pt-1">
-            <v-list-tile v-for="item in p_element">
-              <v-list-tile-action>
-                <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
-              </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-text>{{ item.title }}</v-list-tile-text>
-              </v-list-tile-content>
-            </v-list-tile>
-          </v-list>
+          <v-flex v-for="item in p_element">
+            <v-card-text class="py-1">
+              <span v-html="item.text"></span>
+            </v-card-text>
+          </v-flex>
           <v-card-text>
             <router-link to="/accommodation">More information in accommodation</router-link>
           </v-card-text>
@@ -110,24 +100,18 @@
           <v-card-text
             class="pb-0"
           >The gradient on the packages is based on the needed condition rather than the technical skills.</v-card-text>
-          <v-list class="pt-1">
-            <v-list-tile class="list-height" v-for="item in p_element">
-              <v-list-tile-action>
-                <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
-              </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-          </v-list>
+          <v-flex v-for="item in q_element">
+            <v-card-text class="py-1">
+              <span v-html="item.text"></span>
+            </v-card-text>
+          </v-flex>
           <v-card-text>The difficulty level of the activities and the tempo will of course be suited to match the group.</v-card-text>
 
           <v-card-title class="title pb-0">Environment</v-card-title>
           <v-card-text>
             All of Naturguiden activities take place in our wonderful outdoors. To be able to continue doing this it is important to reduce the impact on our countryside as much as possible. Naturguiden is a member of the Swedish Ecotourism Society and we have products that are certified according to Natures Best,
-            <router-link
-              to="https://naturesbestsweden.com/en/about-natures-best/"
-            >www.naturesbestsweden.com</router-link>
+            <a href="https://naturesbestsweden.com/en/about-natures-best/"
+            >www.naturesbestsweden.com</a>
             <br />None of our packages contains activities that have a negative impact on the environment (like rib boats, snowmobiles, etc). We try to minimize the transports and use public transport as much as possible. Our goal is to leave no trace.
           </v-card-text>
 
@@ -229,61 +213,57 @@ export default {
 
       o_element: [
         {
-          title:
-            "Skating: We pick you up at Stockholm airport, or elsewhere after agreement.",
-          text: "",
+          title: "",
+          text:
+            "<b>Hiking and cross country skiing:</b> Meeting point, Ljungdalen. There are several different ways to get here. Detailed travel information on request. Closest airport Östersund in Sweden and Röros in Norway.",
           link: ""
         },
         {
-          title:
-            "Kayak: Meeting point, Trosa. You get here with train and bus from Stockholm. Travel time less than 2 hours",
-          text: "",
+          title: "",
+          text:
+            "<b>Kayak:</b> Meeting point, Trosa. You get here with train and bus from Stockholm. Travel time less than 2 hours",
           link: ""
         },
         {
-          title:
-            "Hiking and cross country skiing: Meeting point, Ljungdalen. There are several different ways to get here. Detailed travel information on request. Closest airport Östersund in Sweden and Röros in Norway.",
-          text: "",
+          title: "",
+          text:
+            "<b>Skating:</b> We pick you up at Stockholm airport, or elsewhere after agreement.",
           link: ""
         }
       ],
 
       p_element: [
         {
-          title:
-            "Hotel: Twin or double rooms with toilet and shower in each room. ",
-          text: "",
+          title: " ",
+          text: "<b>Hotel:</b> Twin or double rooms with toilet and shower in each room.",
           link: ""
         },
         {
-          title:
-            "Hostel: Two or four bed dormitory rooms with shared toilets and shower. ",
-          text: "",
+          title: " ",
+          text: "<b>Hostel:</b> Two or four bed dormitory rooms with shared toilets and shower.",
           link: ""
         },
         {
-          title:
-            "Tent: Two persons in each tent, sleeping bag and sleeping pad is not provided, you can rent for 30 EUR",
-          text: "",
+          title: "",
+          text: "<b>Tent:</b> Two persons in each tent, sleeping bag and sleeping pad is not provided, you can rent for 30 EUR",
           link: ""
         }
       ],
 
       q_element: [
         {
-          title: "Easy: for everyone with “normal” physique.",
-          text: "",
+          title: "",
+          text: "<b>Easy:</b> for everyone with “normal” physique.",
           link: ""
         },
         {
-          title: "Middle: active people, but not necessary exercise regularly.",
-          text: "",
+          title: "",
+          text: "<b>Middle:</b> active people, but not necessary exercise regularly.",
           link: ""
         },
         {
-          title:
-            "Tough: nothing extreme, but recommended for people that exercise regularly.",
-          text: "",
+          title: "",
+          text: "<b>Tough:</b> nothing extreme, but recommended for people that exercise regularly.",
           link: ""
         }
       ],
@@ -325,8 +305,17 @@ export default {
 .no-padding-bottom {
   padding-bottom: 0;
 }
-
 .list-height {
   height: 25px;
+}
+.my-img {
+  float: left;
+  margin: 10px;
+  //width: 5%;
+}
+.one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 </style>

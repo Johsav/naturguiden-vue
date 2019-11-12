@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid grid-list-md class="no-padding-bottom">
+  <v-container fluid grid-list-md class="pa-3">
     <v-card>
       <v-tabs fixed-tabs grow slider-color="primary">
         <v-tab v-for="item in m_element" :key="item.link" :to="item.link" replace>{{item.title}}</v-tab>
@@ -51,16 +51,11 @@
             <p>We will of course help you with the information you need.</p>
             <b>How to get to Ljungdalen?</b>
 
-            <v-list two-line class="pt-1">
-              <v-list-tile v-for="item in n_element">
-                <v-list-tile-action>
-                  <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-text>{{ item.title }}</v-list-tile-text>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list>
+            <v-flex v-for="item in n_element">
+            <v-card-text class="py-1">
+              <span v-html="item.text"></span>
+            </v-card-text>
+          </v-flex>
 
           </v-card-text>
         </v-card>
@@ -113,20 +108,20 @@ export default {
 
       n_element: [
         {
-          title:
-            "Fly to Östersund: From here you take the bus to Åsarna, change bus and continue to Ljungdalen. Traveltime about 3,5 hours. Or you can get a transfer direct from the airport to Ljungdalen (just above 2 hours drive)."
+          text:
+            "<b>Fly to Östersund:</b> From here you take the bus to Åsarna, change bus and continue to Ljungdalen. Traveltime about 3,5 hours. Or you can get a transfer direct from the airport to Ljungdalen (just above 2 hours drive)."
         },
         {
-          title:
-            "Fly to Röros (in Norway): Less than two hours drive, by rented car or a pre-arranged transfer."
+          text:
+            "<b>Fly to Röros</b> (in Norway): Less than two hours drive, by rented car or a pre-arranged transfer."
         },
         {
-          title:
-            "Train from Stockholm: You need to change train in Sundsvall and continue to Brunflo. From Brunflo take a bus to Åsarna where you change to the bus to Ljungdalen. Travel time around 9 hours."
+          text:
+            "<b>Train from Stockholm:</b> You need to change train in Sundsvall and continue to Brunflo. From Brunflo take a bus to Åsarna where you change to the bus to Ljungdalen. Travel time around 9 hours."
         },
         {
-          title:
-            "Bus from Stockholm: Direct bus (harjedalingen.se) from Stockholm to Funäsdalen where we arrange with a pick up. Total travel time 8-9 hours."
+          text:
+            "<b>Bus from Stockholm:</b> Direct bus (harjedalingen.se) from Stockholm to Funäsdalen where we arrange with a pick up. Total travel time 8-9 hours."
         }
       ]
     };
