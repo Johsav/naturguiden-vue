@@ -1,16 +1,14 @@
 <template>
-  <v-container fluid grid-list-md class="no-padding-bottom">
+  <v-container fluid grid-list-md class="pa-3">
     
 
     <v-layout row wrap fill-height>
 
-      <v-flex md3 lg3 xl3 d-flex>
-        <v-card class="hidden-sm-and-down">
-          <v-img class="top" contain :src="getImgUrl('Logo_RGB.jpg')"></v-img>
-        </v-card>
+      <v-flex md4 lg3 xl3 class="hidden-sm-and-down">
+        <LeftSideColumn></LeftSideColumn>
       </v-flex>
 
-      <v-flex xs12 sm12 md9 lg9 xl9 d-flex>
+      <v-flex xs12 sm12 md8 lg9 xl9 class="py-3">
         <v-flex>
           <v-card class="text-xs-left">
             <v-card-title primary-title>
@@ -25,14 +23,14 @@
               SWEDEN</p>
               <p></p>
               <p>+46 70 53 53 630<br />
-              info@naturguiden.se</p>
+              <a href="mailto:info@naturguiden.se">info@naturguiden.se</a></p>
 
               <p></p>
-              <p>www.naturguiden.com<br />
-              www.naturguiden.se</p>
+              <p><a href="https://www.naturguiden.com/">www.naturguiden.com</a><br />
+              <a href="https://www.naturguiden.se/">www.naturguiden.se</a></p>
 
               <h3>Facebook</h3>
-              <p>https://www.facebook.com/Naturguiden/</p>
+              <p><a href="https://www.facebook.com/Naturguiden/">www.facebook.com/Naturguiden</a></p>
             </v-card-text>
           </v-card>
         
@@ -88,8 +86,13 @@
 
   import { validationMixin } from 'vuelidate'
   import { required, maxLength, email } from 'vuelidate/lib/validators'
+  import LeftSideColumn from "@/components/LeftSideColumn.vue";
 
   export default {
+    components: {
+    LeftSideColumn
+    },
+
     mixins: [validationMixin],
 
     validations: {
