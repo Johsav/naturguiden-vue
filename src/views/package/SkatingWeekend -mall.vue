@@ -41,9 +41,9 @@
                 <div>On our tours we are maximum eight skaters. Our open tours are open for anyone and you are very welcome to follow. But if you are a family or a couple of friends, maybe you rather want a private tour. You can then chose any date, and also the standard of accommodation.</div>
 
                 <div>
-                  <router-link to="/adventures/skating/private">
-                    Read more about our private skating tours here.
-                  </router-link>
+                  <router-link
+                    to="/adventures/skating/private"
+                  >Read more about our private skating tours here.</router-link>
                 </div>
               </v-card-text>
             </v-card>
@@ -69,12 +69,11 @@
                   <i>
                     If you come together with your friends or family and you are 4-6 persons or more consider the options
                     for your own private tour.
-                    <router-link to="/adventures/skating/private">Read more here..</router-link>
+                    <a
+                      href="/adventures/skating-yourown"
+                    >Read more here..</a>
                   </i>
                 </p>
-                As the speed and the distance we like to skate differs depending on our guests' previous skating experience and fitness level we offer some weekends for those with more experience and other weekends for those with less. You don't need to be a champion to join the tour for more experienced skaters but you should be able to skate on ice skates or rollerblades without difficulties and be reasonable fit.
-
-Below you have all information you need, but if you still have some more questions, don't hesitate to contact us on info@naturguiden.se or on +46 70 53 53 630.
               </v-card-text>
             </v-card>
           </v-flex>

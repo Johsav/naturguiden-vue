@@ -2,13 +2,7 @@
   <div>
     <configured-carousel :carouselItems="carouselItems"></configured-carousel>
    <v-container fluid grid-list-lg class="pt-1">
-     <!-- 
-      <v-card>
-        <v-tabs fixed-tabs grow color="primary">
-          <v-tab class="white--text" v-for="item in packages" :key="item.link" :to="item.link" replace>{{item.title}}</v-tab>
-        </v-tabs>
-      </v-card>
-    -->
+    
     <slot></slot>
 
     </v-container>
