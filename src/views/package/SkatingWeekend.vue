@@ -178,9 +178,9 @@
                 <v-card-text>
                 <v-card-title class="subtitle-1 font-weight-black pb-0 pt-0">Day I</v-card-title>
                 Arrival at the airport. The guide will meet you and if possible we start skating already in the afternoon. We start with a safety and security briefing and then hand out all equipment. Time to change to proper clothes if you have not yet done that. Late afternoon we drive towards the chosen skating area. Arriving to the hostel/hotel you check in and then we have dinner at the hostel/hotel.
-                <v-card-title class="subtitle-1 font-weight-black pb-0 pt-0">Day II-III</v-card-title>
+                <v-card-title class="subtitle-1 font-weight-black pb-0">Day II-III</v-card-title>
                 We have breakfast and also time to prepare the lunch packages. Depending on distance we walk or take the minibus towards the ice. At the lake we start by examining the ice before we put on the skates and step out on the ice. We skate in a row, the guide always first, checking the ice and looking out for weak spots. The speed and distance is adjusted to the group and the ice condition. Now and then we take short stops to admire the beauty, chat for a while or just rest. During the day we go ashore from time to time to take something to eat or walk to another lake nearby. At the end of the day we return to the minibus and head back to the hotel/hostel. A nice sauna before the dinner is a pleasant experience. If the conditions are right we might go for another skating trip in moonlight late in the evening.
-                <v-card-title class="subtitle-1 font-weight-black pb-0 pt-0">Day IV</v-card-title>
+                <v-card-title class="subtitle-1 font-weight-black pb-0">Day IV</v-card-title>
                 After breakfast we head off to another day on ice, skating as long as possible depending on the scheduled departure times. On our way back to the airport we stop for a shower and to change clothes and maybe for something to eat. The guide then drives you back to the airport.
               </v-card-text>
             </v-card>

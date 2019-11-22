@@ -37,12 +37,12 @@
               </v-card-title>
 
               <v-card-text class="text-xs-left pt-1 subheading">
-                <div>On our tours we are maximum eight skaters. Our open tours are open for anyone and you are very welcome to follow. But if you are a family or a couple of friends, maybe you rather want a private tour. You can then chose any date, and also the standard of accommodation.</div>
+                <div>If you are a family or a couple of friends, a private tour might be perfect for you. You can chose any date, and also the standard of accommodation. If you travel as single or as a small group our open tours are open for anyone and you are very welcome to follow. On those tours we are not more than eight skaters.</div>
 
                 <div>
                   <router-link
-                    to="/adventures/skating/private"
-                  >Read more about our private skating tours here.</router-link>
+                    to="/adventures/skating/weekend"
+                  >Read more about our open weekend tours here.</router-link>
                 </div>
               </v-card-text>
             </v-card>
@@ -54,103 +54,76 @@
           <v-flex>
             <v-card class="text-xs-left">
               <v-card-title class="pt-1 pb-0">
-                <h1>Nordic Skating - the weekend tour for you</h1>
+                <h1>Nordic Skating - your own tour</h1>
               </v-card-title>
 
               <v-card-text>
-                <p>Nordic skating in Sweden, an all inclusive guided tour with a lot of good skating. We travel by minibus in small groups of maximum eight persons and one guide. Your guide picks you up at the airport/train station and if possible we go directly for skating on a good lake nearby. All needed equipment for skating is provided. We sleep in hostels and are making the dinner together in the evenings. At breakfast we also prepare our lunch that we bring in our backpacks.</p>
-                <p>
-                  Where we skate depends on the ice and weather situation, we always choose the area that provides the
-                  best skating conditions. The accommodations are located in the area but could change from day to
-                  day depending on where we choose to go skating.
-                </p>
-                <p>
-                  <i>
-                    If you come together with your friends or family and you are 4-6 persons or more consider the options
-                    for your own private tour.
-                    <router-link to="/adventures/skating/private">Read more here..</router-link>
-                  </i>
-                </p>As the speed and the distance we like to skate differs depending on our guests' previous skating experience and fitness level we offer some weekends for those with more experience and other weekends for those with less. You don't need to be a champion to join the tour for more experienced skaters but you should be able to skate on ice skates or rollerblades without difficulties and be reasonable fit.
-                Below you have all information you need, but if you still have some more questions, don't hesitate to contact us on info@naturguiden.se or on +46 70 53 53 630.
+                <p>Enjoy Nordic skating together with your friends or family. When booking your own private tour you can come any date and stay as long as you like. You can chose the type of accommodation and combine skating with other activities if you like.</p>
+                <p>We always travel in small groups and most of our guests are private groups. We are maximum eight persons and one guide and travel in a minibus. If you are more than eight we use a second bus.</p>
+                <p>The guide picks you up at the airport or where you like to be picked up. If possible we go directly for skating on a good lake nearby. All skating equipment is provided.</p>Where we skate depends on the ice and weather situation, we always choose the area that provides the best skating conditions. The accommodations are located in the area but could change from day to day depending on where we choose to go skating.
               </v-card-text>
 
-              <v-card-title class="title pb-0">Join us on any of our weekend trips 2020</v-card-title>
-              <v-card-text>
-                <b>Price: 695 EUR ( 37 EUR early season discount before 3 February)</b>
-              </v-card-text>
-              <v-card-text class="pt-0">
-                Everything included, accommodation in hostels, shared double room.
-                <br />
-                Single room +75 EUR, sheets and towel +25 EUR (blanket and pillow is provided).
-                <v-list class="pt-3">
-                  <v-list-tile class="list-height" v-for="item in packageDates">
-                    <v-list-tile-action>
-                      <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>{{ item.date }}</v-list-tile-title>
-                      <v-list-tile-sub-title>{{ item.level }}</v-list-tile-sub-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                </v-list>
-                If there is an interest for other weekends do not hesitate to contact us. We do have groups coming every weekend from early January to mid March, it might be possible to join a group with less than eight participants.
-              </v-card-text>
               <v-card-title class="title pb-0">A normal day on the ice</v-card-title>
               <v-card-text>We start with breakfast where we also prepare our lunch packages. As soon as everyone is ready we head off for skating. If we are lucky we can walk from our accommodation directly out on the ice. Otherwise we take the minibus to the lake. The guide is always first, checking the ice and looking out for weak spots. The speed and distance is adjusted to the group and the ice condition. Now and then we take short stops to admire the beautiful landscape, chat for a while or just rest. During the day we go ashore from time to time, for the first or second lunch break or for walking to another lake nearby. At the end of the day we return to the minibus and head back to the hotel/hostel. A nice sauna before the dinner is a pleasant experience. If the conditions are right we might go for another skating trip in moonlight late in the evening.</v-card-text>
-              
-              <v-card-title class="title pb-0">Pick up</v-card-title>
+
+              <v-card-title class="title pb-0">Lodging</v-card-title>
               <v-card-text>
-                At Stockholm/Arlanda airport. Other locations possible after agreement i.e. Stockholm South/Skavsta (RyanAir) or at your hotel. Read more here <router-link to="/get-here">How to get here</router-link>
-                </v-card-text>
+                <p>
+                  Hostel or Hotel, B1, B2, B3, C1 and C2.
+                  More information under
+                  <router-link to="/accommodation">accommodation</router-link>
+                </p>Sheets and towel are not included if you stay in hostel (B1, B2 or B3),
+                <br />+25 EUR extra if you don't bring your own.
+              </v-card-text>
 
-                <v-card-title class="title pb-0">Time for arrival and departure:</v-card-title>
-                <v-card-text>
-                <v-card-title class="subtitle-1 font-weight-black pb-0 pt-0">Arlanda:</v-card-title>
-                Choose your time, if possible before 17:00 (confirm with us before booking the ticket). Our normal pick-up times are 11:00 and 17:00, but we are flexible and can arrange another pick-up time. If you arrive mid day we find a place close to the airport to go for skating. If other guests arrive later we then go back to the airport and pick them up. Late afternoon we head off for the the place to stay the first night.<br />
-                Departure not before 18:00. We drop you off at the airport 16:30 or later depending on departure time.
-                <v-card-title class="subtitle-1 font-weight-black pb-0">Skavsta:</v-card-title>
-                Pick up around 09:00.<br />
-                Drop off around 18:30.
-                </v-card-text>
+              <v-card-title class="title pb-0">Price</v-card-title>
+              <v-card-text class="pb-0">
+                <b>37 EUR early season discount</b> before 3 February
+              </v-card-text>
+              <v-card-text>
+              <v-simple-table>
+                <tr v-for="item in accom">
+                  <td class="tr">{{item.level}}</td>
+                  <td class="tr">{{item.price}}</td>
+                  <td>{{item.type}}</td>
+                </tr>
+              </v-simple-table>
+              </v-card-text>
+              <v-card-title class="title pb-0">Pick up</v-card-title>
+              <v-card-text>At Stockholm/Arlanda airport. Other locations possible after agreement.</v-card-text>
 
-                <v-card-title class="title pb-0">Accommodation: Youth Hostel, Self Catering</v-card-title>
-                <v-card-text>
-                Youth hostels with two or four bed dormitory room with shared shower and toilet (normally two persons in each room). You need to bring sheets or duvet covers and towels. (Or you can have it included for 25 EUR extra) We prepare the meals together. All food is provided and included in the price.
-                </v-card-text>
+              <v-card-title class="title pb-0">Time for arrival and departure:</v-card-title>
+              <v-card-text>We pick you up at arrival and drop you off in time for departure on the last day</v-card-text>
 
-                <v-card-title class="title pb-0">Personal equipment</v-card-title>
-                <v-card-text>
-                Clothing suitable for skating, a complete set of clothes to bring in provided backpack.<br />
-                Good to have but not necessary: Sun glasses, dry bag for your mobile/camera, indoor shoes
-                </v-card-text>
+              <v-card-title class="title pb-0">Personal equipment</v-card-title>
+              <v-card-text>
+                Clothing suitable for skating, a complete set of clothes to bring in provided backpack.
+                <br />Good to have but not necessary: Sun glasses, dry bag for your mobile/camera, indoor shoes
+              </v-card-text>
 
-                <v-card-title class="title pb-0">Equipment included</v-card-title>
-                <v-card-text>
-                Skates, boots, backpack and required safety equipment, thermos, lunch box and sit pad
-                </v-card-text>
+              <v-card-title class="title pb-0">Equipment included</v-card-title>
+              <v-card-text>Skates, boots, backpack and required safety equipment, thermos, lunch box and sit pad</v-card-text>
 
-                <v-card-title class="title pb-0">Extra equipment that we can provide</v-card-title>
-                <v-card-text>
+              <v-card-title class="title pb-0">Extra equipment that we can provide</v-card-title>
+              <v-card-text>
                 <p>We can provide you with the following but you need to make a reservation for it when you place your order:</p>
                 <p>Extra safety equipment: Helmet, knee pad, wrist and arm bow protectors -free of charge.</p>
                 <p>Sheets and towel: +25 EUR extra.</p>
-                <p><b>Not included:</b> alcoholic drinks.</p>
-                </v-card-text>
+              </v-card-text>
 
-                <v-card-title class="title pb-0">About the skates</v-card-title>
-                <v-card-text>
-                  <v-img
+              <v-card-title class="title pb-0">About the skates</v-card-title>
+              <v-card-text>
+                <v-img
                   contain
                   class="right"
                   width="150"
                   :src="require('@/assets/images/200/schoen and skate.jpg')"
-                ></v-img>
-                We use special skates well adopted for Nordic skating. They are longer than hockey or figure skates. The front has a long curve compared to speed skates with sharp front, which is necessary if the ice in not completely smooth. And most important, the skate and the boot are separate so you can take off the skate when walking to and from the ice. If you have suitable skates, for example the Salomon skates, you may use them if you like.
-                </v-card-text>
+                ></v-img>We use special skates well adopted for Nordic skating. They are longer than hockey or figure skates. The front has a long curve compared to speed skates with sharp front, which is necessary if the ice in not completely smooth. And most important, the skate and the boot are separate so you can take off the skate when walking to and from the ice. If you have suitable skates, for example the Salomon skates, you may use them if you like.
+              </v-card-text>
 
-                <v-card-title class="title pb-0">About safety</v-card-title>
-                <v-card-text>
-                  <v-img
+              <v-card-title class="title pb-0">About safety</v-card-title>
+              <v-card-text>
+                <v-img
                   contain
                   class="right"
                   width="225"
@@ -159,28 +132,38 @@
                 <p>Safety is an important issue. We cover great distances on the ice during a day. The whole time we keep track of the quality of the ice and avoid all weak areas. If someone should break through the ice the safety equipment we have helps us to pick the person up in a minute. And soon all wet clothes are changed to dry and warm clothes. The skating trip can continue.</p>
                 <p>PS: The only time we had a person falling into the water, they did not follow the given instructions.</p>
                 <p>Safety equipment we carry: backpack, safety line, ice nails and poles</p>
-                </v-card-text>
+              </v-card-text>
 
-                <v-card-title class="title pb-0">Included in the price</v-card-title>
-                <v-card-text>
-                Day I<br />
-                Transfer, dinner, guide, rent of equipment, share in double room<br />
-                Day I<br />
-                Breakfast, lunch, dinner, guide, rent of equipment, share in double room<br />
-                Day III<br />
-                Breakfast, lunch, dinner, guide, rent of equipment, share in double room<br />
-                Day IV<br />
-                Breakfast, lunch, guide, rent of equipment, transfer
-                </v-card-text>
+              <v-card-title class="title pb-0">Included in the price</v-card-title>
+              <v-card-text>
+                Day I
+                <br />Transfer, dinner*, guide, rent of equipment, share in double room
+                <br />Day I
+                <br />Breakfast, lunch, dinner*, guide, rent of equipment, share in double room
+                <br />Day III
+                <br />Breakfast, lunch, dinner*, guide, rent of equipment, share in double room
+                <br />Day IV
+                <br />Breakfast, lunch, guide, rent of equipment, transfer
+                <p>*Dinner is not included in alternative B1 and C1.</p>
+                <p>
+                  <b>Not included:</b> alcoholic drinks.
+                </p>
+              </v-card-text>
 
-                <v-card-title class="title pb-0">Program for the four days
-                </v-card-title>
-                <v-card-text>
+              <v-card-title class="title pb-0">Extra days</v-card-title>
+              <v-card-text>It is possible to extend the tour with one or several days. Price for each extra day:</v-card-text>
+              <v-card-text class="py-0" v-for="item in extra">
+                {{item.level}} &nbsp &nbsp
+                {{item.price}}
+              </v-card-text>
+
+              <v-card-title class="title pb-0 pt-4">Program for the four days</v-card-title>
+              <v-card-text>
                 <v-card-title class="subtitle-1 font-weight-black pb-0 pt-0">Day I</v-card-title>
                 Arrival at the airport. The guide will meet you and if possible we start skating already in the afternoon. We start with a safety and security briefing and then hand out all equipment. Time to change to proper clothes if you have not yet done that. Late afternoon we drive towards the chosen skating area. Arriving to the hostel/hotel you check in and then we have dinner at the hostel/hotel.
-                <v-card-title class="subtitle-1 font-weight-black pb-0 pt-0">Day II-III</v-card-title>
+                <v-card-title class="subtitle-1 font-weight-black pb-0">Day II-III</v-card-title>
                 We have breakfast and also time to prepare the lunch packages. Depending on distance we walk or take the minibus towards the ice. At the lake we start by examining the ice before we put on the skates and step out on the ice. We skate in a row, the guide always first, checking the ice and looking out for weak spots. The speed and distance is adjusted to the group and the ice condition. Now and then we take short stops to admire the beauty, chat for a while or just rest. During the day we go ashore from time to time to take something to eat or walk to another lake nearby. At the end of the day we return to the minibus and head back to the hotel/hostel. A nice sauna before the dinner is a pleasant experience. If the conditions are right we might go for another skating trip in moonlight late in the evening.
-                <v-card-title class="subtitle-1 font-weight-black pb-0 pt-0">Day IV</v-card-title>
+                <v-card-title class="subtitle-1 font-weight-black pb-0">Day IV</v-card-title>
                 After breakfast we head off to another day on ice, skating as long as possible depending on the scheduled departure times. On our way back to the airport we stop for a shower and to change clothes and maybe for something to eat. The guide then drives you back to the airport.
               </v-card-text>
             </v-card>
@@ -195,7 +178,7 @@
             <v-card>
               <v-card-title class="d-block grey lighten-1">
                 <div class="title">Nordic skating</div>
-                <div class="subheading">weekend tour</div>
+                <div class="subheading">{{packageType.type}}</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -212,26 +195,8 @@
               </v-container>
             </v-card>
           </v-flex>
-          <!-- Right side column - scheduled dates  -->
-          <v-flex xl12 lg12 md12 sm6 xs12>
-            <v-card>
-              <v-card-title class="d-block grey lighten-1">
-                <div class="title">Scheduled dates</div>
-                <div class="subheading">open groups 2020</div>
-              </v-card-title>
+          
 
-              <v-container fluid grid-list-sm>
-                <v-layout column>
-                  <v-flex v-for="item in packageDates" :key="item.date">
-                    <v-layout row>
-                      <v-card-text class="text-xs-right py-1 px-2">{{item.date}}</v-card-text>
-                      <v-card-text class="text-xs-left py-1 px-2">{{item.level}}</v-card-text>
-                    </v-layout>
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-card>
-          </v-flex>
           <!-- Right side column - Booking  -->
           <v-flex xl12 lg12 md12 sm6 xs12>
             <v-card>
@@ -265,30 +230,55 @@ export default {
 
   data() {
     return {
-      packageItems: [
-        { type: "Season:", content: "January - mid March" },
+      packageType: {type: "private tour"},
+      packageItems: 
+      [
+        { type: "Season:", content: "December - March" },
         { type: "Days:", content: "4 days/3 nights" },
         {
           type: "Price:",
           content:
-            "695 EUR early season discount 37 EUR \r\nsingle room +75 EUR \nsheets \nand towel +25 EUR"
+            "from 585 EUR"
         },
-        { type: "Meeting point:", content: "Arlanda airport" },
+        { type: "Meeting point:", content: "Arlanda airport or place after agreement" },
         {
           type: "Lodging:",
-          content: "Hostel in double room, shared toilet and shower"
+          content: "Hotel or Hostel"
         }
       ],
-      packageDates: [
-        { date: "23 - 26 January:", level: "Weekend for normal skaters" },
-        { date: "30 Jan - 2 Febr:", level: "Weekend for good skaters" },
-        { date: "6 - 9 February:", level: "Weekend for normal skaters" },
-        { date: "13 - 16 February:", level: "Weekend for good skaters" },
+      accom: [
         {
-          date: "20 - 23 February:",
-          level: "Weekend for good and normal skaters - two groups"
+          level: "Basic 1",
+          price: "from 622 EUR",
+          type: "single room 75 EUR extra"
         },
-        { date: "27 Febr - 1 March:", level: "Weekend for normal skaters" }
+        {
+          level: "Basic 2",
+          price: "from 660 EUR",
+          type: "single room 75 EUR extra"
+        },
+        {
+          level: "Basic 3",
+          price: "from 855 EUR",
+          type: "single room 75 EUR extra"
+        },
+        {
+          level: "Comfort 1",
+          price: "from 790 EUR",
+          type: "single room 183 EUR extra"
+        },
+        {
+          level: "Comfort 2",
+          price: "from 988 EUR",
+          type: "single room 183 EUR extra"
+        }
+      ],
+      extra: [
+        { level: "Basic 1:", price: "175 EUR" },
+        { level: "Basic 2:", price: "190 EUR" },
+        { level: "Basic 3:", price: "250 EUR" },
+        { level: "Comfort 1:", price: "240 EUR" },
+        { level: "Comfort 2:", price: "290 EUR" }
       ]
     };
   }
@@ -332,3 +322,9 @@ var w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad;
   par.insertBefore(s, scr);
 })(document, "script");
 </script>
+
+<style scoped lang="scss">
+.tr {
+  width: 100px;
+}
+</style>
