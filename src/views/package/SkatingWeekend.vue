@@ -131,10 +131,12 @@
 
                 <v-card-title class="title pb-0">Extra equipment that we can provide</v-card-title>
                 <v-card-text>
-                <p>We can provide you with the following but you need to make a reservation for it when you place your order:</p>
-                <p>Extra safety equipment: Helmet, knee pad, wrist and arm bow protectors -free of charge.</p>
-                <p>Sheets and towel: +25 EUR extra.</p>
-                <p><b>Not included:</b> alcoholic drinks.</p>
+                <p>
+                  We can provide you with the following but you need to make a reservation for it when you place your order:</p>
+                <p>
+                  Extra safety equipment: Helmet, knee pad, wrist and arm bow protectors -free of charge.</p>
+                <p>
+                  Sheets and towel: +25 EUR extra.</p>
                 </v-card-text>
 
                 <v-card-title class="title pb-0">About the skates</v-card-title>
@@ -156,32 +158,36 @@
                   width="225"
                   :src="require('@/assets/images/500/safety_eq.jpg')"
                 ></v-img>
-                <p>Safety is an important issue. We cover great distances on the ice during a day. The whole time we keep track of the quality of the ice and avoid all weak areas. If someone should break through the ice the safety equipment we have helps us to pick the person up in a minute. And soon all wet clothes are changed to dry and warm clothes. The skating trip can continue.</p>
-                <p>PS: The only time we had a person falling into the water, they did not follow the given instructions.</p>
-                <p>Safety equipment we carry: backpack, safety line, ice nails and poles</p>
+                <p>
+                  Safety is an important issue. We cover great distances on the ice during a day. The whole time we keep track of the quality of the ice and avoid all weak areas. If someone should break through the ice the safety equipment we have helps us to pick the person up in a minute. And soon all wet clothes are changed to dry and warm clothes. The skating trip can continue.</p>
+                <p>
+                  PS: The only time we had a person falling into the water, they did not follow the given instructions.</p>
+                <p>
+                  Safety equipment we carry: backpack, safety line, ice nails and poles</p>
                 </v-card-text>
 
                 <v-card-title class="title pb-0">Included in the price</v-card-title>
                 <v-card-text>
-                Day I<br />
-                Transfer, dinner, guide, rent of equipment, share in double room<br />
-                Day I<br />
-                Breakfast, lunch, dinner, guide, rent of equipment, share in double room<br />
-                Day III<br />
-                Breakfast, lunch, dinner, guide, rent of equipment, share in double room<br />
-                Day IV<br />
-                Breakfast, lunch, guide, rent of equipment, transfer
+                  Day I<br />
+                  Transfer, dinner, guide, rent of equipment, share in double room<br />
+                  Day I<br />
+                  Breakfast, lunch, dinner, guide, rent of equipment, share in double room<br />
+                  Day III<br />
+                  Breakfast, lunch, dinner, guide, rent of equipment, share in double room<br />
+                  Day IV<br />
+                  Breakfast, lunch, guide, rent of equipment, transfer
+                  <p><b>Not included:</b> alcoholic drinks.</p>
                 </v-card-text>
 
                 <v-card-title class="title pb-0">Program for the four days
                 </v-card-title>
                 <v-card-text>
                 <v-card-title class="subtitle-1 font-weight-black pb-0 pt-0">Day I</v-card-title>
-                Arrival at the airport. The guide will meet you and if possible we start skating already in the afternoon. We start with a safety and security briefing and then hand out all equipment. Time to change to proper clothes if you have not yet done that. Late afternoon we drive towards the chosen skating area. Arriving to the hostel/hotel you check in and then we have dinner at the hostel/hotel.
+                  Arrival at the airport. The guide will meet you and if possible we start skating already in the afternoon. We start with a safety and security briefing and then hand out all equipment. Time to change to proper clothes if you have not yet done that. Late afternoon we drive towards the chosen skating area. Arriving to the hostel/hotel you check in and then we have dinner at the hostel/hotel.
                 <v-card-title class="subtitle-1 font-weight-black pb-0">Day II-III</v-card-title>
-                We have breakfast and also time to prepare the lunch packages. Depending on distance we walk or take the minibus towards the ice. At the lake we start by examining the ice before we put on the skates and step out on the ice. We skate in a row, the guide always first, checking the ice and looking out for weak spots. The speed and distance is adjusted to the group and the ice condition. Now and then we take short stops to admire the beauty, chat for a while or just rest. During the day we go ashore from time to time to take something to eat or walk to another lake nearby. At the end of the day we return to the minibus and head back to the hotel/hostel. A nice sauna before the dinner is a pleasant experience. If the conditions are right we might go for another skating trip in moonlight late in the evening.
+                  We have breakfast and also time to prepare the lunch packages. Depending on distance we walk or take the minibus towards the ice. At the lake we start by examining the ice before we put on the skates and step out on the ice. We skate in a row, the guide always first, checking the ice and looking out for weak spots. The speed and distance is adjusted to the group and the ice condition. Now and then we take short stops to admire the beauty, chat for a while or just rest. During the day we go ashore from time to time to take something to eat or walk to another lake nearby. At the end of the day we return to the minibus and head back to the hotel/hostel. A nice sauna before the dinner is a pleasant experience. If the conditions are right we might go for another skating trip in moonlight late in the evening.
                 <v-card-title class="subtitle-1 font-weight-black pb-0">Day IV</v-card-title>
-                After breakfast we head off to another day on ice, skating as long as possible depending on the scheduled departure times. On our way back to the airport we stop for a shower and to change clothes and maybe for something to eat. The guide then drives you back to the airport.
+                  After breakfast we head off to another day on ice, skating as long as possible depending on the scheduled departure times. On our way back to the airport we stop for a shower and to change clothes and maybe for something to eat. The guide then drives you back to the airport.
               </v-card-text>
             </v-card>
           </v-flex>
