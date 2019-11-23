@@ -18,11 +18,11 @@
                   :src="require('@/assets/images/Logo_RGB.png')"
                 ></v-img>
                 <div>
-                  Explore the Swedish archipelago in a kayak for a couple of days. Enjoy all the islands and sherries. We stay away from civilisation, bring all food and water we need. Find our way among the islands and stop for lunch when we feel for it. In the evening we find a good place for wild camping, cooking dinner over open fire
+                  Join us on our Kayak tours in the beautiful archipelago of the Baltic sea. Between islands and skerries, out in the open sea and in seduced caves. There are thousands of islands, most of them unsettled. The Swedish "allemansrätt" gives us the right to camp on any one of them. At lunchtime we make a break on some island, cook a meal, maybe take a swim. In the evenings we camp on another island, make dinner over open fire and sleep in tents.
                 </div>
 
                 <div>
-                  We realy love the time on the Baltic.
+                  We really love to spend time in the archipelago.
                   <b>Join us on our weekend tours or book your own private tour</b>
                 </div>
               </v-card-text>
@@ -36,12 +36,14 @@
               </v-card-title>
 
               <v-card-text class="text-xs-left pt-1 subheading">
-                <div>On our tours we are maximum eight guests. Our open tours are open for anyone and you are very welcome to follow. But if you are a family or a couple of friends, maybe you rather want a private tour. You can then chose any date, and we are absolute free to adopt the tour after your preferences.</div>
+                <div>
+                  If you are a family or a couple of friends, a private tour might be perfect for you. You can chose any date, and also change were we go if you have other preferences. If you travel as single or as a small group our open tours are open for anyone and you are very welcome to follow. On those tours we are not more than eight guests.
+                </div>
 
                 <div>
                   <router-link
-                    to="/adventures/kayak/private"
-                  >Read more about our private skating tours here.</router-link>
+                    to="/adventures/kayak/weekend"
+                  >Read more about our open weekend kayak tours here.</router-link>
                 </div>
               </v-card-text>
             </v-card>
@@ -53,15 +55,14 @@
           <v-flex>
             <v-card class="text-xs-left">
               <v-card-title class="pt-1 pb-0">
-                <h1>Kayak - the weekend adventure</h1>
+                <h1>Your own kayak adventure</h1>
               </v-card-title>
               <v-card-text>
-                <p>During three days we kayak in the beautiful archipelago south of Stockholm. Between islands and skerries, out in the open sea and in secluded caves. We sleep in tents on the islands along the way, prepare the food over open fire and wash ourselves in rock pools of the Baltic Sea.</p>
+                <p>Enjoy the beautiful archipelago of Sweden. Between islands and skerries, out in the open sea and in secluded caves. We sleep in tents on the islands along the way, prepare the food over open fire and wash ourselves in rock pools of the Baltic Sea.</p>
 
                 <p>With kayak out on the Baltic sea. Out among thousands of islands, most of them unsettled. The Swedish “allemansrätt” gives us the opportunity to stay on any one of them. There is no fixed tour, the wind and waves affect our plans and you never know where to spend the night. During the day we take several stops, for a meal or just to stretch our legs. In the evening, after a swim we make a fire and start making dinner. Maybe we manage to catch some fish that we can fry in the pan.</p>
                 <p>
-                  If you come together with your friends or family and you are 4-6 persons or more consider the options for your own private tour.
-                  <router-link to="/adventures/kayak/private">Read more here..</router-link>
+                 You decide how you like to spend the days. How fast and long we go with the kayak. How much time you like to spend on the islands, swimming or just relaxing. 
                 </p>
                 <p>
                   Below you have all information you need, but if you still have some more questions, don't hesitate to contact us on
@@ -70,25 +71,22 @@
                   >info@naturguiden.se</a> or on +46 70 53 53 630.
                 </p>
               </v-card-text>
-              <v-card-title class="title pb-0">Join us on any of our weekend trips 2020</v-card-title>
+              <v-card-title class="title pb-0">Book your own skating tour</v-card-title>
               <v-card-text>
-                <b>Price: 490 EUR</b>
+                <b>Price: from 490 EUR (4 day/ 3 nights)</b>
               </v-card-text>
               <v-card-text class="pt-0">
                 Everything included, accommodation in tent, normally two persons / tent.
                 <br />You need to bring a sleeping bag and camping mattress, or rent them for 30 EUR.
-                <v-list class="pt-3">
-                  <v-list-tile class="list-height" v-for="item in packageDates">
-                    <v-list-tile-action>
-                      <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>{{ item.date }}</v-list-tile-title>
-                      <v-list-tile-sub-title>{{ item.level }}</v-list-tile-sub-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                </v-list>If there is an interest for other weekends do not hesitate to contact us. We will do our best to help you.
               </v-card-text>
+              <v-card-text class="pt-0">
+                <b>More days</b>
+              </v-card-text>
+              <v-card-text class="pt-0">
+                If you like to stay longer than 4 days
+                <br />You pay from: 75 EUR/day (depending on number of participants) 
+              </v-card-text>
+
               <v-card-title class="title pb-0">A normal day in the archipelago</v-card-title>
               <v-card-text>
                 <p>We start with breakfast prepared at the shoreline on the camping stove, maybe porridge, bread and tea/coffee. Then we put down our tents and stove everything in our kayaks. We head off out between the islands. The weather and wind decide were we go, out on the open or close to the islands.</p>
@@ -100,19 +98,21 @@
               <v-card-text>
                 Normally we start our tours in Trosa, south of Stockholm. You get here rather easy with local train and bus. Read more here.
                 <router-link to="/get-here">How to get here</router-link>
+                <br />But we are open for other options if that suits you better.
               </v-card-text>
 
               <v-card-title class="title pb-0">Time</v-card-title>
               <v-card-text>
-                We meet at 11:00 in Trosa harbour
-                <br />And return to Trosa last day around 16:00
+                Any time you like, you decide when we we will meet and how long we will stay.
               </v-card-text>
 
-              <v-card-title class="title pb-0">Accommodation: Tents</v-card-title>
+              <v-card-title class="title pb-0">Accommodation: Tents or hostel if you prefer that</v-card-title>
               <v-card-text>
                 <p>We will sleep in a tent on an island in the archipelago. Normally two persons in each tent.</p>
                 <p>You need to bring a sleeping bag and camping mattress. Or rent them for 30 EUR.</p>
                 <p>We prepare the meals together over open fire or on a camping stove. All food is provided and included in the price.</p>
+                <p>If you rather stay in hostel or hostel. We will plan the tour in such way that makes it possible.
+                </p>
               </v-card-text>
 
               <v-card-title class="title pb-0">Personal equipment</v-card-title>
@@ -169,7 +169,7 @@
             <v-card>
               <v-card-title class="d-block grey lighten-1">
                 <div class="title">Nordic skating</div>
-                <div class="subheading">weekend tour</div>
+                <div class="subheading">private tour</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -186,26 +186,7 @@
               </v-container>
             </v-card>
           </v-flex>
-          <!-- Right side column - scheduled dates  -->
-          <v-flex xl12 lg12 md12 sm6 xs12>
-            <v-card>
-              <v-card-title class="d-block grey lighten-1">
-                <div class="title">Scheduled dates</div>
-                <div class="subheading">open groups 2020</div>
-              </v-card-title>
-
-              <v-container fluid grid-list-sm>
-                <v-layout column>
-                  <v-flex v-for="item in packageDates" :key="item.date">
-                    <v-layout row>
-                      <v-card-text class="text-xs-right py-1 px-2">{{item.date}}</v-card-text>
-                      <v-card-text class="text-xs-left py-1 px-2">{{item.level}}</v-card-text>
-                    </v-layout>
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-card>
-          </v-flex>
+         
           <!-- Right side column - Booking  -->
           <v-flex xl12 lg12 md12 sm6 xs12>
             <v-card>
@@ -241,8 +222,8 @@ export default {
       packageItems: [
         { type: "Season:", content: "May - October" },
         { type: "Days:", content: "4 days/3 nights" },
-        { type: "Price:", content: "490 EUR"},
-        { type: "Meeting point:", content: "Trosa harbour south of Stockholm" },
+        { type: "Price:", content: "From 490 EUR"},
+        { type: "Meeting point:", content: "Trosa harbour south of Stockholm or other place after agreement" },
         { type: "Lodging:", content: "Tent in the archipelago" }
       ],
 
