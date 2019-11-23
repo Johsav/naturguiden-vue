@@ -58,52 +58,52 @@ export default new Router({
     {
       path: '/adventures/kayak/private',
       name: 'kayak-private',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/KayakPrivate.vue')
+      component: () => import(/* webpackChunkName: "kayak-private" */ './views/package/KayakPrivate.vue')
     },
     {
       path: '/adventures/kayak/weekend',
       name: 'kayak-weekend',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/KayakWeekend.vue')
+      component: () => import(/* webpackChunkName: "kayak-weekend" */ './views/package/KayakWeekend.vue')
     },
     {
       path: '/adventures/hiking/private',
       name: 'hiking-private',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/HikingPrivate.vue')
+      component: () => import(/* webpackChunkName: "hiking-private" */ './views/package/HikingPrivate.vue')
     },
     {
-      path: '/adventures/hiking/weekend',
-      name: 'hiking-weekend',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/HikingWeekend.vue')
+      path: '/adventures/hiking/eightdays',
+      name: 'hiking-eightdays',
+      component: () => import(/* webpackChunkName: "hiking-eightdays" */ './views/package/HikingEightdays.vue')
     },
     {
       path: '/adventures/skiing/private',
       name: 'skiing-private',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/SkiingPrivate.vue')
+      component: () => import(/* webpackChunkName: "skiing-private" */ './views/package/SkiingPrivate.vue')
     },
     {
-      path: '/adventures/skiing/weekend',
-      name: 'skiing-weekend',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/package/SkiingWeekend.vue')
+      path: '/adventures/skiing/adventures',
+      name: 'skiing-adventures',
+      component: () => import(/* webpackChunkName: "skiing-adventures" */ './views/package/SkiingAdventures.vue')
     },
     {
       path: '/info',
       name: 'tours',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/info/Tours.vue')
+      component: () => import(/* webpackChunkName: "tours" */ './views/info/Tours.vue')
     },
     {
       path: '/get-here',
       name: 'get-here',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/info/GetHere.vue')
+      component: () => import(/* webpackChunkName: "get-here" */ './views/info/GetHere.vue')
     },
     {
       path: '/accommodation',
       name: 'accommodation',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/info/Accommodation.vue')
+      component: () => import(/* webpackChunkName: "accommodation" */ './views/info/Accommodation.vue')
     },
     {
       path: '/sweden',
       name: 'About Sweden',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/info/Sweden.vue')
+      component: () => import(/* webpackChunkName: "About Sweden" */ './views/info/Sweden.vue')
     }
   ]
 })

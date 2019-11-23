@@ -290,10 +290,8 @@ export default {
         { date: "30 Jan - 2 Febr:", level: "Weekend for good skaters" },
         { date: "6 - 9 February:", level: "Weekend for normal skaters" },
         { date: "13 - 16 February:", level: "Weekend for good skaters" },
-        {
-          date: "20 - 23 February:",
-          level: "Weekend for good and normal skaters - two groups"
-        },
+        { date: "20 - 23 February:", 
+          level: "Weekend for good and normal skaters - two groups" },
         { date: "27 Febr - 1 March:", level: "Weekend for normal skaters" }
       ]
     };

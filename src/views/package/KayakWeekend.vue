@@ -18,6 +18,8 @@
                   :src="require('@/assets/images/Logo_RGB.png')"
                 ></v-img>
                 <div>
+                  Join us on our Kayak tours in the beautiful archipelago of the Baltic sea. Between islands and skerries, out in the open sea and in seduced caves. There are thousands of islands, most of them unsettled. The Swedish "allemansrätt" gives us the right to camp on any one of them. At lunchtime we make a break on some island, cook a meal, maybe take a swim. In the evenings we camp on another island, make dinner over open fire and sleep in tents.
+
                   Explore the Swedish archipelago in a kayak for a couple of days. Enjoy all the islands and sherries. We stay away from civilisation, bring all food and water we need. Find our way among the islands and stop for lunch when we feel for it. In the evening we find a good place for wild camping, cooking dinner over open fire
                 </div>
 
