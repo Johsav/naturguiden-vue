@@ -4,7 +4,7 @@ import './plugins/vuetify'
 import App from './App.vue'
 import router from './router'
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
-import 'vuetify/src/stylus/app.styl'
+/* import 'vuetify/src/stylus/app.styl' */
 import VueYouTubeEmbed from 'vue-youtube-embed'
 
 
@@ -26,5 +26,6 @@ Vue.use(Vuetify, {
 
 new Vue({
   router,
+  Vuetify,
   render: h => h(App)
 }).$mount('#app')
