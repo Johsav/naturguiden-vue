@@ -105,5 +105,11 @@ export default new Router({
       name: 'About Sweden',
       component: () => import(/* webpackChunkName: "About Sweden" */ './views/info/Sweden.vue')
     }
+   /* {
+      path: '/article/nationalgeographic',
+      name: 'Helags summit',
+      component: () => import(/* webpackChunkName: "About Sweden" */   /*"./views/article/World's Best Hikes  Summit Hikes - National Geographic.html")
+    }
+*/
   ]
 })
