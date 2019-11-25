@@ -16,5 +16,14 @@ module.exports = {
     } else {
       // ...
     }
+
+    config.module
+      .rule('html')
+      .test(/\.html$/)
+      .use('html-loader')
+        .loader('html-loader')
+        .end()
+
+
   }
 }

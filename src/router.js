@@ -108,7 +108,7 @@ export default new Router({
    /* {
       path: '/article/nationalgeographic',
       name: 'Helags summit',
-      component: () => import(/* webpackChunkName: "About Sweden" */   /*"./views/article/World's Best Hikes  Summit Hikes - National Geographic.html")
+      component: () => import(/* webpackChunkName: "About Sweden" */   /*"./assets/article/NG.html")
     }
 */
   ]

@@ -59,8 +59,17 @@
                 <p>Hiking the Swedish mountains your own way. Sleep in tents or in the mountain lodges. Walk on the path or find your own way between the mountains. Decide your exact route before or take one day at a time, decide where to go when you walk. The choices are yours, we help you make it happen. Taking care of all preparations and with our good knowledge of the region help you find the best options. Totally free to experience the wild in your way.</p>
               </v-card-text>
                 <v-card-text class="grey lighten-3 pb-1">
-                  <p>We will probably do a summit hike to Helags. Number three among the World's best summit hikes according to 
-                    <!--<router-link to="/article/nationalgeographic">National Geographic </router-link> -->"Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."</p>
+                  <p>We will probably do a summit hike to Helags. Number three among the World's best summit hikes according to National Geographic,
+
+
+<!--
+                    <router-link to="/article/nationalgeographic">National Geographic </router-link> 
+                    
+                    <router-link :to="require('html-loader!@/assets/article/NG.html')"> XXXX
+                    </router-link>
+-->                    
+                    
+                    "Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."</p>
                   <p>On Helags there is also a glacier that we will visit and maybe we will visit the mountain Sylarna as well.</p>
                   <p>Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now slowly coming back. Read more about the arctic fox project in the region </p>
                 </v-card-text>
