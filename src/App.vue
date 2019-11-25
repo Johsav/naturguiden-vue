@@ -132,7 +132,7 @@ export default {
         {title: "Nordic skating", link: "/adventures/skating/weekend" },
         {title: "Kayak", link: "/adventures/kayak/weekend" },
         {title: "Hiking", link: "/adventures/hiking/weekend" },
-        {title: "Back country skiing", link: "/adventures/skiing/weekend" }
+        {title: "Back country skiing", link: "/adventures/skiing/adventures" }
       ],
       mini: false,
       right: null

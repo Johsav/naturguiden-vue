@@ -81,6 +81,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "skiing-private" */ './views/package/SkiingPrivate.vue')
     },
     {
+      path: '/adventures/skiing/weekend',
+      name: 'skiing-weekend',
+      component: () => import(/* webpackChunkName: "skiing-private" */ './views/package/SkiingWeekend.vue')
+    },
+    {
       path: '/adventures/skiing/adventures',
       name: 'skiing-adventures',
       component: () => import(/* webpackChunkName: "skiing-adventures" */ './views/package/SkiingAdventures.vue')

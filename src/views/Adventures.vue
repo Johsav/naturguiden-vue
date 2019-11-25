@@ -138,7 +138,7 @@ export default {
         },
         {
           title: "Back country skiing - with winter adventures",
-          link: "/adventures/skiing/adventure",
+          link: "/adventures/skiing/adventures",
           imageSrc: "1400/hiking_1413_4.jpg",
           text: `Enjoy the Swedish  mountains in winter. Days with a lot of great outdoor winter activities. Different activities each day or several days on cross country skiing between mountain cabins, the choice are yours. Our base camp is a mountain lodge located on the mountain, some hundred meters from closest road. Explore by your self or join an arranged tour.`
         }
