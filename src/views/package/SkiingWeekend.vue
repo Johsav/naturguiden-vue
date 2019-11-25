@@ -44,8 +44,9 @@
 
               <v-card-text class="text-xs-left pt-1 subheading">
                 <div>We offer three different winter packages.</div>
-                <div>1. Spend days in our mountain lodge. Use the day doing different winter activities such as cross country skiing, winter fishing, alpine skiing or snow shoe walking. Go yourself or together with a guide. You have all information below on this page.</div>
-                <div>2. A open guided tour on back country skies between the mountain lodges up among the mountains. Feel free to join. <router-link to="/adventures/skiing/weekend"> Read more about our open ski tour here.</router-link></div>
+                <div>1. A open guided tour on back country skies between the mountain lodges up among the mountains. Feel free to join. You have all information below on this page.</div>
+                <div>2. Spend days in our mountain lodge. Use the day doing different winter activities such as cross country skiing, winter fishing, alpine skiing or snow shoe walking. Go yourself or together with a guide. <router-link to="/adventures/skiing/adventures"> Read more about winter adventure days here.</router-link></div>
+                
                 <div>3. If you are a family or a couple of friends, a private ski tour might be perfect for you. You can chose any date, and tail the tour after your preferences. <router-link to="/adventures/skiing/private"> Read more about your own ski tour here.</router-link></div>
               </v-card-text>
             </v-card>
@@ -92,6 +93,17 @@
               <v-card-text class="pt-0">
                 Everything included, accommodation in hostel and mountain lodge, normally two persons / room. But on some mountain lodges we might need to stay more people in each room. Sheets and towels are provided.
               </v-card-text>
+              <v-list class="pt-1 grey lighten-3">
+                  <v-list-tile class="list-height" v-for="item in packageDates">
+                    <v-list-tile-action>
+                      <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                      <v-list-tile-title>{{ item.date }}</v-list-tile-title>
+                      <v-list-tile-sub-title>{{ item.level }}</v-list-tile-sub-title>
+                    </v-list-tile-content>
+                  </v-list-tile>
+                </v-list>
                 <v-card-title class="title pb-0">More days or other accommodation</v-card-title>
               <v-card-text>
                 If you like to stay longer or arrive before, contact us we can help you arrange that.
@@ -182,8 +194,8 @@
           <v-flex xl12 lg12 md12 sm6 xs12>
             <v-card>
               <v-card-title class="d-block grey lighten-1">
-                <div class="title">Hiking</div>
-                <div class="subheading">Private tour</div>
+                <div class="title">Cross Country Skiing</div>
+                <div class="subheading">Open tour</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -200,7 +212,28 @@
               </v-container>
             </v-card>
           </v-flex>
-         
+
+          <!-- Right side column - scheduled dates  -->
+          <v-flex xl12 lg12 md12 sm6 xs12>
+            <v-card>
+              <v-card-title class="d-block grey lighten-1">
+                <div class="title">Scheduled dates</div>
+                <div class="subheading">open groups 2020</div>
+              </v-card-title>
+
+              <v-container fluid grid-list-sm>
+                <v-layout column>
+                  <v-flex v-for="item in packageDates" :key="item.date">
+                    <v-layout row>
+                      <v-card-text class="text-xs-right py-1 px-2">{{item.date}}</v-card-text>
+                      <v-card-text class="text-xs-left py-1 px-2">{{item.level}}</v-card-text>
+                    </v-layout>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+            </v-card>
+          </v-flex> 
+
           <!-- Right side column - Booking  -->
           <v-flex xl12 lg12 md12 sm6 xs12>
             <v-card>
@@ -234,15 +267,15 @@ export default {
   data() {
     return {
       packageItems: [
-        { type: "Season:", content: "June - September" },
-        { type: "Days:", content: "8 days/8 nights" },
+        { type: "Season:", content: "March - April" },
+        { type: "Days:", content: "4 days/5 nights" },
         { type: "Price:", content: "695 EUR"},
         { type: "Meeting point:", content: "Ljungdalen" },
-        { type: "Lodging:", content: "Tent" }
+        { type: "Lodging:", content: "Mountain Lodge" }
       ],
 
       packageDates: [
-        { date: "2 - 9 August: Hiking week", level: "" }
+        { date: "5 - 10 April:", level: "Cross country skiing" }
       ],
 
       days: [

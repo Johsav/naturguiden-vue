@@ -7,7 +7,7 @@
             <!-- First Card - general info  -->
             <v-card class="grey lighten-3">
               <v-card-title class="pt-1 pb-0">
-                <h1>Hiking in the  Swedish mountains</h1>
+                <h1>Winter holyday with cross country skiing</h1>
               </v-card-title>
 
               <v-card-text class="text-xs-left pt-1 subheading">
@@ -18,14 +18,19 @@
                   :src="require('@/assets/images/Logo_RGB.png')"
                 ></v-img>
                 <div>
-                  Leave the civilisation for a couple of days. Join our hiking tours in the beautiful mountains of Sweden. Time for recovery and recreation, the most beautiful trails, what to eat and where to sleep - everything is arranged for you. Leave the planning to us and just enjoy.
-                </div>
-                <div>On our hike we will most likely visit Helags. Number three among the World's best summit hikes according to National Geographic. Visit the glacier and reach the summit with a stunning view in all directions</div>
-                <div>We are in the home of the native Sami people. Walking their trails, passing their summer homes up in the mountains. And for sure we will meet their reindeers. We might even see the occasional native arctic fox.
+                  Visit the Swedish mountains during the best time of the year, the fifth season: still winter, but with long lasting sunshine days. Sun factor 20 is needed. We cross the snowy mountains under a blue sky, take our breaks in dug couches of snow.
                 </div>
                 <div>
-                  The freedom and space in the remote mountains are good for our body and soul.
-                  <b>Join us on our long tour or book your own private tour</b>
+                  Take several days on back country skies between different mountain lodges. Or stay in our mountain lodge doing day trips on skies with option for a lot of other winter activities. Winter fishing, snow shoe walking, alpine skiing or just run down the slope on a sledge. 
+                </div>
+                <div>
+                  We living with Helags just around the corner. Number three among the World's best summit hikes according to National Geographic. On our cross country tours we will for sure visit Helags mountain lodge. With the possibility to reach the summit for those that have the energy to do that.
+                </div>  
+                <div>We are in the home of the native Sami people. In April they moving the reindeers from the winter pasture in the forest up to the mountains It might be possible that we see those reindeers on their way to the mountains. We might even see the rare native arctic fox.
+                </div>
+                <div>
+                  Spring in the mountains are the best period of the year.
+                  <b>Join us on a tour or just stay in our lodge enjoy different winter activities.</b>
                 </div>
               </v-card-text>
             </v-card>
@@ -34,15 +39,15 @@
           <v-flex xs12 sm12 md4 lg4 xl4>
             <v-card class="grey lighten-3">
               <v-card-title class="pt-1 pb-0">
-                <h1>Private or Open tour</h1>
+                <h1>Our different winter package</h1>
               </v-card-title>
 
               <v-card-text class="text-xs-left pt-1 subheading">
-                <div>If you are a family or a couple of friends, a private tour might be perfect for you. You can chose any date, and tail the tour after your preferences. If you travel as single or as a small group our open tours are open for anyone and you are very welcome to follow. On those tours we are not more than ten guests.
-                <router-link to="/adventures/hiking/eightdays"
-                  >Read more about our open hiking tour here.</router-link></div>
-                <div>We also have a 
-                <router-link to="adventure/lodge"> mountain lodge </router-link> on the mountain where you can stay. Use the day hiking, fishing, bird watching or what you prefer, with or without guide. </div>
+                <div>We offer three different winter packages.</div>
+                <div>1. If you are a family or a couple of friends, a private ski tour might be perfect for you. You can chose any date, and tail the tour after your preferences. You have all information below on this page.</div>
+                <div>2. Spend days in our mountain lodge. Use the day doing different winter activities such as cross country skiing, winter fishing, alpine skiing or snow shoe walking. Go yourself or together with a guide. <router-link to="/adventures/skiing/adventures"> Read more about winter activities here.</router-link></div>
+                <div>3. A open guided tour on back country skies between the mountain lodges up among the mountains. Feel free to join. <router-link to="/adventures/skiing/weekend"> Read more about our open ski tour here.</router-link></div>
+                
               </v-card-text>
             </v-card>
           </v-flex>
@@ -53,31 +58,26 @@
           <v-flex>
             <v-card class="text-xs-left">
               <v-card-title class="pt-1 pb-0">
-                <h1>Your own hiking tour</h1>
+                <h1>Your own cross country skiing adventure</h1>
               </v-card-title>
               <v-card-text>
-                <p>Hiking the Swedish mountains your own way. Sleep in tents or in the mountain lodges. Walk on the path or find your own way between the mountains. Decide your exact route before or take one day at a time, decide where to go when you walk. The choices are yours, we help you make it happen. Taking care of all preparations and with our good knowledge of the region help you find the best options. Totally free to experience the wild in your way.</p>
+                <p>Your own tour with friends or family with cross country skiing over the mountains. As much adventures as you like, we tailor the tour after your preferences. Stay all nights in the mountain stations were we have electricity and warm showers. Or spend the nights in snow cave or tent. Or maybe a good combination, one night in a snow cave and next night on Helags mountain station with a nice sauna and dinner served.</p>
+                
+                <p>During the days we crossing a almost white landscape, not that steep as in the Alps and no trees as you can see on the picture. We use skies for cross country skiing, skies with steel edge and back country bindings. Depending on what you prefer we went over the tops, up and then downhill, maybe with nice telemark turns, or we went around the tops, not that much up and down.</p>
+
               </v-card-text>
-                <v-card-text class="grey lighten-3 pb-1">
-                  <p>We will probably do a summit hike to Helags. Number three among the World's best summit hikes according to National Geographic,
-
-
+              <v-card-text class="grey lighten-3 pb-1">
+                <p>We normally stay one night at the mountain lodge at Helags mountain. Number three among the World's best summit hikes according to National Geographic. "Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."</p>
 <!--
                     <router-link to="/article/nationalgeographic">National Geographic </router-link> 
                     
                     <router-link :to="require('html-loader!@/assets/article/NG.html')"> XXXX
                     </router-link>
--->                    
-                    
-                    "Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."</p>
-                  <p>On Helags there is also a glacier that we will visit and maybe we will visit the mountain Sylarna as well.</p>
-                  <p>Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now slowly coming back. Read more about the arctic fox project in the region </p>
+-->                     
+                  <p>Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now slowly coming back. Read more about the arctic fox project in the region.</p>
                 </v-card-text>
                 <v-card-text>
-                  While hiking in the Swedish mountains we stay above tree level, the area where no trees can grow. It is still green with grass and flowers. We are exposed to the force of nature with only tents for shelter during the nights that never get dark. Or we can chose to stay some nights in the mountain lodges. We wash ourselves outdoors in the cold and crystal clear water of the rivers or we take a nice shower in the lodge. We prepare lunch close to a small river or eat in the mountain lodge. A tour just by yourself, or a tour meeting other hikers now and then.
-                </p>
-                <p>
-                 The tour starts in Ljungdalen, the south port to the Jämtland mountains.</p> 
+                 The tour starts in Ljungdalen, the south port to the Jämtland mountains. If you prefer another stating point it can most likely be arranged.
                 <p>
                   Below you have all information you need, but if you still have some more questions, don't hesitate to contact us on
                   <a
@@ -86,24 +86,22 @@
                 </p>
               </v-card-text>
               <v-flex class="grey lighten-3 pb-1">
-              <v-card-title class="title pb-0">Book your own hiking tour</v-card-title>
+              <v-card-title class="title pb-0">Book your own cross country ski adventure</v-card-title>
               <v-card-text>
-                <b>Price: from 425 EUR (4 days/3 nights)</b>
+                <b>Price: from 425 EUR (4 days/5 nights)</b>
               </v-card-text>
               <v-card-text class="pt-0">
-                Everything included, accommodation in tent, normally two persons / tent.
-                <br />You need to bring a sleeping bag and camping mattress, or rent them for 30 EUR.
+                Everything included, accommodation in hostel and mountain lodge, normally two persons / room. But on some mountain lodges we might need to stay more people in each room. Sheets and towels are provided.
               </v-card-text>
                 <v-card-title class="title pb-0">More days or other accommodation</v-card-title>
               <v-card-text>
-                If you like to stay longer than 4 days or sleep one or more nights in a mountain lodge contact us for price details and more information.
+                If you like a shorter or longer tour. Or if you like to change type of accommodation. Feel free to adjust the tour, we update the price depending on your choice.
               </v-card-text>
               </v-flex>
-              <v-card-title class="title pb-0">A normal day in the mountains</v-card-title>
+              <v-card-title class="title pb-0">A normal day on tour</v-card-title>
               <v-card-text class="pb-1">
-                <p>We start with preparing breakfast on the camping stove. Water we get from the crystal clear creek nearby. Then we put down our tents and start our journey. When we walk over a creek we take a short stop to drink. Now and then we take a short break. Around lunch time we take a longer break close to a river or creek, preparing lunch on our camping stove.</p>
-                <p>In the evening we find a nice place for our tents. Making diner over open fire or on the camping stove and wash ourself in the river or in a lake (yes, it is probably very cold). We will probably meet reindeer and lemmings, a lot of different birds, and we will try to spot the arctic fox in the area.</p>
-                <p>Some of the days we stay two nights at the same place and from there start a summit hike to some of the peaks, e.g. Helags. We will also try to catch fish in the small lakes and fry them over open fire.</p>
+                <p>We start with preparing breakfast together in the Mountain station kitchen. We also prepare something for lunch. Then we are ready for another day on skies. There are about 20 km between the stations/cabins. A perfect distance for most of us. Now and then we take a short break. Around lunch time we make a dug couch where we eat our lunch. If the weather is good,we take a longer break, enjoy the sun and the view. It will not get dark before eight, we have all day.</p>
+                <p>In the evening we reach our next Mountain cabin. Time to get familiar and feel at home and then time for dinner. One night we stay at a Mountain station, here we will get dinner served. Other nights we stay in Mountain cabins, less fancy but maybe more genuine. Here we prepare all food together.</p>
               </v-card-text>
 
               <v-card-title class="title pb-0">Meeting point</v-card-title>
@@ -123,37 +121,40 @@
                 <br />Last day: We find the most convenient way for you to go back.
               </v-card-text>
 
-              <v-card-title class="title pb-0">Accommodation: Tents or in a mountain Lodge</v-card-title>
+              <v-card-title class="title pb-0">Accommodation: Mountain stations and cabins</v-card-title>
               <v-card-text class="pb-1">
-                <p>You will sleep in tent close to the creek or the lake. Normally two persons in each tent.
-                You need to bring a sleeping bag and camping mattress, or rent them for 30 EUR.
-                Or you can choose to stay one or more nights in a mountain lodge, normally in shared rooms with others. You then pay for that night yourself.</p>
+                <p>(Tent or snow cave is an option if you like to try that one or more nights)
+                <p>In the area there are a network with Mountain stations and Mountain cabins, about 20 km in-between. We will stay both on Mountain stations and Mountain cabins.The Mountain station are more like a good hostel, and they have electricity. You can get dinner served and you have a small shop.<br />
+                The Mountain cabins are nice but simple accommodation. No electricity, you have to bring in (and also out) all water. Toilets in a separate building. But a pretty good kitchen, wood to heat the house and a lot of charm. Normally 4 person in each room, bunk beds. 
+                
+                We provide sheets and towels. But if you like, bring your sleeping bag</p>
               </v-card-text>
 
               <v-card-title class="title pb-0">Personal equipment</v-card-title>
               <v-card-text class="pb-1">
-                <p>Hiking boots, water resistant and suitable clothes, backpack for hiking, sleeping bag, sleeping pad, cap and gloves, sandals to wear when crossing rivers.</p>
-                <p>Good to have but not necessary: Hat for the sun, rain or mosquitos, swimwear, dry bag for your mobile/camera, sun glasses.</p>
+                <p>Clothing suitable for being active during wintertime. Maybe not same cloth as for alpine skies, might be to warm. Several layers are always good, then you can adapt. A warm jacket for the breaks, warm cloves and a cap covering your ears. Maybe also a ski mask if you have. And indoor shoes are very nice.</p>
+                <p>If you chose to stay in tent or snow cave also bring a warm sleeping bag and a camping mattress</p>
+                <p><b>Absolutely necessary:</b>Sun glasses and sun protection. A good backpack for all your cloth and equipment. You also need to carry your share of the food.
+                </p>
               </v-card-text>
 
               <v-card-title class="title pb-0">Equipment included</v-card-title>
               <v-card-text>
-                Tents, camping stove, maps.
-                <br />Aside from your own equipment, you also need to carry your share of food and tent or camping stove.
+                Skies and ski boots, Sheets and towels.
               </v-card-text>
 
               <v-flex class="grey lighten-3">
               <v-card-title class="title pb-0">Included in the price</v-card-title>
               <v-card-text class="pb-1">
-                Day I
+                First day
                 <br />Dinner, accommodation in Ljungdalen
                 <br />Full days
-                <br />Breakfast, lunch, dinner, guide, rent of equipment
+                <br />Accommoadation in Mountain station/cabin, Breakfast, lunch, dinner, guide, rent of equipment.
                 <br />Last night
                 <br />Accommodation and breakfast in Ljungdalen
                 <p>
                   <br />
-                  <b>Not included:</b> alcoholic drinks.
+                  <b>Not included:</b> alcoholic drinks (and no place to buy either, except for 3,5% beer)
                 </p>
               </v-card-text>
               </v-flex>
@@ -184,7 +185,7 @@
           <v-flex xl12 lg12 md12 sm6 xs12>
             <v-card>
               <v-card-title class="d-block grey lighten-1">
-                <div class="title">Hiking</div>
+                <div class="title">Cross country skiing</div>
                 <div class="subheading">Private tour</div>
               </v-card-title>
 
@@ -236,11 +237,11 @@ export default {
   data() {
     return {
       packageItems: [
-        { type: "Season:", content: "June - September" },
-        { type: "Days:", content: "8 days/8 nights" },
+        { type: "Season:", content: "March - April" },
+        { type: "Days:", content: "4 days/5 nights" },
         { type: "Price:", content: "695 EUR"},
         { type: "Meeting point:", content: "Ljungdalen" },
-        { type: "Lodging:", content: "Tent" }
+        { type: "Lodging:", content: "Mountain Lodge" }
       ],
 
       packageDates: [
@@ -249,33 +250,37 @@ export default {
 
       days: [
         {
-          day: "Day I",
+          day: "Day 0",
           title: "",
           text: `Travel to Ljungdalen.<br />
           Accommodation in Ljungdalen. Dinner and briefing about the tour. Then time for all preparation and sharing food and other equipment among us.<br />
           Clothes and other belongings not needed on the hike can be left here until you get back.`
         },
         {
+          day: "Day I",
+          title: "",
+          text: "After breakfast buffet but before we head off for the mountains, we prepare ourselves big lunch packages. The first stage is up to the ski slope. Before we start we need some exercise in going downhill on cross country skies. It is a little tricky, but with the right technique it becomes much easier.<br /> After exercising we let the ski lift pull us up towards the summit once again. This time we should not go downhill again but continue towards the very top. When passing it you get marvellous views, mountains everywhere. We will see the dramatic mountain Helags, the target for tomorrow, in front of us. Instead we turn more south towards Mountain cabin Fältjägaren, 14 km to go. It starts with a small slope, your practise will come handy. We take some breaks along the way and reach Fältjägaren in the late afternoon. Fältjägaren is a small lodge with two big rooms. It has no washing facilities and the toilet is in a separate building. Together, we prepare dinner and eat to just relax afterwards. You will probably sleep well after this long day."
+        },
+        {
           day: "Day II",
           title: "",
-          text: "Breakfast in the morning and then we head off. First through the    village and then up into the forest. We follow the old pilgrim path toward Trondheim in Norway. After 4 km we get up above the tree level, here you get the first sight of Helags.<br />           A little further and then it's time for our first lunch break. With a great view over the lake below and the sound from the creek we start cooking.<br /> Later in the afternoon we have passed our first mountains and now we have Helags in front of us. We find a nice spot close to some water where we put up our tents. Time for cooking the dinner and plans for tomorrow."
+          text: `Unlike yesterday when we ski far from the ordinary path, we have a marked path to follow today towards Helags Mountain station, 11 km away. If the weather is good and the force is with us we will climb the mountain. A good approach up the mountain is half way to the station. With or without skies depending on the situation.<br /> We take af course several breaks along the way and reach Helags in the afternoon. Before we leave to our lodge we will have time to relax. Tonight we will have the dinner served, but first some time in the warming and relaxing sauna.` 
         },
         {
-          day: "Days on the mountains",
+          day: "Day III",
           title: "",
-          text: `The high peaks of Sylarna and Helags are in front of us but how should we climb them? What is the weather forecast? How far should we walk today? Is there any reindeer down in the valley to see? We continue taking one day at a time, stop and drink the crystal clear water from a stream, stretch out in the sun during lunch and take a bath in cold water in the river in the evening. Maybe we decide to walk the whole night, in July it never gets dark.
-          <br />
-          These are magnificent but hard days. High mountains to climb, fantastic views to enjoy and natural peacefulness without any other people.`
+          text: `This day we heading towards Gåsen Mountain cabin, 18 km. Also today after a marked path. We are now more used to cross country skiing and the mountains. Everyone can take this day in their own pace, just follow the path will lead you to the cabin. If we are lucky we might see the native arctic fox. We passing not to far from where they been fed. <br /> This day ends with a long uphill path, a good recommendation is to take a break half way, even thou you are almost there.
+          Gåsen is a much bigger than Fältjägaren with three separate houses. But the standard is about the same. Most likely we stay in four beds room. We make dinner together and decide later about the path for tomorrow.`
         },
         {
-          day: "Last hiking day",
+          day: "Day IV",
           title: "",
-          text: `The last stage is walking down towards Ljungdalen– an easy path where long parts are downhill. The hiking starts right after breakfast and after lunchtime we reach Ljungdalen. Now it is time to get a real shower at the hostel, or maybe a sauna. In the evening we get dinner at the local restaurant. `
+          text: `This day we get off the marked tracks again, 25 km, around the mountain Härjångsfjället and down into a valley. Slightly downhill most of the way. We enjoy the day and taking some nice breaks, no hurry, the sun is up to after eight o clock. In the evening we are back at the hostel. A welcome shower or maybe a visit to the small indoor swimming pool is waiting. A good dinner ends a fantastic tour.`
         },
         {
           day: "Last day",
           title: "",
-          text: `Last day, time to relax and to see more of Ljungdalen. Visit the old "Gammelgården" were you can get waffle with cloudberry jam. Or "Hemslöjden" where you can see or buy handicraft made by people in the village.
+          text: `Last day, time to relax and to see more of Ljungdalen. Visit "Hemslöjden" where you can see or buy handicraft made by people in the village.
           <br />
           The bus will bring you back towards Östersund/Stockholm around 15:00`
         }

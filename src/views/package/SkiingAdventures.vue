@@ -189,8 +189,8 @@
           <v-flex xl12 lg12 md12 sm6 xs12>
             <v-card>
               <v-card-title class="d-block grey lighten-1">
-                <div class="title">Hiking</div>
-                <div class="subheading">Private tour</div>
+                <div class="title">Winter Holiday</div>
+                <div class="subheading"></div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -241,11 +241,11 @@ export default {
   data() {
     return {
       packageItems: [
-        { type: "Season:", content: "June - September" },
-        { type: "Days:", content: "8 days/8 nights" },
-        { type: "Price:", content: "695 EUR"},
+        { type: "Season:", content: "March - April" },
+        { type: "Days:", content: "Chose any" },
+        { type: "Price:", content: "80 EUR/day"},
         { type: "Meeting point:", content: "Ljungdalen" },
-        { type: "Lodging:", content: "Tent" }
+        { type: "Lodging:", content: "Mountain Lodge" }
       ],
 
       packageDates: [
