@@ -5,6 +5,7 @@
         <v-tab v-for="item in m_element" :key="item.link" :to="item.link" replace>{{item.title}}</v-tab>
       </v-tabs>
     </v-card>
+    
 
     <v-layout row fill height>
       <v-flex xl3 lg3 md4 class="hidden-sm-and-down">
