@@ -109,6 +109,16 @@ export default new Router({
       path: '/sweden',
       name: 'About Sweden',
       component: () => import(/* webpackChunkName: "About Sweden" */ './views/info/Sweden.vue')
+    },
+    {
+      path: '/article',
+      name: 'Articles',
+      component: () => import(/* webpackChunkName: "About Sweden" */ './views/article/Article.vue')
+    },
+    {
+      path: '/video',
+      name: 'Videos',
+      component: () => import(/* webpackChunkName: "About Sweden" */ './views/article/Video.vue')
     }
    /* {
       path: '/article/nationalgeographic',

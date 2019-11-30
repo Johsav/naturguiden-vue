@@ -17,7 +17,7 @@
       <v-list class="pt-0" classdense>
         <v-divider></v-divider>
 
-        <v-list-tile v-for="item in drawerLinks" :key="item.title" :to="{path: item.link}">
+        <v-list-tile v-for="item in drawerLinks" :key="item.title" :to="{path: item.link }">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
@@ -34,7 +34,7 @@
         <v-img :src="require('./assets/name.png')" height="48" width="156" contain></v-img>
       </router-link>
 
-<!-- Old menu without submenu      <v-menu offset-y>
+      <!-- Old menu without submenu      <v-menu offset-y>
         <v-btn flat slot="activator">
           <v-icon left>expand_more</v-icon>
           <span>Our Adventures</span>
@@ -45,45 +45,34 @@
           </v-list-tile>
         </v-list>
       </v-menu>
--->
-      
-<!-- EGEN TEST ------------------------>
-      <v-menu offset-x>
+      -->
+
+      <!-- EGEN TEST ------------------------>
+      <v-menu offset-y :close-on-select="true">
         <v-btn flat slot="activator">
           <v-icon left>expand_more</v-icon>
           <span>Our Adventures</span>
         </v-btn>
-        <v-list>
+        <v-list class="py-0">
           <v-list-tile>
             <router-link to="/adventures">
-            <v-list-tile-title> All our adventures</v-list-tile-title>
+              <v-list-tile-title class="black--text plain-text">All our adventures</v-list-tile-title>
             </router-link>
           </v-list-tile>
         </v-list>
-        <v-list
-          v-for="item in items" 
-          :key="item.title"
-         >
-
-<!--<v-list
-          v-for="item in items" 
-          :key="item.title" 
-          v-model="item.active" 
-          no-action>   -->          
-
-          
+        <v-list v-for="item in items" :key="item.title" class="text-xs-left py-0">
           <v-menu offset-x right open-on-hover>
             <v-list-tile slot="activator">
               <v-list-tile-title>{{ item.title }}</v-list-tile-title>
             </v-list-tile>
             <v-list dense>
-              <v-list-tile 
+              <v-list-tile
                 v-for="subItem in item.items"
                 :key="subItem.title"
-                @click
-                router :to="subItem.link"
-                v-model="item.active">
-
+                @click="close"
+                router
+                :to="subItem.link"
+              >
                 <v-list-tile-title>{{ subItem.title }}</v-list-tile-title>
               </v-list-tile>
             </v-list>
@@ -192,35 +181,51 @@ export default {
       ],
 
       items: [
-        { title: "Nordic skating",
+        {
+          title: "Nordic skating",
           items: [
             { title: "Open tour", link: "/adventures/skating/weekend" },
             { title: "Private tour", link: "/adventures/skating/private" }
           ]
         },
-        { title: "Kayak",
+        {
+          title: "Kayak",
           items: [
             { title: "Open tour", link: "/adventures/kayak/weekend" },
             { title: "Private tour", link: "/adventures/kayak/private" }
           ]
         },
-        { title: "Hiking",
+        {
+          title: "Hiking",
           items: [
             { title: "Open tour", link: "/adventures/hiking/eightdays" },
             { title: "Private tour", link: "/adventures/hiking/private" }
           ]
         },
-        { title: "Cross country skiing",
+        {
+          title: "Cross country skiing",
           items: [
             { title: "Open tour", link: "/adventures/skiing/weekend" },
             { title: "Private tour", link: "/adventures/skiing/private" },
-            { title: "Winter adventures", link: "/adventures/skiing/adventures" }
+            {
+              title: "Winter adventures",
+              link: "/adventures/skiing/adventures"
+            }
           ]
         }
       ],
       mini: false,
       right: null
     };
+  },
+
+  methods: {
+    route(parentMenuIndex) {
+      if (arguments.length) {
+        const parentMenu = this.$refs.menuRef[parentMenuIndex];
+        parentMenu.isActive = false;
+      }
+    }
   }
 };
 </script>
@@ -228,6 +233,9 @@ export default {
 <style scoped>
 .bg-red {
   /*background-color: red;*/
+}
+.plain-text {
+  text-decoration: none;
 }
 </style>
 

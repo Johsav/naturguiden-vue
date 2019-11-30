@@ -250,7 +250,7 @@
                       <v-flex style="position: absolute; bottom: 0; left: 0; right: 0;   text-align: center;">
                         <v-btn
                           router-link
-                          to="/articles"
+                          to="/article"
                           text
                           small
                           color="blue-grey darken-2"
