@@ -48,7 +48,7 @@
       -->
 
       <!-- EGEN TEST ------------------------>
-      <v-menu offset-y :close-on-select="true">
+      <v-menu offset-y>
         <v-btn flat slot="activator">
           <v-icon left>expand_more</v-icon>
           <span>Our Adventures</span>
@@ -62,16 +62,18 @@
         </v-list>
         <v-list v-for="item in items" :key="item.title" class="text-xs-left py-0">
           <v-menu offset-x right open-on-hover>
-            <v-list-tile slot="activator">
+            <template slot="activator">
+              <v-list-tile @click.stop.prevent >
               <v-list-tile-title>{{ item.title }}</v-list-tile-title>
             </v-list-tile>
+            </template>
             <v-list dense>
               <v-list-tile
                 v-for="subItem in item.items"
                 :key="subItem.title"
-                @click="close"
-                router
-                :to="subItem.link"
+               
+    @click="parentMenu = false"
+                router :to="subItem.link"
               >
                 <v-list-tile-title>{{ subItem.title }}</v-list-tile-title>
               </v-list-tile>
@@ -221,11 +223,11 @@ export default {
 
   methods: {
     route(parentMenuIndex) {
-      if (arguments.length) {
-        const parentMenu = this.$refs.menuRef[parentMenuIndex];
-        parentMenu.isActive = false;
-      }
-    }
+  if (arguments.length) {
+      const parentMenu = this.$refs.menuRef[parentMenuIndex];
+      parentMenu.isActive = false;
+  }
+}
   }
 };
 </script>

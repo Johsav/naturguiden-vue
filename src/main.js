@@ -6,11 +6,15 @@ import router from './router'
 import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
 /* import 'vuetify/src/stylus/app.styl' */
 import VueYouTubeEmbed from 'vue-youtube-embed'
+import vPlayBack from 'v-playback'
+
 
 
 Vue.config.productionTip = false
 
 Vue.use(VueYouTubeEmbed)
+
+Vue.use(vPlayBack)
 
 Vue.use(Vuetify, {
   theme: {
