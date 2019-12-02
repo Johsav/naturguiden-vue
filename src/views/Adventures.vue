@@ -137,10 +137,22 @@ export default {
           text: `Leave the civilisation for a couple of days. A hiking tours in the beautiful mountains of Sweden together with friends or family. Time for recovery and recreation, the most beautiful trails, what to eat and where to sleep - everything is arranged for you. Leave the planning to us and just enjoy.`
         },
         {
-          title: "Back country skiing - with winter adventures",
+          title: "Cross country skiing - open tour",
+          link: "/adventures/skiing/weekend",
+          imageSrc: "1400/hiking_1413_4.jpg",
+          text: `Cross country skiing in the Swedish mountains.  Experience the space and the meditative in crossing the mountains on skies. Enjoy the breaks with beautiful views sitting in our dug couches eating our lunch. Best season is March and April, best place to be this time of the year with long lasting days and a lot of snow. Join our open four days tour when we ski between mountain lodges in Jämtland`
+        },
+        {
+          title: "Cross country skiing - private tour",
+          link: "/adventures/skiing/private",
+          imageSrc: "1400/hiking_1413_4.jpg",
+          text: `Your own tour with friends or family with cross country skiing over the mountains. As much adventures as you like, we tailor the tour after your preferences. Stay all nights in the mountain stations were we have electricity and warm showers. Or spend the nights in snow cave or tent. Maybe we take a detour to try to see the rare artic fox. Or if you travel last part of April we might meet the Sami people moving their Reindeers up to their summer pasture`
+        },
+        {
+          title: "Cross country skiing - with winter adventures",
           link: "/adventures/skiing/adventures",
           imageSrc: "1400/hiking_1413_4.jpg",
-          text: `Enjoy the Swedish  mountains in winter. Days with a lot of great outdoor winter activities. Different activities each day or several days on cross country skiing between mountain cabins, the choice are yours. Our base camp is a mountain lodge located on the mountain, some hundred meters from closest road. Explore by your self or join an arranged tour.`
+          text: `Enjoy the Swedish mountains in winter. Days with a lot of great outdoor winter activities. Different activities each day or several days on cross country skiing between mountain cabins, the choice are yours. Our base camp is a mountain lodge located on the mountain, some hundred meters from closest road. Explore by your self or join an arranged tour.`
         }
       ]
     };
