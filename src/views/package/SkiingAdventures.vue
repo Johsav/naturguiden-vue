@@ -62,8 +62,15 @@
               <v-card-title class="pt-1 pb-0">
                 <h1>Winter holyday with a variety of activities</h1>
               </v-card-title>
-              <v-card-text>
-                <p>Days with all kind of winter outdoor activities. Welcome to our cabin located almost up on the mountain, close to the small village Ljungdalen in the county Härjedalen. With 250 meter to the road you have to ski or walk the last part. But when you are there, the winter adventures begins just outside the front door. Put on your skies and head of in any direction. Or go down the slope just outside on a sledge.</p>
+              <v-card-text class="pt-1 subheading">
+                <v-img
+                  contain
+                  class="right"
+                  width="350"
+                  :src="require('@/assets/images/500/skiing004.jpg')"
+                ></v-img>
+                Days with all kind of winter outdoor activities. Welcome to our cabin located almost up on the mountain, close to the small village Ljungdalen in the county Härjedalen. With 250 meter to the road you have to ski or walk the last part. But when you are there, the winter adventures begins just outside the front door. Put on your skies and head of in any direction. Or go down the slope just outside on a sledge.</v-card-text>
+                <v-card-text>
                 <p>It's you vacation and it's your choice. Stay close to the cabin, dig a nice couch in the snow. Enjoy the sun and all the activities you can do here such as snow shoe walk or just sitting in the sun. Making a great slope for the children or yourself with tunnels and jumps and go for it on a sledge.</p>
                 <p>Or take a daytrip on cross country skies out onto the mountain. Maybe to some of the lake for winter fishing. Or to reach the summit on some of the mountains to get the view.</p>
                 <p>With cross country skiing you can go everywhere, as it is to much snow for walking, you use the skies to get where you are going. There are also prepared ski tracks, if you don't want to do your own tracks. Apart from cross country skiing, there are several opportunities for alpine skiing, the closest only two km away.</p>

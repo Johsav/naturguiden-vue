@@ -57,7 +57,7 @@
                 <v-img
                   contain
                   class="right"
-                  width="200"
+                  width="350"
                   :src="require('@/assets/images/500/hiking001.jpg')"
                 ></v-img>
                 Eight adventurous days filled with mountain peak tours, glacier hiking and magnificent nature! The details are not set, we decide from day to day how the trip will develop. We bring our own tents (which will be provided) and all the food we need. We are totally free to experience the wild, outside all regular tracks and mountain lodges.

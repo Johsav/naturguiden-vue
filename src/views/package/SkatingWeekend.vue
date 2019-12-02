@@ -61,7 +61,7 @@
                 <v-img
                   contain
                   class="right"
-                  width="200"
+                  width="350"
                   :src="require('@/assets/images/500/skating003.jpg')"
                 ></v-img>
                 Nordic skating in Sweden, an all inclusive guided tour with a lot of good skating. We travel by minibus in small groups of maximum eight persons and one guide. Your guide picks you up at the airport/train station and if possible we go directly for skating on a good lake nearby. All needed equipment for skating is provided. We sleep in hostels and are making the dinner together in the evenings. At breakfast we also prepare our lunch that we bring in our backpacks.</p>

@@ -61,7 +61,7 @@
                 <v-img
                   contain
                   class="right"
-                  width="200"
+                  width="350"
                   :src="require('@/assets/images/500/skating002.jpg')"
                 ></v-img>
                 <p>Enjoy Nordic skating together with your friends or family. When booking your own private tour you can come any date and stay as long as you like. You can chose the type of accommodation and combine skating with other activities if you like.</p>

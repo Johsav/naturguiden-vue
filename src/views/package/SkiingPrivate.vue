@@ -60,9 +60,15 @@
               <v-card-title class="pt-1 pb-0">
                 <h1>Your own cross country skiing adventure</h1>
               </v-card-title>
-              <v-card-text>
-                <p>Your own tour with friends or family with cross country skiing over the mountains. As much adventures as you like, we tailor the tour after your preferences. Stay all nights in the mountain stations were we have electricity and warm showers. Or spend the nights in snow cave or tent. Or maybe a good combination, one night in a snow cave and next night on Helags mountain station with a nice sauna and dinner served.</p>
-                
+               <v-card-text class="pt-1 subheading">
+                <v-img
+                  contain
+                  class="right"
+                  width="350"
+                  :src="require('@/assets/images/500-300/skiing002.jpg')"
+                ></v-img>
+                Your own tour with friends or family with cross country skiing over the mountains. As much adventures as you like, we tailor the tour after your preferences. Stay all nights in the mountain stations were we have electricity and warm showers. Or spend the nights in snow cave or tent. Or maybe a good combination, one night in a snow cave and next night on Helags mountain station with a nice sauna and dinner served.</v-card-text>
+                <v-card-text>
                 <p>During the days we crossing a almost white landscape, not that steep as in the Alps and no trees as you can see on the picture. We use skies for cross country skiing, skies with steel edge and back country bindings. Depending on what you prefer we went over the tops, up and then downhill, maybe with nice telemark turns, or we went around the tops, not that much up and down.</p>
 
               </v-card-text>

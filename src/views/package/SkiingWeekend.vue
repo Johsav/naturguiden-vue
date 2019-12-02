@@ -60,10 +60,17 @@
               <v-card-title class="pt-1 pb-0">
                 <h1>Cross-country skiing in the Swedish mountains</h1>
               </v-card-title>
-              <v-card-text>
-                <p>Cross country skiing over the mountains. Experience the space and the meditative in crossing the mountains on skies. Enjoy the breaks with beautiful views sitting in our dug couches eating our lunch.<br />
+               <v-card-text class="pt-1 subheading">
+                <v-img
+                  contain
+                  class="right"
+                  width="300"
+                  :src="require('@/assets/images/300/mountain_winter_break.jpg')"
+                ></v-img>
+                Cross country skiing over the mountains. Experience the space and the meditative in crossing the mountains on skies. Enjoy the breaks with beautiful views sitting in our dug couches eating our lunch.<br />
                 We spend the nights in mountains lodges enjoy the time together during the evening.
-                First day we start training downhill skiing with cross country skies. Good to have knowledge when we get up on the mountains. You carry your own backpack with personal equipment during the tour. </p>
+                First day we start training downhill skiing with cross country skies. Good to have knowledge when we get up on the mountains. You carry your own backpack with personal equipment during the tour. </v-card-text>
+                <v-card-text>
                 <p>We crossing a almost white landscape, not that steep as in the Alps and no trees  as you can see on the picture.  We use skies for cross country skiing, skies with steel edge and back country bindings. Depending on what you prefer we went over the tops, up and then downhill, maybe with nice telemark turns, or we went around the tops, not that much up and down.</p>
               </v-card-text>
                 <v-card-text class="grey lighten-3 pb-1">

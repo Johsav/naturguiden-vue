@@ -59,7 +59,7 @@
                 <v-img
                   contain
                   class="right"
-                  width="200"
+                  width="350"
                   :src="require('@/assets/images/300/kayak3.jpg')"
                 ></v-img>
                 During three days we kayak in the beautiful archipelago south of Stockholm. Between islands and skerries, out in the open sea and in secluded caves. We sleep in tents on the islands along the way, prepare the food over open fire and wash ourselves in rock pools of the Baltic Sea.</v-card-text>
