@@ -75,20 +75,12 @@
                 </p>
               </v-card-text>
               <v-card-text class="grey lighten-3 pb-1">
-                <p>You will for sure see Helags, the highest far highest peak in this part of Sweden, only 15 km away. It's number three among the World's best summit hikes according to National Geographic.</p>
-
-                <!--
-                    <router-link to="/article/nationalgeographic">National Geographic </router-link> 
-                    
-                    <router-link :to="require('html-loader!@/assets/article/NG.html')"> XXXX
-                    </router-link>
-                -->
-
+                <p>You will for sure see Helags, the highest far highest peak in this part of Sweden, only 15 km away. It's number three among the World's best summit hikes according to <a href="https://www.nationalgeographic.com/adventure/lists/hiking-backpacking/worlds-best-summit-hikes/#/helagsfjallet-mountain-sweden_91186_600x450.jpg">National Geographic,</a></p>
                 <p>
                   <i>"Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."</i>
                 </p>
                 <P>It's possible to ski to Helags mountain lodge for a nice lunch and the go back in a long day. Or you can do this as a two day trip with the possibility to do the summit as well.</P>
-                <p>Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now slowly coming back. Read more about the arctic fox project in the region</p>
+                <p>Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now slowly coming back. <a href="https://rewildingeurope.com/news/arctic-fox-safaris-in-sweden-helps-the-arctic-fox-while-making-business-sense/">Read more about the arctic fox project in the region</a></p>
               </v-card-text>
               <v-card-text>
                 <p>
@@ -136,7 +128,7 @@
                 <p>Cloth for outdoor winter activities. Several layers are always good, then you can adapt. A warm jacket for the breaks, warm cloves (two pairs if one pair get wet) and a cap covering your ears. Maybe also a ski mask if you have.</p>
                 <p>If you want to stay in tent or snow cave also bring a warm sleeping bag and a camping mattress.</p>
                 <p>
-                  <b>Absolutely necessary:</b>Sun glasses and sun protection. A good backpack for all your cloth and equipment. You also need to carry your share of the food.
+                  <b>Absolutely necessary:</b> Sun glasses and sun protection. 
                 </p>
               </v-card-text>
             </v-card>

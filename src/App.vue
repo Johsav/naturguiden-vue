@@ -49,10 +49,12 @@
 
       <!-- EGEN TEST ------------------------>
       <v-menu offset-y>
-        <v-btn flat slot="activator">
+        <template v-slot:activator="{ on }">
+        <v-btn flat v-on="on">
           <v-icon left>expand_more</v-icon>
           <span>Our Adventures</span>
         </v-btn>
+        </template>
         <v-list class="py-0">
           <v-list-tile>
             <router-link to="/adventures">
@@ -62,8 +64,8 @@
         </v-list>
         <v-list v-for="item in items" :key="item.title" class="text-xs-left py-0">
           <v-menu offset-x right open-on-hover>
-            <template slot="activator">
-              <v-list-tile @click.stop.prevent >
+            <template v-slot:activator="{ on }">
+              <v-list-tile v-on="on" @click.stop.prevent >
               <v-list-tile-title>{{ item.title }}</v-list-tile-title>
             </v-list-tile>
             </template>

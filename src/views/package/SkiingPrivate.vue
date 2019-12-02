@@ -67,14 +67,10 @@
 
               </v-card-text>
               <v-card-text class="grey lighten-3 pb-1">
-                <p>We normally stay one night at the mountain lodge at Helags mountain. Number three among the World's best summit hikes according to National Geographic. "Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."</p>
-<!--
-                    <router-link to="/article/nationalgeographic">National Geographic </router-link> 
-                    
-                    <router-link :to="require('html-loader!@/assets/article/NG.html')"> XXXX
-                    </router-link>
--->                     
-                  <p>Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now slowly coming back. Read more about the arctic fox project in the region.</p>
+                <p>We normally stay one night at the mountain lodge at Helags mountain. Number three among the World's best summit hikes according to <a href="https://www.nationalgeographic.com/adventure/lists/hiking-backpacking/worlds-best-summit-hikes/#/helagsfjallet-mountain-sweden_91186_600x450.jpg">National Geographic,</a></p>
+                <p><i>"Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."</i></p>
+
+                <p>Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now slowly coming back. <a href="https://rewildingeurope.com/news/arctic-fox-safaris-in-sweden-helps-the-arctic-fox-while-making-business-sense/">Read more about the arctic fox project in the region</a></p>
                 </v-card-text>
                 <v-card-text>
                  The tour starts in Ljungdalen, the south port to the Jämtland mountains. If you prefer another stating point it can most likely be arranged.

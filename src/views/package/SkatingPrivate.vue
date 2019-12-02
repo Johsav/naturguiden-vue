@@ -57,7 +57,13 @@
                 <h1>Nordic Skating - your own tour</h1>
               </v-card-title>
 
-              <v-card-text>
+              <v-card-text class="subheading pb-0">
+                <v-img
+                  contain
+                  class="right"
+                  width="200"
+                  :src="require('@/assets/images/500/skating002.jpg')"
+                ></v-img>
                 <p>Enjoy Nordic skating together with your friends or family. When booking your own private tour you can come any date and stay as long as you like. You can chose the type of accommodation and combine skating with other activities if you like.</p>
                 <p>We always travel in small groups and most of our guests are private groups. We are maximum eight persons and one guide and travel in a minibus. If you are more than eight we use a second bus.</p>
                 <p>The guide picks you up at the airport or where you like to be picked up. If possible we go directly for skating on a good lake nearby. All skating equipment is provided.</p>Where we skate depends on the ice and weather situation, we always choose the area that provides the best skating conditions. The accommodations are located in the area but could change from day to day depending on where we choose to go skating.
@@ -76,6 +82,7 @@
                 <br />+25 EUR extra if you don't bring your own.
               </v-card-text>
 
+              <v-flex class="grey lighten-3">
               <v-card-title class="title pb-0">Price</v-card-title>
               <v-card-text class="pb-0">
                 <b>37 EUR early season discount</b> before 3 February
@@ -89,6 +96,7 @@
                 </tr>
               </v-simple-table>
               </v-card-text>
+              </v-flex>
               <v-card-title class="title pb-0">Pick up</v-card-title>
               <v-card-text>At Stockholm/Arlanda airport. Other locations possible after agreement.</v-card-text>
 
@@ -134,6 +142,7 @@
                 <p>Safety equipment we carry: backpack, safety line, ice nails and poles</p>
               </v-card-text>
 
+              <v-flex class="grey lighten-3">
               <v-card-title class="title pb-0">Included in the price</v-card-title>
               <v-card-text>
                 Day I
@@ -149,6 +158,7 @@
                   <b>Not included:</b> alcoholic drinks.
                 </p>
               </v-card-text>
+              </v-flex>
 
               <v-card-title class="title pb-0">Extra days</v-card-title>
               <v-card-text>It is possible to extend the tour with one or several days. Price for each extra day:</v-card-text>
@@ -157,15 +167,21 @@
                 {{item.price}}
               </v-card-text>
 
-              <v-card-title class="title pb-0 pt-4">Program for the four days</v-card-title>
-              <v-card-text>
-                <v-card-title class="subtitle-1 font-weight-black pb-0 pt-0">Day I</v-card-title>
-                Arrival at the airport. The guide will meet you and if possible we start skating already in the afternoon. We start with a safety and security briefing and then hand out all equipment. Time to change to proper clothes if you have not yet done that. Late afternoon we drive towards the chosen skating area. Arriving to the hostel/hotel you check in and then we have dinner at the hostel/hotel.
-                <v-card-title class="subtitle-1 font-weight-black pb-0">Day II-III</v-card-title>
-                We have breakfast and also time to prepare the lunch packages. Depending on distance we walk or take the minibus towards the ice. At the lake we start by examining the ice before we put on the skates and step out on the ice. We skate in a row, the guide always first, checking the ice and looking out for weak spots. The speed and distance is adjusted to the group and the ice condition. Now and then we take short stops to admire the beauty, chat for a while or just rest. During the day we go ashore from time to time to take something to eat or walk to another lake nearby. At the end of the day we return to the minibus and head back to the hotel/hostel. A nice sauna before the dinner is a pleasant experience. If the conditions are right we might go for another skating trip in moonlight late in the evening.
-                <v-card-title class="subtitle-1 font-weight-black pb-0">Day IV</v-card-title>
-                After breakfast we head off to another day on ice, skating as long as possible depending on the scheduled departure times. On our way back to the airport we stop for a shower and to change clothes and maybe for something to eat. The guide then drives you back to the airport.
-              </v-card-text>
+              <v-card-title class="title pb-0">Program for the four days</v-card-title>
+                  <v-timeline dense>
+                    <v-timeline-item v-for="(day, i) in days" color="primary" :key="i" small right>
+                      <span
+                        slot="opposite"
+                        :class="`headline font-weight-bold primary--text`"
+                        v-text="day.day"
+                      ></span>
+                      <div class="py-0">
+                        <h2 :class="`headline font-weight-light mb-2 primary--text`">{{day.day}}</h2>
+                        <span v-html="day.text"></span>
+                      </div>
+                    </v-timeline-item>
+                  </v-timeline>
+                  
             </v-card>
           </v-flex>
         </v-layout>
@@ -230,6 +246,25 @@ export default {
 
   data() {
     return {
+
+        days: [
+        {
+          day: "Day I",
+          title: "",
+          text: `Arrival at the airport. The guide will meet you and if possible we start skating already in the afternoon. We start with a safety and security briefing and then hand out all equipment. Time to change to proper clothes if you have not yet done that. Late afternoon we drive towards the chosen skating area. Arriving to the hostel/hotel you check in and then we have dinner at the hostel/hotel. `
+        },
+        {
+          day: "Day II-III",
+          title: "",
+          text: `We have breakfast and also time to prepare the lunch packages. Depending on distance we walk or take the minibus towards the ice. At the lake we start by examining the ice before we put on the skates and step out on the ice. We skate in a row, the guide always first, checking the ice and looking out for weak spots. The speed and distance is adjusted to the group and the ice condition. Now and then we take short stops to admire the beauty, chat for a while or just rest. During the day we go ashore from time to time to take something to eat or walk to another lake nearby. At the end of the day we return to the minibus and head back to the hotel/hostel. A nice sauna before the dinner is a pleasant experience. If the conditions are right we might go for another skating trip in moonlight late in the evening. `
+        },
+        {
+          day: "Day IV",
+          title: "",
+          text: `After breakfast we head off to another day on ice, skating as long as possible depending on the scheduled departure times. On our way back to the airport we stop for a shower and to change clothes and maybe for something to eat. The guide then drives you back to the airport. `
+        }
+      ],
+
       packageType: {type: "private tour"},
       packageItems: 
       [

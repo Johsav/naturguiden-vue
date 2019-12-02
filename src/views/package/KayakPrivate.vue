@@ -57,20 +57,24 @@
               <v-card-title class="pt-1 pb-0">
                 <h1>Your own kayak adventure</h1>
               </v-card-title>
-              <v-card-text>
-                <p>Enjoy the beautiful archipelago of Sweden. Between islands and skerries, out in the open sea and in secluded caves. We sleep in tents on the islands along the way, prepare the food over open fire and wash ourselves in rock pools of the Baltic Sea.</p>
-
-                <p>With kayak out on the Baltic sea. Out among thousands of islands, most of them unsettled. The Swedish “allemansrätt” gives us the opportunity to stay on any one of them. There is no fixed tour, the wind and waves affect our plans and you never know where to spend the night. During the day we take several stops, for a meal or just to stretch our legs. In the evening, after a swim we make a fire and start making dinner. Maybe we manage to catch some fish that we can fry in the pan.</p>
-                <p>
-                 You decide how you like to spend the days. How fast and long we go with the kayak. How much time you like to spend on the islands, swimming or just relaxing. 
-                </p>
-                <p>
-                  Below you have all information you need, but if you still have some more questions, don't hesitate to contact us on
-                  <a
-                    href="mailto:info@naturguiden.se"
-                  >info@naturguiden.se</a> or on +46 70 53 53 630.
-                </p>
+              <v-card-text class="pt-1 subheading">
+                <v-img
+                  contain
+                  class="right"
+                  width="200"
+                  :src="require('@/assets/images/500/kayak001.jpg')"
+                ></v-img>
+                Enjoy the beautiful archipelago of Sweden. Between islands and skerries, out in the open sea and in secluded caves. We sleep in tents on the islands along the way, prepare the food over open fire and wash ourselves in rock pools of the Baltic Sea.
               </v-card-text>
+              <v-card-text>
+                <p>With kayak out on the Baltic sea. Out among thousands of islands, most of them unsettled. The Swedish “allemansrätt” gives us the opportunity to stay on any one of them. There is no fixed tour, the wind and waves affect our plans and you never know where to spend the night. During the day we take several stops, for a meal or just to stretch our legs. In the evening, after a swim we make a fire and start making dinner. Maybe we manage to catch some fish that we can fry in the pan.</p>
+                <p>You decide how you like to spend the days. How fast and long we go with the kayak. How much time you like to spend on the islands, swimming or just relaxing. </p>
+                <p> Below you have all information you need, but if you still have some more questions, don't hesitate to contact us on
+                  <a href="mailto:info@naturguiden.se"
+                  >info@naturguiden.se</a> or on +46 70 53 53 630. </p>
+              </v-card-text>
+
+              <v-flex class="grey lighten-3">
               <v-card-title class="title pb-0">Book your own skating tour</v-card-title>
               <v-card-text>
                 <b>Price: from 490 EUR (4 day/ 3 nights)</b>
@@ -86,6 +90,7 @@
                 If you like to stay longer than 4 days
                 <br />You pay from: 75 EUR/day (depending on number of participants) 
               </v-card-text>
+              </v-flex>
 
               <v-card-title class="title pb-0">A normal day in the archipelago</v-card-title>
               <v-card-text>
@@ -127,20 +132,19 @@
                 <br />Normally we provide single kayaks K1, but if you prefer a two seat kayak K2 we provide that for you
               </v-card-text>
 
+              <v-flex class="grey lighten-3">  
               <v-card-title class="title pb-0">Included in the price</v-card-title>
               <v-card-text>
-                Day I
+                Day I:
                 <br />Lunch, dinner, guide, rent of equipment
-                <br />Day II-III
+                <br />Day II-III:
                 <br />Breakfast, lunch, dinner, guide, rent of equipment
-                <br />Day IV
+                <br />Day IV:
                 <br />Breakfast, lunch, guide,rent of equipment
-                <p>
-                  <br />
-                  <b>Not included:</b> alcoholic drinks.
-                </p>
+                <p> <br /> <b>Not included:</b> alcoholic drinks. </p>
               </v-card-text>
-<!--
+              </v-flex>
+
               <v-card-title class="title pb-0">Program for the four days</v-card-title>
               <v-timeline dense>
                 <v-timeline-item v-for="(day, i) in days" color="primary" :key="i" small right>
@@ -149,13 +153,12 @@
                     :class="`headline font-weight-bold primary--text`"
                     v-text="day.day"
                   ></span>
-                  <div class="py-3">
-                    <h2 :class="`headline font-weight-light mb-3 primary--text`">{{day.title}}</h2>
-                    <div>{{day.text}}</div>
+                  <div class="py-0">
+                    <h2 :class="`headline font-weight-light mb-2 primary--text`">{{day.day}}</h2>
+                    <span v-html="day.text"></span>
                   </div>
                 </v-timeline-item>
               </v-timeline>
--->
 
             </v-card>
           </v-flex>
@@ -168,7 +171,7 @@
           <v-flex xl12 lg12 md12 sm6 xs12>
             <v-card>
               <v-card-title class="d-block grey lighten-1">
-                <div class="title">Nordic skating</div>
+                <div class="title">Kayak</div>
                 <div class="subheading">private tour</div>
               </v-card-title>
 
@@ -219,6 +222,26 @@ export default {
   },
   data() {
     return {
+
+      days: [
+        {
+          day: "Day I",
+          title: "",
+          text: `We meet you at our starting point. After some introduction we start with packing the belongings into dry bags and then into the kayak. Belongings not needed during the trip can be left behind. After a short introduction we head off out onto the water. We start slow to get comfortable with the kayak. Later on we reach a nice island where we go ashore, put up our tents and start making dinner over the open fire. Hopefully, the water is warm to swim.The night we spend in our tents, two persons each.`
+        },
+        {
+          day: "Day II-III",
+          title: "",
+          text: `In the morning when the sun makes it warm we sit on the rocks with feet in the water eating our breakfast. When everything is back in the kayak we head out towards the open sea, leaving no trace that shows where we have spent the night.<br />
+          The wind, weather and the fitness of the group decides how we plan our trip. We paddle between islets and skerrys, out into open sea and calm secluded bays. You learn about paddling technique and safety, reading coastal maps and about birds and animals of the archipelago. We stop at and visit historical and cultural places too. During the day, we will have several breaks to eat and to relax. In the evening we make our camp on another island.`
+        },
+        {
+          day: "Day IV",
+          title: "",
+          text: `After breakfast we head back towards the starting point. We adjust our time schedule according to the departure. Back ashore we take something to eat and prepare ourselves for the trip home again.`
+        }
+      ],
+
       packageItems: [
         { type: "Season:", content: "May - October" },
         { type: "Days:", content: "4 days/3 nights" },
@@ -230,38 +253,8 @@ export default {
       packageDates: [
         { date: "25 - 28 June:", level: "" },
         { date: "20 - 23 August:", level: "" }
-      ],
-
-      days: [
-        {
-          day: "Day 1",
-          title: "Arive and skate",
-          text: `Arrival at the airport. The guide will meet you and if possible we start skating already in the afternoon.
-                We start with a safety and security briefing and then hand out all equipment. Time to change to proper
-                clothes if you have not yet done that. Late afternoon we drive towards the chosen skating area. Arriving
-                to the hostel/hotel you check in and then we have dinner at the hostel/hotel.`
-        },
-        {
-          day: "Day 2 & 3",
-          title: "Skate some more",
-          text: `We have breakfast and also time to prepare the lunch packages. Depending on distance we walk or take
-                the minibus towards the ice. At the lake we start by examining the ice before we put on the skates
-                and step out on the ice. We skate in a row, the guide always first, checking the ice and looking
-                out for weak spots. The speed and distance is adjusted to the group and the ice condition. Now and
-                then we take short stops to admire the beauty, chat for a while or just rest. During the day we go
-                ashore from time to time to take something to eat or walk to another lake nearby. At the end of the
-                day we return to the minibus and head back to the hotel/hostel. A nice sauna before the dinner is
-                a pleasant experience. If the conditions are right we might go for another skating trip in moonlight
-                late in the evening.`
-        },
-        {
-          day: "Day 4",
-          title: "Skate and leave",
-          text: `After breakfast we head off to another day on ice, skating as long as possible depending on the scheduled departure times.
-                On our way back to the airport we stop for a shower and to change clothes and maybe for something
-                to eat. The guide then drives you back to the airport.`
-        }
       ]
+
     };
   }
 };

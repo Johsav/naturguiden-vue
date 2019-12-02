@@ -38,12 +38,7 @@
               </v-card-title>
 
               <v-card-text class="text-xs-left pt-1 subheading">
-                <div>On our tours we are maximum ten guests. Our open tours are open for anyone and you are very welcome to follow. But if you are a family or a couple of friends, maybe you rather want a private tour. You can chose any date, and we are absolute free to adopt the tour after your preferences. We also have a 
-                <router-link to="adventure/lodge"> mountain lodge </router-link> on the mountain where you can stay. Use the day hiking, fishing, bird watching or what you prefer, with or without guide. </div>
-
-                <div>
-                  <router-link
-                    to="/adventures/hiking/private"
+                <div>On our tours we are maximum ten guests. Our open tours are open for anyone and you are very welcome to follow. But if you are a family or a couple of friends, maybe you rather want a private tour. You can chose any date, and we are absolute free to adopt the tour after your preferences. <router-link to="/adventures/hiking/private"
                   >Read more about our private hiking tour here.</router-link>
                 </div>
               </v-card-text>
@@ -58,30 +53,33 @@
               <v-card-title class="pt-1 pb-0">
                 <h1>Eight days in the wild</h1>
               </v-card-title>
-              <v-card-text>
-                <p>Eight adventurous days filled with mountain peak tours, glacier hiking and magnificent nature! The details are not set, we decide from day to day how the trip will develop. We bring our own tents (which will be provided) and all the food we need. We are totally free to experience the wild, outside all regular tracks and mountain lodges.</p>
-
-                <p>But for sure we will do a summit hike to Helags. Number three among the World's best summit hikes according to National Geographic "Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."
-
-                On Helags there is also a glacier that we will visit and maybe we will visit the mountain Sylarna as well
-
-                Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now starting to come back to the area. Read more about the arctic fox project in the region </p>
-                <p>
-                  While hiking in the Swedish mountains we stay above tree level, the area where no trees can grow. It is still green with grass and flowers. We are exposed to the force of nature with only tents for shelter during the nights that never get dark. We wash ourselves outdoors in the cold and crystal clear water of the rivers. We prepare lunch close to a small river. Probably not meeting any other people, only the reindeer and lemmings.
-                </p>
-                <p>
-                 The tour starts in Ljungdalen, the south port to the Jämtland mountains.</p> 
-                <p>
-                  If you come together with your friends or family and you are 4-6 persons or more consider the options for your own private tour.
-                  <router-link to="/adventures/hiking/private">Read more here..</router-link>
-                </p>
-                <p>
-                  Below you have all information you need, but if you still have some more questions, don't hesitate to contact us on
-                  <a
-                    href="mailto:info@naturguiden.se"
-                  >info@naturguiden.se</a> or on +46 70 53 53 630.
-                </p>
+              <v-card-text class="pt-1 subheading">
+                <v-img
+                  contain
+                  class="right"
+                  width="200"
+                  :src="require('@/assets/images/500/hiking001.jpg')"
+                ></v-img>
+                Eight adventurous days filled with mountain peak tours, glacier hiking and magnificent nature! The details are not set, we decide from day to day how the trip will develop. We bring our own tents (which will be provided) and all the food we need. We are totally free to experience the wild, outside all regular tracks and mountain lodges.
               </v-card-text>
+              <v-card-text class="grey lighten-3 pt-1 pb-1">    
+                <p>But for sure we will do a summit hike to Helags. Number three among the World's best summit hikes according to <a href="https://www.nationalgeographic.com/adventure/lists/hiking-backpacking/worlds-best-summit-hikes/#/helagsfjallet-mountain-sweden_91186_600x450.jpg">National Geographic,</a> "Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."
+
+                On Helags there is also a glacier that we will visit and maybe we will visit the mountain Sylarna as well</p>
+
+                <p>Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now starting to come back to the area. <a href="https://rewildingeurope.com/news/arctic-fox-safaris-in-sweden-helps-the-arctic-fox-while-making-business-sense/">Read more about the arctic fox project in the region</a> </p>
+              </v-card-text>
+              <v-card-text>  
+                <p>While hiking in the Swedish mountains we stay above tree level, the area where no trees can grow. It is still green with grass and flowers. We are exposed to the force of nature with only tents for shelter during the nights that never get dark. We wash ourselves outdoors in the cold and crystal clear water of the rivers. We prepare lunch close to a small river. Probably not meeting any other people, only the reindeer and lemmings.</p>
+                <p>The tour starts in Ljungdalen, the south port to the Jämtland mountains.</p> 
+                <p>If you come together with your friends or family and you are 4-6 persons or more consider the options for your own private tour.
+                  <router-link to="/adventures/hiking/private">Read more here..</router-link></p>
+                <p>Below you have all information you need, but if you still have some more questions, don't hesitate to contact us on
+                  <a href="mailto:info@naturguiden.se"
+                  >info@naturguiden.se</a> or on +46 70 53 53 630.</p>
+              </v-card-text>
+
+              <v-flex class="grey lighten-3">
               <v-card-title class="title pb-0">Join us on our eight days trip 2020</v-card-title>
               <v-card-text>
                 <b>Price: 695 EUR</b>
@@ -101,6 +99,8 @@
                   </v-list-tile>
                 </v-list>If you interest to come some other week do not hesitate to contact us. We will do our best to help you.
               </v-card-text>
+              </v-flex>
+
               <v-card-title class="title pb-0">A normal day in the mountains</v-card-title>
               <v-card-text>
                 <p>We start with preparing breakfast on the camping stove. Water we get from the crystal clear creek nearby. Then we put down our tents and start our journey. When we walk over a creek we take a short stop to drink. Now and then we take a short break. Around lunch time we take a longer break close to a river or creek, preparing lunch on our camping stove.</p>
@@ -144,23 +144,25 @@
                 <br />Aside from your own equipment, you also need to carry your share of food and tent or camping stove.
               </v-card-text>
 
+              <v-flex class="grey lighten-3">
               <v-card-title class="title pb-0">Included in the price</v-card-title>
-              <v-card-text>
-                Day I
+              <v-card-text CLASS="pb-1">
+                Day I:
                 <br />Dinner, accommodation in Ljungdalen
-                <br />Day II-VII
+                <br />Day II-VII:
                 <br />Breakfast, lunch, dinner, guide, rent of equipment
-                <br />Day IV
+                <br />Day IV:
                 <br />Breakfast, lunch, guide,rent of equipment, accommodation in Ljungdalen
-                <br />Day IX
+                <br />Day IX:
                 <br />Breakfast
                 <p>
                   <br />
                   <b>Not included:</b> alcoholic drinks.
                 </p>
               </v-card-text>
+              </v-flex>
 
-              <v-card-title class="title pb-0">Program for the four days</v-card-title>
+              <v-card-title class="title pb-0">How the days can look like</v-card-title>
               <v-timeline dense>
                 <v-timeline-item v-for="(day, i) in days" color="primary" :key="i" small right>
                   <span
@@ -266,7 +268,7 @@ export default {
       ],
 
       packageDates: [
-        { date: "2 - 9 August: Hiking week", level: "" }
+        { date: "2 - 9 August:", level: "Hiking week" }
       ],
 
       days: [

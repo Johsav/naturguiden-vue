@@ -7,7 +7,7 @@
             <!-- First Card - general info  -->
             <v-card class="grey lighten-3">
               <v-card-title class="pt-1 pb-0">
-                <h1>Hiking in the  Swedish mountains</h1>
+                <h1>Hiking in the Swedish mountains</h1>
               </v-card-title>
 
               <v-card-text class="text-xs-left pt-1 subheading">
@@ -17,12 +17,9 @@
                   width="100"
                   :src="require('@/assets/images/Logo_RGB.png')"
                 ></v-img>
-                <div>
-                  Leave civilisation for a couple of days. Join our hiking tours in the beautiful mountains of Sweden. Time for recovery and recreation, the most beautiful trails, what to eat and where to sleep - everything is arranged for you. Leave the planning to us and just enjoy.
-                </div>
+                <div>Leave civilisation for a couple of days. Join our hiking tours in the beautiful mountains of Sweden. Time for recovery and recreation, the most beautiful trails, what to eat and where to sleep - everything is arranged for you. Leave the planning to us and just enjoy.</div>
                 <div>On our hike we will most likely visit Helags. Number three among the World's best summit hikes according to National Geographic. Visit the glacier and reach the summit with a stunning view in all directions</div>
-                <div>We are in the home of the native Sami people. Walking their trails, passing their summer homes up in the mountains. And for sure we will meet their reindeers. We might even see the occasional native arctic fox.
-                </div>
+                <div>We are in the home of the native Sami people. Walking their trails, passing their summer homes up in the mountains. And for sure we will meet their reindeers. We might even see the occasional native arctic fox.</div>
                 <div>
                   The freedom and space in the remote mountains are good for our body and soul.
                   <b>Join us on our long tour or book your own private tour</b>
@@ -38,11 +35,13 @@
               </v-card-title>
 
               <v-card-text class="text-xs-left pt-1 subheading">
-                <div>If you are a family or a couple of friends, a private tour might be perfect for you. You can chose any date, and tail the tour after your preferences. If you travel as single or as a small group our open tours are open for anyone and you are very welcome to follow. On those tours we are not more than ten guests.
-                <router-link to="/adventures/hiking/eightdays"
-                  >Read more about our open hiking tour here.</router-link></div>
-                <div>We also have a 
-                <router-link to="adventure/lodge"> mountain lodge </router-link> on the mountain where you can stay. Use the day hiking, fishing, bird watching or what you prefer, with or without guide. </div>
+                <div>
+                  If you are a family or a couple of friends, a private tour might be perfect for you. You can chose any date, and tail the tour after your preferences. If you travel as single or a small group our open tours are open for anyone and you are very welcome to follow. On those tours we are not more than ten guests.
+                  <router-link
+                    to="/adventures/hiking/eightdays"
+                  >Read more about our open hiking tour here.</router-link>
+                </div>
+               
               </v-card-text>
             </v-card>
           </v-flex>
@@ -55,29 +54,25 @@
               <v-card-title class="pt-1 pb-0">
                 <h1>Your own hiking tour</h1>
               </v-card-title>
-              <v-card-text>
+              <v-card-text class="pt-1 subheading">
+                <v-img
+                  contain
+                  class="right"
+                  width="200"
+                  :src="require('@/assets/images/500/hiking001.jpg')"
+                ></v-img>
                 <p>Hiking the Swedish mountains your own way. Sleep in tents or in the mountain lodges. Walk on the path or find your own way between the mountains. Decide your exact route before or take one day at a time, decide where to go when you walk. The choices are yours, we help you make it happen. Taking care of all preparations and with our good knowledge of the region help you find the best options. Totally free to experience the wild in your way.</p>
               </v-card-text>
-                <v-card-text class="grey lighten-3 pb-1">
-                  <p>We will probably do a summit hike to Helags. Number three among the World's best summit hikes according to National Geographic,
-
-
-<!--
-                    <router-link to="/article/nationalgeographic">National Geographic </router-link> 
-                    
-                    <router-link :to="require('html-loader!@/assets/article/NG.html')"> XXXX
-                    </router-link>
--->                    
-                    
-                    "Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."</p>
-                  <p>On Helags there is also a glacier that we will visit and maybe we will visit the mountain Sylarna as well.</p>
-                  <p>Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now slowly coming back. Read more about the arctic fox project in the region </p>
-                </v-card-text>
-                <v-card-text>
-                  While hiking in the Swedish mountains we stay above tree level, the area where no trees can grow. It is still green with grass and flowers. We are exposed to the force of nature with only tents for shelter during the nights that never get dark. Or we can chose to stay some nights in the mountain lodges. We wash ourselves outdoors in the cold and crystal clear water of the rivers or we take a nice shower in the lodge. We prepare lunch close to a small river or eat in the mountain lodge. A tour just by yourself, or a tour meeting other hikers now and then.
-                </p>
-                <p>
-                 The tour starts in Ljungdalen, the south port to the Jämtland mountains.</p> 
+              <v-card-text class="grey lighten-3 pb-1">
+                <p>We will probably do a summit hike to Helags. Number three among the World's best summit hikes according to
+                  <a href="https://www.nationalgeographic.com/adventure/lists/hiking-backpacking/worlds-best-summit-hikes/#/helagsfjallet-mountain-sweden_91186_600x450.jpg">National Geographic,</a>
+                  "Sweden's highest peak south of the Arctic Circle, Helagsfjället, also simply called Helags, stands out above the surrounding peaks of the Scandinavian Mountains right on the Norway border."</p>
+                <p>On Helags there is also a glacier that we will visit and maybe we will visit the mountain Sylarna as well.</p>
+                <p>Another highlight is the arctic fox in the area. They are very rare, but with hard work from some enthusiasts that have brought out food to them for many years, they are now slowly coming back. <a href="https://rewildingeurope.com/news/arctic-fox-safaris-in-sweden-helps-the-arctic-fox-while-making-business-sense/">Read more about the arctic fox project in the region</a></p>
+              </v-card-text>
+              <v-card-text>
+                <p>While hiking in the Swedish mountains we stay above tree level, the area where no trees can grow. It is still green with grass and flowers. We are exposed to the force of nature with only tents for shelter during the nights that never get dark. Or we can chose to stay some nights in the mountain lodges. We wash ourselves outdoors in the cold and crystal clear water of the rivers or we take a nice shower in the lodge. We prepare lunch close to a small river or eat in the mountain lodge. A tour just by yourself, or a tour meeting other hikers now and then.</p>
+                <p>The tour starts in Ljungdalen, the south port to the Jämtland mountains.</p>
                 <p>
                   Below you have all information you need, but if you still have some more questions, don't hesitate to contact us on
                   <a
@@ -86,18 +81,16 @@
                 </p>
               </v-card-text>
               <v-flex class="grey lighten-3 pb-1">
-              <v-card-title class="title pb-0">Book your own hiking tour</v-card-title>
-              <v-card-text>
-                <b>Price: from 425 EUR (4 days/3 nights)</b>
-              </v-card-text>
-              <v-card-text class="pt-0">
-                Everything included, accommodation in tent, normally two persons / tent.
-                <br />You need to bring a sleeping bag and camping mattress, or rent them for 30 EUR.
-              </v-card-text>
+                <v-card-title class="title pb-0">Book your own hiking tour</v-card-title>
+                <v-card-text>
+                  <b>Price: from 425 EUR (4 days/3 nights)</b>
+                </v-card-text>
+                <v-card-text class="pt-0">
+                  Everything included, accommodation in tent, normally two persons / tent.
+                  <br />You need to bring a sleeping bag and camping mattress, or rent them for 30 EUR.
+                </v-card-text>
                 <v-card-title class="title pb-0">More days or other accommodation</v-card-title>
-              <v-card-text>
-                If you like to stay longer than 4 days or sleep one or more nights in a mountain lodge contact us for price details and more information.
-              </v-card-text>
+                <v-card-text>If you like to stay longer than 4 days or sleep one or more nights in a mountain lodge contact us for price details and more information.</v-card-text>
               </v-flex>
               <v-card-title class="title pb-0">A normal day in the mountains</v-card-title>
               <v-card-text class="pb-1">
@@ -107,13 +100,11 @@
               </v-card-text>
 
               <v-card-title class="title pb-0">Meeting point</v-card-title>
-              <v-card-text>
-                Normally we start our tours in Ljungdalen. A small village up in the mountains. South of Åre and close to the Norwegian border.
-              </v-card-text>
+              <v-card-text>Normally we start our tours in Ljungdalen. A small village up in the mountains. South of Åre and close to the Norwegian border.</v-card-text>
 
               <v-card-title class="title pb-0">Get here</v-card-title>
               <v-card-text>
-                You can get here in several different ways. We will help you with more details when we know from where you will travel. More information here. 
+                You can get here in several different ways. We will help you with more details when we know from where you will travel. More information here.
                 <router-link to="/get-here">How to get here</router-link>
               </v-card-text>
 
@@ -125,9 +116,11 @@
 
               <v-card-title class="title pb-0">Accommodation: Tents or in a mountain Lodge</v-card-title>
               <v-card-text class="pb-1">
-                <p>You will sleep in tent close to the creek or the lake. Normally two persons in each tent.
-                You need to bring a sleeping bag and camping mattress, or rent them for 30 EUR.
-                Or you can choose to stay one or more nights in a mountain lodge, normally in shared rooms with others. You then pay for that night yourself.</p>
+                <p>
+                  You will sleep in tent close to the creek or the lake. Normally two persons in each tent.
+                  You need to bring a sleeping bag and camping mattress, or rent them for 30 EUR.
+                  Or you can choose to stay one or more nights in a mountain lodge, normally in shared rooms with others. You then pay for that night yourself.
+                </p>
               </v-card-text>
 
               <v-card-title class="title pb-0">Personal equipment</v-card-title>
@@ -143,20 +136,21 @@
               </v-card-text>
 
               <v-flex class="grey lighten-3">
-              <v-card-title class="title pb-0">Included in the price</v-card-title>
-              <v-card-text class="pb-1">
-                Day I
-                <br />Dinner, accommodation in Ljungdalen
-                <br />Full days
-                <br />Breakfast, lunch, dinner, guide, rent of equipment
-                <br />Last night
-                <br />Accommodation and breakfast in Ljungdalen
-                <p>
-                  <br />
-                  <b>Not included:</b> alcoholic drinks.
-                </p>
-              </v-card-text>
+                <v-card-title class="title pb-0">Included in the price</v-card-title>
+                <v-card-text class="pb-1">
+                  Day I:
+                  <br />Dinner, accommodation in Ljungdalen
+                  <br />Full days:
+                  <br />Breakfast, lunch, dinner, guide, rent of equipment
+                  <br />Last night:
+                  <br />Accommodation and breakfast in Ljungdalen
+                  <p>
+                    <br />
+                    <b>Not included:</b> alcoholic drinks.
+                  </p>
+                </v-card-text>
               </v-flex>
+
               <v-card-title class="title pb-0">Program: How a trip can look like</v-card-title>
               <v-timeline dense>
                 <v-timeline-item v-for="(day, i) in days" color="primary" :key="i" small right>
@@ -171,9 +165,8 @@
                   </div>
                 </v-timeline-item>
               </v-timeline>
-
-
             </v-card>
+
           </v-flex>
         </v-layout>
       </v-flex>
@@ -202,7 +195,7 @@
               </v-container>
             </v-card>
           </v-flex>
-         
+
           <!-- Right side column - Booking  -->
           <v-flex xl12 lg12 md12 sm6 xs12>
             <v-card>
@@ -238,14 +231,12 @@ export default {
       packageItems: [
         { type: "Season:", content: "June - September" },
         { type: "Days:", content: "8 days/8 nights" },
-        { type: "Price:", content: "695 EUR"},
+        { type: "Price:", content: "695 EUR" },
         { type: "Meeting point:", content: "Ljungdalen" },
         { type: "Lodging:", content: "Tent" }
       ],
 
-      packageDates: [
-        { date: "2 - 9 August: Hiking week", level: "" }
-      ],
+      packageDates: [{ date: "2 - 9 August: Hiking week", level: "" }],
 
       days: [
         {
@@ -258,7 +249,8 @@ export default {
         {
           day: "Day II",
           title: "",
-          text: "Breakfast in the morning and then we head off. First through the    village and then up into the forest. We follow the old pilgrim path toward Trondheim in Norway. After 4 km we get up above the tree level, here you get the first sight of Helags.<br />           A little further and then it's time for our first lunch break. With a great view over the lake below and the sound from the creek we start cooking.<br /> Later in the afternoon we have passed our first mountains and now we have Helags in front of us. We find a nice spot close to some water where we put up our tents. Time for cooking the dinner and plans for tomorrow."
+          text:
+            "Breakfast in the morning and then we head off. First through the    village and then up into the forest. We follow the old pilgrim path toward Trondheim in Norway. After 4 km we get up above the tree level, here you get the first sight of Helags.<br />           A little further and then it's time for our first lunch break. With a great view over the lake below and the sound from the creek we start cooking.<br /> Later in the afternoon we have passed our first mountains and now we have Helags in front of us. We find a nice spot close to some water where we put up our tents. Time for cooking the dinner and plans for tomorrow."
         },
         {
           day: "Days on the mountains",
