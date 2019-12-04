@@ -18,25 +18,25 @@
                 <v-card class="d-flex flex-no-wrap fill-height elevation-5 mx-2">
                   <v-layout align-center>
                     <v-avatar size="100" class="mx-3">
-                      <v-img :src="require('@/assets/images/100/guardian003.jpg')"></v-img>
+                      <v-img :src="require('@/assets/images/100/guardian004.jpg')"></v-img>
                     </v-avatar>
                     <v-layout column>
                       <a
-                        href="http://www.theguardian.com/travel/2013/oct/25/skating-on-sea-ice-in-sweden?INTCMP=SRCH"
+                        href="https://www.theguardian.com/travel/2018/feb/10/sweden-ice-skating-holiday-lakes-touring-poetry"
                       >
-                        <v-card-title class="font-weight-bold caption py-1">The guardian 25 Oct 2013</v-card-title>
+                        <v-card-title class="font-weight-bold caption py-1">The guardian 10 Febr 2018</v-card-title>
                       </a>
                       <v-card-text align="left" class="pt-0 px-3">
                         <p>
-                          John Savelid is waiting for me at Stockholm airport holding a strange bag that looks like a rucksack
-                          with too many straps. "It's a day sack for skating," he tells me, "but also a life jacket in
-                          case you go through."
+                          Gliding over frozen rivers and lakes was once a popular winter pastime across northern Europe. A new wild skating tour of Sweden hopes to revive it, and revel in the sublime scenery, too
                         </p>
                       </v-card-text>
                     </v-layout>
                   </v-layout>
                 </v-card>
               </v-flex>
+
+              
 
               <!-- NR 2 -->
               <v-flex xs12 sm12 md12 lg6 xl6>
@@ -185,7 +185,7 @@
                     </v-avatar>
                     <v-layout column>
                       <a
-                        href="http://www.theguardian.com/travel/2013/oct/25/skating-on-sea-ice-in-sweden?INTCMP=SRCH"
+                        href="http://test2.naturguiden.com/ext/pdf/Southern star march-2011.pdf"
                       >
                         <v-card-title class="font-weight-bold caption py-1">The Southern Star</v-card-title>
                       </a>
@@ -198,6 +198,32 @@
                   </v-layout>
                 </v-card>
               </v-flex>
+
+              <!-- NR 9 -->
+              <v-flex xs12 sm12 md12 lg6 xl6>
+                <v-card class="d-flex flex-no-wrap fill-height elevation-5 mx-2">
+                  <v-layout align-center>
+                    <v-avatar size="100" class="mx-3">
+                      <v-img :src="require('@/assets/images/100/guardian003.jpg')"></v-img>
+                    </v-avatar>
+                    <v-layout column>
+                      <a
+                        href="http://www.theguardian.com/travel/2013/oct/25/skating-on-sea-ice-in-sweden?INTCMP=SRCH"
+                      >
+                        <v-card-title class="font-weight-bold caption py-1">The guardian 25 Oct 2013</v-card-title>
+                      </a>
+                      <v-card-text align="left" class="pt-0 px-3">
+                        <p>
+                          John Savelid is waiting for me at Stockholm airport holding a strange bag that looks like a rucksack
+                          with too many straps. "It's a day sack for skating," he tells me, "but also a life jacket in
+                          case you go through."
+                        </p>
+                      </v-card-text>
+                    </v-layout>
+                  </v-layout>
+                </v-card>
+              </v-flex>
+
             </v-layout>
           </v-flex>
         </v-card>
@@ -222,7 +248,17 @@ export default {
 
   data() {
     return {
-      drawer: null
+      drawer: null,
+
+      article: [
+        {
+          title: "The guardian 10 Febr 2018",
+          link: "",
+          text: `Travel to Ljungdalen.<br />
+          Accommodation in Ljungdalen. Dinner and briefing about the tour. Then time for all preparation and sharing food and other equipment among us.<br />
+          Clothes and other belongings not needed on the hike can be left here until you get back.`
+        }
+      ]
     };
   }
 };

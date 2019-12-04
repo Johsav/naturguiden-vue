@@ -75,7 +75,8 @@
                     >
                       <v-img
                         class="white--text"
-                        :src="require('@/assets/images/500-300/kajak4.jpg')"
+                        :src="require('@/assets/images/500-300/kajak4.jpg')"                        
+aspect-ratio="undefined"
                       >
                         <v-card-title class="display-1"></v-card-title>
                       </v-img>

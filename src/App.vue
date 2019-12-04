@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-navigation-drawer v-model="drawer" temporary app>
-      <v-toolbar flat color="primary" dark>
+      <v-toolbar flat color="primary" dark app>
         <v-list class="pa-0">
           <v-list-tile>
             <v-list-tile-content>
@@ -74,7 +74,7 @@
                 v-for="subItem in item.items"
                 :key="subItem.title"
                
-    @click="parentMenu = false"
+                 @click="parentMenu = false"
                 router :to="subItem.link"
               >
                 <v-list-tile-title>{{ subItem.title }}</v-list-tile-title>
@@ -89,19 +89,14 @@
       </v-toolbar-items>
 
       <v-spacer></v-spacer>
-      <router-link to="/about">
+      <router-link to="/contact">
         <v-btn icon>
-          <v-icon>credit_card</v-icon>
-        </v-btn>
-      </router-link>
-      <router-link to="/about">
-        <v-btn icon>
-          <v-icon>chat</v-icon>
+          <v-icon>contact_phone</v-icon>
         </v-btn>
       </router-link>
     </v-toolbar>
 
-    <v-content app class="bg-red">
+    <v-content app >
       <!-- Innanför v-content ligger koden för de olika sidorna -->
       <router-view></router-view>
     </v-content>
