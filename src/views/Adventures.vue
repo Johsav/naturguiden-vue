@@ -63,13 +63,12 @@
 </template>
 
 <script>
-import LeftSideColumn from "../components/LeftSideColumn";
 //import { nbind } from 'q';
 //import Bokun from "../components/Bokun/";
 
 export default {
   components: {
-    LeftSideColumn
+    
   },
   methods: {
     getImgUrl(img) {

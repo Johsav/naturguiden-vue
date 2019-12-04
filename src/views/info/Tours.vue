@@ -25,7 +25,7 @@
           <v-card-title class="title pb-0">The packages Naturguiden has to offer:</v-card-title>
 
           <v-list class="pt-1">
-            <v-list-tile class="list-height" v-for="item in l_element">
+            <v-list-tile class="list-height" v-for="item in l_element" :key="item.title">
               <v-list-tile-action>
                 <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
               </v-list-tile-action>
@@ -40,7 +40,7 @@
           <v-card-title class="title pb-0">All our packages always include</v-card-title>
 
           <v-list class="pt-1">
-            <v-list-tile class="list-height" v-for="item in n_element">
+            <v-list-tile class="list-height" v-for="item in n_element" :key="item.title">
               <v-list-tile-action>
                 <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
               </v-list-tile-action>
@@ -56,7 +56,7 @@
             class="pb-1"
           >Our different activities take place on different place of Sweden, how to travel to get there differs.</v-card-text>
 
-          <v-flex v-for="item in o_element">
+          <v-flex v-for="item in o_element" :key="item.text">
             <v-card-text class="py-1">
               <span v-html="item.text"></span>
             </v-card-text>
@@ -75,7 +75,7 @@
             We offer these types of accommodation:
           </v-card-title>
 
-          <v-flex v-for="item in p_element">
+          <v-flex v-for="item in p_element" :key="item.text">
             <v-card-text class="py-1">
               <span v-html="item.text"></span>
             </v-card-text>
@@ -101,7 +101,7 @@
           <v-card-text
             class="pb-0"
           >The gradient on the packages is based on the needed condition rather than the technical skills.</v-card-text>
-          <v-flex v-for="item in q_element">
+          <v-flex v-for="item in q_element" :key="item.text">
             <v-card-text class="py-1">
               <span v-html="item.text"></span>
             </v-card-text>
@@ -138,11 +138,9 @@
 
 <script>
 import LeftSideColumn from "@/components/LeftSideColumn.vue";
-import ConfiguredCarousel from "@/components/ConfiguredCarousel.vue";
 
 export default {
   components: {
-    ConfiguredCarousel,
     LeftSideColumn
   },
 
@@ -267,31 +265,8 @@ export default {
           text: "<b>Tough:</b> nothing extreme, but recommended for people that exercise regularly.",
           link: ""
         }
-      ],
-
-      carouselItems: [
-        {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
-          title: "Ice-skating",
-          subtitle: "Ice-skating is fun"
-        },
-        {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
-          title: "Hiking",
-          subtitle: "walk walk"
-        },
-        {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
-          title: "Kayak",
-          subtitle: "paddle paddle"
-        },
-        {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
-          title: "Ice-skating",
-          subtitle: "Ice-skating is fun"
-        }
       ]
-    };
+     };
   }
 };
 </script>

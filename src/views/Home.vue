@@ -85,7 +85,7 @@ aspect-ratio="undefined"
                         <v-card-text
                           align="left"
                           class="pt-0 px-3"
-                        >Kayak between islands and skerries in the beautiful archipelago of tha Baltic sea.</v-card-text>
+                        >Kayak between islands and skerries in the beautiful archipelago of the Baltic sea.</v-card-text>
                       </v-layout>
                       <v-flex style="position: absolute; bottom: 0;">
                         <v-btn

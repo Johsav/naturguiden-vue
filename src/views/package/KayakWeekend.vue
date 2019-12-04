@@ -81,7 +81,7 @@
                 Everything included, accommodation in tent, normally two persons / tent.
                 <br />You need to bring a sleeping bag and camping mattress, or rent them for 30 EUR.
                 <v-list class="grey lighten-3 pt-3">
-                  <v-list-tile class="list-height" v-for="item in packageDates">
+                  <v-list-tile class="list-height" v-for="item in packageDates" :key="item.date">
                     <v-list-tile-action>
                       <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
                     </v-list-tile-action>

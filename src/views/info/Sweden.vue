@@ -105,11 +105,9 @@ On our winter activities you can expect temperatures between zero and minus twen
 
 <script>
 import LeftSideColumn from "@/components/LeftSideColumn.vue";
-import ConfiguredCarousel from "@/components/ConfiguredCarousel.vue";
 
 export default {
   components: {
-    ConfiguredCarousel,
     LeftSideColumn
   },
 
@@ -119,30 +117,26 @@ export default {
     }
   },
 
-mounted () {
-      console.log(this.$vuetify.breakpoint)
-    },
-
   computed: {
     imageHeight () {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return '700px'
-        case 'sm': return '700px'
-        case 'md': return '700px'
-        case 'lg': return '700px'
-        case 'xl': return '700px'
+        case 'xs': return '700px';
+        case 'sm': return '700px';
+        case 'md': return '700px';
+        case 'lg': return '700px';
+        case 'xl': return '700px';
       }
     },
     imagewidth () {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return '100%'
-        case 'sm': return '40%'
-        case 'md': return '40%'
-        case 'lg': return '35%'
-        case 'xl': return '23%'
+        case 'xs': return '100%';
+        case 'sm': return '40%';
+        case 'md': return '40%';
+        case 'lg': return '35%';
+        case 'xl': return '23%';
       }
     },
-    w_imageHeight () {
+    w_imageHeight ()  {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs': return '200px'
         case 'sm': return '200px'

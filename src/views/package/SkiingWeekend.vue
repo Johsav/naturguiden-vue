@@ -96,7 +96,7 @@
                 Everything included, accommodation in hostel and mountain lodge, normally two persons / room. But on some mountain lodges we might need to stay more people in each room. Sheets and towels are provided.
               </v-card-text>
               <v-list class="pt-1 grey lighten-3">
-                  <v-list-tile class="list-height" v-for="item in packageDates">
+                  <v-list-tile class="list-height" v-for="item in packageDates" :key="item.date">
                     <v-list-tile-action>
                       <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
                     </v-list-tile-action>

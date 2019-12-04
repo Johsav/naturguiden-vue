@@ -93,12 +93,10 @@
 </template>
 
 <script>
-import ConfiguredCarousel from "@/components/ConfiguredCarousel.vue";
 import LeftSideColumn from "@/components/LeftSideColumn.vue";
 
 export default {
   components: {
-    ConfiguredCarousel,
     LeftSideColumn
   },
 

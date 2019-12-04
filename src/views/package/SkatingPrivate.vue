@@ -89,7 +89,7 @@
               </v-card-text>
               <v-card-text>
               <v-simple-table>
-                <tr v-for="item in accom">
+                <tr v-for="item in accom" :key="item.level">
                   <td class="tr">{{item.level}}</td>
                   <td class="tr">{{item.price}}</td>
                   <td>{{item.type}}</td>
@@ -162,8 +162,8 @@
 
               <v-card-title class="title pb-0">Extra days</v-card-title>
               <v-card-text>It is possible to extend the tour with one or several days. Price for each extra day:</v-card-text>
-              <v-card-text class="py-0" v-for="item in extra">
-                {{item.level}} &nbsp &nbsp
+              <v-card-text class="py-0" v-for="item in extra" :key="item.level">
+                {{item.level}} &nbsp; &nbsp;
                 {{item.price}}
               </v-card-text>
 
@@ -237,7 +237,6 @@
 
 <script>
 import AdventureMenu from "@/components/AdventureMenu.vue";
-import { nbind } from "q";
 
 export default {
   components: {

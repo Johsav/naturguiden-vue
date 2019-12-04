@@ -101,11 +101,9 @@
 
 <script>
 import LeftSideColumn from "@/components/LeftSideColumn.vue";
-import ConfiguredCarousel from "@/components/ConfiguredCarousel.vue";
 
 export default {
   components: {
-    ConfiguredCarousel,
     LeftSideColumn
   },
 
@@ -115,10 +113,6 @@ export default {
     }
   },
     
-  mounted () {
-      console.log(this.$vuetify.breakpoint)
-    },
-
   computed: {
     imageHeight () {
       switch (this.$vuetify.breakpoint.name) {

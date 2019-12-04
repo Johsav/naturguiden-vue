@@ -9,7 +9,17 @@ module.exports = {
         .use(PrerenderSPAPlugin, [
           {
             staticDir: path.join(__dirname, 'dist'),
-            routes: [ '/', '/about', '/adventures', '/info'], // List of routes to prerender.
+            routes: ['/', '/about', '/adventures', '/info', '/article', '/sweden', '/get-here', '/accommodation', '/video', '/contact',
+              '/adventures/skating/private',
+              '/adventures/skating/weekend',
+              '/adventures/kayak/private',
+              '/adventures/kayak/weekend',
+              '/adventures/hiking/private',
+              '/adventures/hiking/eightdays',
+              '/adventures/skiing/private',
+              '/adventures/skiing/weekend',
+              '/adventures/skiing/adventures'
+            ], // List of routes to prerender.
             renderer: new PrerenderSPAPlugin.PuppeteerRenderer() // without this line does not work in my case
           }
         ])
@@ -21,8 +31,8 @@ module.exports = {
       .rule('html')
       .test(/\.html$/)
       .use('html-loader')
-        .loader('html-loader')
-        .end()
+      .loader('html-loader')
+      .end()
 
 
   }

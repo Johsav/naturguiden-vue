@@ -22,14 +22,6 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/info',
-      name: 'info',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "info" */ './views/info/Tours.vue')
-    },
-    {
       path: '/adventures',
       name: 'adventures',
       // route level code-splitting
@@ -92,7 +84,7 @@ export default new Router({
     },
     {
       path: '/info',
-      name: 'tours',
+      name: 'info',
       component: () => import(/* webpackChunkName: "tours" */ './views/info/Tours.vue')
     },
     {
@@ -107,17 +99,17 @@ export default new Router({
     },
     {
       path: '/sweden',
-      name: 'About Sweden',
+      name: 'sweden',
       component: () => import(/* webpackChunkName: "About Sweden" */ './views/info/Sweden.vue')
     },
     {
       path: '/article',
-      name: 'Articles',
+      name: 'article',
       component: () => import(/* webpackChunkName: "About Sweden" */ './views/article/Article.vue')
     },
     {
       path: '/video',
-      name: 'Videos',
+      name: 'video',
       component: () => import(/* webpackChunkName: "About Sweden" */ './views/article/Video.vue')
     }
    /* {

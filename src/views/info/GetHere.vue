@@ -51,7 +51,7 @@
             <p>We will of course help you with the information you need.</p>
             <b>How to get to Ljungdalen?</b>
 
-            <v-flex v-for="item in n_element">
+            <v-flex v-for="item in n_element" :key="item.text">
             <v-card-text class="py-1">
               <span v-html="item.text"></span>
             </v-card-text>
@@ -66,11 +66,9 @@
 
 <script>
 import LeftSideColumn from "@/components/LeftSideColumn.vue";
-import ConfiguredCarousel from "@/components/ConfiguredCarousel.vue";
 
 export default {
   components: {
-    ConfiguredCarousel,
     LeftSideColumn
   },
 
