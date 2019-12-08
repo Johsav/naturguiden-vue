@@ -116,10 +116,11 @@ export default {
       return require("@/assets/images/" + img);
     }
   },
-
+  
   computed: {
     imageHeight () {
       switch (this.$vuetify.breakpoint.name) {
+        default:
         case 'xs': return '700px';
         case 'sm': return '700px';
         case 'md': return '700px';
@@ -129,6 +130,7 @@ export default {
     },
     imagewidth () {
       switch (this.$vuetify.breakpoint.name) {
+        default:
         case 'xs': return '100%';
         case 'sm': return '40%';
         case 'md': return '40%';
@@ -138,6 +140,7 @@ export default {
     },
     w_imageHeight ()  {
       switch (this.$vuetify.breakpoint.name) {
+        default:
         case 'xs': return '200px'
         case 'sm': return '200px'
         case 'md': return '300px'
@@ -147,6 +150,7 @@ export default {
     },
     w_imagewidth () {
       switch (this.$vuetify.breakpoint.name) {
+        default:
         case 'xs': return '100%'
         case 'sm': return '30%'
         case 'md': return '30%'
