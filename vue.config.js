@@ -27,6 +27,12 @@ module.exports = {
       // ...
     }
 
+    transpileDependencies: [
+      'vue-echarts',
+      'resize-detector',
+      'vuetify'
+    ]
+
     config.module
       .rule('html')
       .test(/\.html$/)

@@ -74,7 +74,7 @@
                 v-for="subItem in item.items"
                 :key="subItem.title"
                
-                 @click="parentMenu = false"
+                :on_click="close_m()"
                 router :to="subItem.link"
               >
                 <v-list-tile-title>{{ subItem.title }}</v-list-tile-title>
@@ -232,7 +232,7 @@ export default {
   },
 
   methods: {
-    route(parentMenuIndex) {
+    close_m(parentMenuIndex) {
   if (arguments.length) {
       const parentMenu = this.$refs.menuRef[parentMenuIndex];
       parentMenu.isActive = false;
