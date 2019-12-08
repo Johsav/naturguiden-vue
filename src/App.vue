@@ -102,7 +102,7 @@
     </v-content>
     <div>
       <!-- Needed to avoid footer overwrite lower part of page -->
-      <v-footer dark app absolute height="auto" color="secondary">
+      <v-footer dark app absolute :height="footerHeight" color="secondary">
         <v-container fluid>
           <v-layout align-center justify-start row fill-height wrap>
             <v-flex xs6 sm4 md4 lg2 xl2>
@@ -216,6 +216,19 @@ export default {
       mini: false,
       right: null
     };
+  },
+
+  computed: {
+    footerHeight() {
+      switch (this.$vuetify.breakpoint.name) {
+        default:
+        case 'xs': return '330';
+        case 'sm': return '300';
+        case 'md': return '300';
+        case 'lg': return '200';
+        case 'xl': return '200';
+      }
+    }
   },
 
   methods: {
