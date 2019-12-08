@@ -76,7 +76,7 @@
                       <v-img
                         class="white--text"
                         :src="require('@/assets/images/500-300/kajak4.jpg')"                        
-aspect-ratio="undefined"
+
                       >
                         <v-card-title class="display-1"></v-card-title>
                       </v-img>
@@ -102,7 +102,7 @@ aspect-ratio="undefined"
                       style="margin-bottom: 35px;"
                       height="100%"
                       router-link
-                      to="/adventures/hiking/weekend"
+                      to="/adventures/hiking/eightdays"
                     >
                       <v-img
                         class="white--text"
@@ -329,7 +329,7 @@ export default {
           subtitle: ""
         },
         {
-          src: require("@/assets/images/1400/Skating_1413_4.jpg"),
+          src: require("@/assets/images/1400/skiing_1413_1.jpg"),
           title: "",
           subtitle: ""
         }

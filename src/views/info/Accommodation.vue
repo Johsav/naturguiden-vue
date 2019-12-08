@@ -18,7 +18,7 @@
             :height='imageHeight'
             :width='imagewidth'
             class="my-img"
-            :src="require('@/assets/images/500/tent002.jpg')">
+            :src="require('@/assets/images/500/tent004.jpg')">
           </v-img>
                  
           <v-card-title primary-title class="display-1 pb-0">Accommodation</v-card-title>

@@ -85,16 +85,11 @@ export default {
   computed: {
     imageHeight() {
       switch (this.$vuetify.breakpoint.name) {
-        case "xs":
-          return "165px";
-        case "sm":
-          return "280px";
-        case "md":
-          return "315px";
-        case "lg":
-          return "315px";
-        case "xl":
-          return "315px";
+        case "xs": return "165px"
+        case "sm": return "280px"
+        case "md": return "315px"
+        case "lg": return "315px"
+        case "xl": return "315px"
       }
     },
     imagewidth() {
@@ -116,7 +111,7 @@ export default {
   data() {
     return {
       drawer: null,
-      url: "http://test2.naturguiden.com/video/Skating_2019.mp4"
+      url: "http://www.naturguiden.com/ext/video/Skating_2019.mp4"
     };
   }
 };

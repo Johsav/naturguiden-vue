@@ -23,7 +23,7 @@
           </v-card>
           <v-flex v-for="item in packages" :key="item.link">
             <v-card :to="item.link">
-              <v-img class="white--text display-1" height="200px" :src="getImgUrl(item.imageSrc)">
+              <v-img class="white--text display-1" height="300px" :src="getImgUrl(item.imageSrc)">
                 <v-card-title>{{item.title}}</v-card-title>
               </v-img>
               <v-card-text class="subheading">{{item.text}}</v-card-text>
@@ -122,7 +122,7 @@ export default {
         {
           title: "Hiking - 8 days in the wild",
           link: "/adventures/hiking/eightdays",
-          imageSrc: "1400/hiking_1413_4.jpg",
+          imageSrc: "1400/hiking_1413_5.jpg",
           text: `Eight adventurous days filled with mountain peak tours,
           glacier hiking and magnificent nature! The details are not set,
           we decide from day to day how the trip will develop. We bring our
@@ -138,19 +138,19 @@ export default {
         {
           title: "Cross country skiing - open tour",
           link: "/adventures/skiing/weekend",
-          imageSrc: "1400/hiking_1413_4.jpg",
+          imageSrc: "1400/skiing_1413_1.jpg",
           text: `Cross country skiing in the Swedish mountains.  Experience the space and the meditative in crossing the mountains on skies. Enjoy the breaks with beautiful views sitting in our dug couches eating our lunch. Best season is March and April, best place to be this time of the year with long lasting days and a lot of snow. Join our open four days tour when we ski between mountain lodges in Jämtland`
         },
         {
           title: "Cross country skiing - private tour",
           link: "/adventures/skiing/private",
-          imageSrc: "1400/hiking_1413_4.jpg",
+          imageSrc: "1400/skiing_1413_3.jpg",
           text: `Your own tour with friends or family with cross country skiing over the mountains. As much adventures as you like, we tailor the tour after your preferences. Stay all nights in the mountain stations were we have electricity and warm showers. Or spend the nights in snow cave or tent. Maybe we take a detour to try to see the rare artic fox. Or if you travel last part of April we might meet the Sami people moving their Reindeers up to their summer pasture`
         },
         {
           title: "Cross country skiing - with winter adventures",
           link: "/adventures/skiing/adventures",
-          imageSrc: "1400/hiking_1413_4.jpg",
+          imageSrc: "1400/skiing_1413_4.jpg",
           text: `Enjoy the Swedish mountains in winter. Days with a lot of great outdoor winter activities. Different activities each day or several days on cross country skiing between mountain cabins, the choice are yours. Our base camp is a mountain lodge located on the mountain, some hundred meters from closest road. Explore by your self or join an arranged tour.`
         }
       ]

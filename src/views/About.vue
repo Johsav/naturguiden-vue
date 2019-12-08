@@ -130,7 +130,7 @@ export default {
         {
           title: "Hiking",
           text: "Find the way and yourself up in the mountain.",
-          link: "/adventures/hiking/weekend"
+          link: "/adventures/hiking/eightdays"
         },
         {
           title: "Back Country skiing",

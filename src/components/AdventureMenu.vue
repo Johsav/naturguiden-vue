@@ -61,6 +61,11 @@ export default {
           subtitle: ""//"paddle paddle"
         },
         {
+          src: require("@/assets/images/1400/skiing_1413_3.jpg"),
+          title: "", //"Ice-skating",
+          subtitle: ""//"Ice-skating is fun"
+        },
+        {
           src: require("@/assets/images/1400/kayak_1413_4.jpg"),
           title: "", //"Kayak",
           subtitle: ""//"paddle paddle"
@@ -74,6 +79,11 @@ export default {
           src: require("@/assets/images/1400/kayak_1413_1.jpg"),
           title: "", //"Kayak",
           subtitle: ""//"paddle paddle"
+        },
+        {
+          src: require("@/assets/images/1400/skiing_1413_4.jpg"),
+          title: "", //"Ice-skating",
+          subtitle: ""//"Ice-skating is fun"
         },
         {
           src: require("@/assets/images/1400/Skating_1413_2.jpg"),
@@ -109,6 +119,26 @@ export default {
         },
         {
           src: require("@/assets/images/1400/Skating_1413_4.jpg"),
+          title: "", //"Ice-skating",
+          subtitle: ""//"Ice-skating is fun"
+        },
+        {
+          src: require("@/assets/images/1400/hiking_1413_5.jpg"),
+          title: "", //"Ice-skating",
+          subtitle: ""//"Ice-skating is fun"
+        },
+        {
+          src: require("@/assets/images/1400/skiing_1413_1.jpg"),
+          title: "", //"Ice-skating",
+          subtitle: ""//"Ice-skating is fun"
+        },
+        {
+          src: require("@/assets/images/1400/hiking_1413_6.jpg"),
+          title: "", //"Ice-skating",
+          subtitle: ""//"Ice-skating is fun"
+        },
+        {
+          src: require("@/assets/images/1400/skiing_1413_2.jpg"),
           title: "", //"Ice-skating",
           subtitle: ""//"Ice-skating is fun"
         },

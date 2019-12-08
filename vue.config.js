@@ -20,7 +20,7 @@ module.exports = {
               '/adventures/skiing/weekend',
               '/adventures/skiing/adventures'
             ], // List of routes to prerender.
-            renderer: new PrerenderSPAPlugin.PuppeteerRenderer() // without this line does not work in my case
+            renderer: new PrerenderSPAPlugin.PuppeteerRenderer({headless: false}) // without this line does not work in my case
           }
         ])
     } else {

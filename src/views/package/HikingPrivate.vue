@@ -59,7 +59,7 @@
                   contain
                   class="right"
                   width="350"
-                  :src="require('@/assets/images/500/hiking001.jpg')"
+                  :src="require('@/assets/images/500/helags001.jpg')"
                 ></v-img>
                 <p>Hiking the Swedish mountains your own way. Sleep in tents or in the mountain lodges. Walk on the path or find your own way between the mountains. Decide your exact route before or take one day at a time, decide where to go when you walk. The choices are yours, we help you make it happen. Taking care of all preparations and with our good knowledge of the region help you find the best options. Totally free to experience the wild in your way.</p>
               </v-card-text>

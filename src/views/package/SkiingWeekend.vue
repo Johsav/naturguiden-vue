@@ -65,7 +65,7 @@
                   contain
                   class="right"
                   width="300"
-                  :src="require('@/assets/images/300/mountain_winter_break.jpg')"
+                  :src="require('@/assets/images/500/skiing005.jpg')"
                 ></v-img>
                 Cross country skiing over the mountains. Experience the space and the meditative in crossing the mountains on skies. Enjoy the breaks with beautiful views sitting in our dug couches eating our lunch.<br />
                 We spend the nights in mountains lodges enjoy the time together during the evening.
@@ -160,7 +160,7 @@
                 First day
                 <br />Dinner, accommodation in Ljungdalen
                 <br />Full days
-                <br />Accommoadation in Mountain station/cabin, Breakfast, lunch, dinner, guide, rent of equipment.
+                <br />Accommodation in Mountain station/cabin, Breakfast, lunch, dinner, guide, rent of equipment.
                 <br />Last night
                 <br />Accommodation and breakfast in Ljungdalen
                 <p>
