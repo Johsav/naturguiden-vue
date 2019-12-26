@@ -57,13 +57,13 @@
 
               <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
 
-              <v-text-field
+              <v-textarea
                 v-model="message"
                 :counter="500"
                 :rules="messageRules"
                 label="Message / Request"
                 required
-              ></v-text-field>
+              ></v-textarea>
 
               <v-checkbox
                 v-model="gdpr"

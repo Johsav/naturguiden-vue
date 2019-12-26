@@ -243,15 +243,18 @@
           </v-flex>
           <!-- Right side column - Booking  -->
           <v-flex xl12 lg12 md12 sm6 xs12>
-            <v-card>
-              <v-card-title class="d-block grey lighten-1">BOOKNING</v-card-title>
+            <BookingOpen></BookingOpen>
+
+
+           <!-- <v-card>
+              <v-card-title class="d-block grey lighten-1">BOOKNING / CONTACT</v-card-title>
               <v-card-text>
                 <div id="bokun-w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad">Loading...</div>
               </v-card-text>
             </v-card>
           </v-flex>
           <v-flex xl12 lg12 md12 sm6 xs12>
-            <!--            <v-card>
+                        <v-card>
               <v-card-title class="d-block grey lighten-1">Important Information</v-card-title>
               <v-card-text>It's very important ....</v-card-text>
             </v-card>
@@ -267,10 +270,12 @@
 //import { nbind } from 'q';
 //import Bokun from "../components/Bokun/";
 import AdventureMenu from "@/components/AdventureMenu.vue";
+import BookingOpen from "@/components/BookingOpen.vue";
 
 export default {
   components: {
-    AdventureMenu
+    AdventureMenu,
+    BookingOpen
   },
 
   data() {
