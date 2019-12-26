@@ -47,7 +47,7 @@
       </v-menu>
       -->
 
-      <!-- EGEN TEST ------------------------>
+      <!-- EGEN TEST ------FUNGERAR INTE JUST NU------------------
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
         <v-btn flat v-on="on">
@@ -83,6 +83,33 @@
           </v-menu>
         </v-list>
       </v-menu>
+      <!-->
+
+      <!-- NY LÖSNING UTAN SUBMENU  ---->
+       <v-menu offset-y>
+        <template v-slot:activator="{ on }">
+        <v-btn flat v-on="on">
+          <v-icon left>expand_more</v-icon>
+          <span>Our Adventures</span>
+        </v-btn>
+        </template>
+
+<v-list v-for="item in items_2" :key="item.title" 
+                 class="text-xs-left py-0">
+          <v-menu offset-x right>
+            <template v-slot:activator="{ on }">
+              <v-list-tile v-on="on" :on_click="close_m()" router :to="item.link" >
+              <v-list-tile-title>{{ item.title }}</v-list-tile-title>
+            </v-list-tile>
+            </template>
+           
+          </v-menu>
+        </v-list>
+      </v-menu>
+
+
+
+
 
       <v-toolbar-items v-for="item in toolbarLinks" :key="item.title" class="hidden-sm-and-down">
         <v-btn flat :to="{path: item.link}">{{ item.title }}</v-btn>
@@ -212,6 +239,21 @@ export default {
             }
           ]
         }
+      ],
+       items_2: [
+        
+        { title: "Nordic skating - Open tour", link: "/adventures/skating/weekend" },
+        { title: "Nordic skating - Private tour", link: "/adventures/skating/private" },
+        
+        { title: "Kayak - Open tour", link: "/adventures/kayak/weekend" },
+        { title: "Kayak - Private tour", link: "/adventures/kayak/private" },
+
+        { title: "Hiking - Open tour", link: "/adventures/hiking/eightdays" },
+        { title: "Hiking - Private tour", link: "/adventures/hiking/private" },
+     
+        { title: "Cross country skiing - Open tour", link: "/adventures/skiing/weekend" },
+        { title: "Cross country skiing - Private tour", link: "/adventures/skiing/private" },
+        { title: "Cross country skiing - Winter adventures", link: "/adventures/skiing/adventures" }
       ],
       mini: false,
       right: null

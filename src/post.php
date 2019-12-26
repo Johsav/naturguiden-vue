@@ -17,10 +17,10 @@
 	$subject1 = "Naturguiden-com Inquiry";
 	$mailto1 = "john@naturguiden.se";
 		 
-	$form_message1 = "<html><body><p>Message sent from Naturguiden.com Inquiry form - 4\n<br/>
+	$form_message1 = "<html><body><p>Message sent from Naturguiden.com Inquiry form\n<br/>
 	<b>FirstName:</b> ".$name." \n<br/>
 	<b>Email:</b> ".$email." \n<br/>
-    <b>Message:</b> ".$message." 
+    <b>Message:</b> ".$message." \n<br/>
     <b>GDPR?:</b> ".$gdpr." \n<br/></p></body></html>"; 
 	 
 	$sent = mail($mailto1, $subject1, $form_message1, $headers);
