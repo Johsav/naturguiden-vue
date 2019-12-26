@@ -85,6 +85,7 @@ export default {
   computed: {
     imageHeight() {
       switch (this.$vuetify.breakpoint.name) {
+        default:
         case "xs": return "165px"
         case "sm": return "280px"
         case "md": return "315px"
@@ -94,6 +95,7 @@ export default {
     },
     imagewidth() {
       switch (this.$vuetify.breakpoint.name) {
+        default:
         case "xs":
           return "300px";
         case "sm":

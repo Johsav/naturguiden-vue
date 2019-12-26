@@ -144,7 +144,7 @@
                   contain
                   class="right"
                   width="150"
-                  :src="require('@/assets/images/200/schoen and skate.jpg')"
+                  :src="require('@/assets/images/200/schoen_and_skate.jpg')"
                 ></v-img>We use special skates well adopted for Nordic skating. They are longer than hockey or figure skates. The front has a long curve compared to speed skates with sharp front, which is necessary if the ice in not completely smooth. And most important, the skate and the boot are separate so you can take off the skate when walking to and from the ice. If you have suitable skates, for example the Salomon skates, you may use them if you like.
               </v-card-text>
 
@@ -264,8 +264,9 @@
 </template>
 
 <script>
+//import { nbind } from 'q';
+//import Bokun from "../components/Bokun/";
 import AdventureMenu from "@/components/AdventureMenu.vue";
-//import { nbind } from "q";
 
 export default {
   components: {
@@ -321,7 +322,7 @@ export default {
   }
 };
 
-//Bokun script
+/*Bokun script
 var w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad;
 (function(d, t) {
   var host = "widgets.bokun.io";
@@ -357,5 +358,7 @@ var w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad;
   var scr = d.getElementsByTagName(t)[0],
     par = scr.parentNode;
   par.insertBefore(s, scr);
-})(document, "script");
+})(document, "script");  */
+
+
 </script>

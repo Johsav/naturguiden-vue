@@ -158,7 +158,8 @@ export default {
   }
 };
 
-//Bokun script
+
+/*Bokun script
 var w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad;
 (function(d, t) {
   var host = "widgets.bokun.io";
@@ -194,7 +195,9 @@ var w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad;
   var scr = d.getElementsByTagName(t)[0],
     par = scr.parentNode;
   par.insertBefore(s, scr);
-})(document, "script");
+})(document, "script");  */
+
+
 </script>
 
 <style scoped>
