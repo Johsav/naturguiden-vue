@@ -36,7 +36,7 @@
       <div class="text-xs-left pt-3">I want to book the Open tour ..</div>
 
       <v-radio-group v-model="group">
-        <v-radio v-for="item in items" :key="item.item" :label="item.item" :value="item.item"></v-radio>
+        <v-radio v-for="item in items" :key="item.date" :label="item.date + item.level" :value="item.date"></v-radio>
       </v-radio-group>
 
       <div class="text-xs-left pt-3">Send a Message or Request</div>
@@ -74,24 +74,13 @@ import axios from "axios";
 
 export default {
   components: {},
+  name: "booking-open",
+  props: {
+    items: Array
+  },  
 
   data: () => ({
     valid: true,
-    submitted: false,
-
-    items: [
-      { item: "23 - 26 January: Skating Weekend, normal group" },
-      { item: "30 Jan - 2 Febr: Skating Weekend, good group" },
-      { item: "6 - 9 February: Skating Weekend, normal group" },
-      { item: "13 - 16 February: Skating Weekend, good group" },
-      { item: "20 - 23 February: Skating Weekend, normal group"},
-      { item: "20 - 23 February: Skating Weekend, good group"},
-      { item: "27 Febr - 1 March: Skating Weekend, normal group" },
-      { item: "6 - 11 April:  Winter adventure week" },
-      { item: "25 - 28 June: Kayak weekend" },
-      { item: "2 - 9 August:  Hiking 8 days" },
-      { item: "20 - 23 August:  Kayak weekend" }
-    ],
 
     name: "",
     nameRules: [

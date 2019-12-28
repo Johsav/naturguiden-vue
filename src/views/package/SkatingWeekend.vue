@@ -243,23 +243,9 @@
           </v-flex>
           <!-- Right side column - Booking  -->
           <v-flex xl12 lg12 md12 sm6 xs12>
-            <BookingOpen></BookingOpen>
-
-
-           <!-- <v-card>
-              <v-card-title class="d-block grey lighten-1">BOOKNING / CONTACT</v-card-title>
-              <v-card-text>
-                <div id="bokun-w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad">Loading...</div>
-              </v-card-text>
-            </v-card>
+            <booking-open :items="packageDates"></booking-open>
           </v-flex>
-          <v-flex xl12 lg12 md12 sm6 xs12>
-                        <v-card>
-              <v-card-title class="d-block grey lighten-1">Important Information</v-card-title>
-              <v-card-text>It's very important ....</v-card-text>
-            </v-card>
-            -->
-          </v-flex>
+          
         </v-layout>
       </v-flex>
     </v-layout>
@@ -267,8 +253,6 @@
 </template>
 
 <script>
-//import { nbind } from 'q';
-//import Bokun from "../components/Bokun/";
 import AdventureMenu from "@/components/AdventureMenu.vue";
 import BookingOpen from "@/components/BookingOpen.vue";
 
@@ -317,53 +301,12 @@ export default {
         { date: "30 Jan - 2 Febr:", level: "Weekend for good skaters" },
         { date: "6 - 9 February:", level: "Weekend for normal skaters" },
         { date: "13 - 16 February:", level: "Weekend for good skaters" },
-        {
-          date: "20 - 23 February:",
-          level: "Weekend for good and normal skaters - two groups"
-        },
+        { date: "20 - 23 February:", level: "Weekend for normal skaters" },
+        { date: "20 - 23 February:", level: "Weekend for good skaters" },
         { date: "27 Febr - 1 March:", level: "Weekend for normal skaters" }
       ]
     };
   }
 };
-
-/*Bokun script
-var w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad;
-(function(d, t) {
-  var host = "widgets.bokun.io";
-  var frameUrl =
-    "https://" +
-    host +
-    "/widgets/32023?bookingChannelUUID=3ccd59a6-631f-4273-a87f-8899f0037f8f&amp;activityId=86253&amp;lang=en&amp;ccy=SEK&amp;hash=w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad";
-  var s = d.createElement(t),
-    options = {
-      host: host,
-      frameUrl: frameUrl,
-      widgetHash: "w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad",
-      autoResize: true,
-      height: "",
-      width: "100%",
-      minHeight: 0,
-      async: true,
-      ssl: true,
-      affiliateTrackingCode: "",
-      transientSession: true,
-      cookieLifetime: 43200
-    };
-  s.src = "https://" + host + "/assets/javascripts/widgets/embedder.js";
-  s.onload = s.onreadystatechange = function() {
-    var rs = this.readyState;
-    if (rs) if (rs != "complete") if (rs != "loaded") return;
-    try {
-      w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad = new BokunWidgetEmbedder();
-      w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad.initialize(options);
-      w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad.display();
-    } catch (e) {}
-  };
-  var scr = d.getElementsByTagName(t)[0],
-    par = scr.parentNode;
-  par.insertBefore(s, scr);
-})(document, "script");  */
-
 
 </script>
