@@ -7,11 +7,11 @@
           <v-img
             class="white--text"
             height="300px"
-            :src="require('@/assets/images/500/kayak002.jpg')"
+            :src="require('@/assets/images/500/skating_2018_002.jpg')"
           ></v-img>
-          <v-card-text class="pb-0">Enjoy a guided kayak tour in the archipelago. Camping on the islands, cocking over open fire.</v-card-text>
+          <v-card-text class="pb-0">Amazing skating on natural ice. Still possible to book a weekend tour.</v-card-text>
           <v-card-actions>
-            <v-btn flat color="orange" router-link to="/adventures/kayak/weekend">Join our kayak tours!</v-btn>
+            <v-btn flat color="orange" router-link to="/adventures/kayak/weekend">Join our skating tours!</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -21,11 +21,11 @@
           <v-img
             class="white--text"
             height="300px"
-            :src="require('@/assets/images/500/kayak002.jpg')"
+            :src="require('@/assets/images/500/skiing004.jpg')"
           ></v-img>
-          <v-card-text class="pb-0">Enjoy a guided kayak tour in the archipelago. Camping on the islands, cocking over open fire.</v-card-text>
+          <v-card-text class="pb-0">Experience the fifth season. Cross country skiing in the Swedish mountains.</v-card-text>
           <v-card-actions>
-            <v-btn flat color="orange" router-link to="/adventures/kayak/weekend">Join our kayak tours!</v-btn>
+            <v-btn flat color="orange" router-link to="/adventures/kayak/weekend">Join our skiing tours!</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
