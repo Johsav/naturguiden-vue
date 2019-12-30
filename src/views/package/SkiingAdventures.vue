@@ -170,7 +170,7 @@
 
          <!-- Right side column - Booking  -->
           <v-flex xl12 lg12 md12 sm6 xs12>
-            <booking-open :items="packageDates"></booking-open>
+            <booking-private :activity="activity"></booking-private>
           </v-flex>
 
         </v-layout>
@@ -182,15 +182,18 @@
 
 <script>
 import AdventureMenu from "@/components/AdventureMenu.vue";
-import BookingOpen from "@/components/BookingOpen.vue";
+import BookingPrivate from "@/components/BookingPrivate.vue";
 
 export default {
   components: {
     AdventureMenu,
-    BookingOpen
+    BookingPrivate
   },
   data() {
     return {
+
+      activity: "winter adventure",
+
       packageItems: [
         { type: "Season:", content: "March - April" },
         { type: "Days:", content: "Chose any" },
@@ -198,8 +201,6 @@ export default {
         { type: "Meeting point:", content: "Ljungdalen" },
         { type: "Lodging:", content: "Mountain Lodge" }
       ],
-
-      packageDates: [{ date: "2 - 9 August: Hiking week", level: "" }],
 
       days: [
         {

@@ -206,22 +206,11 @@
             </v-card>
           </v-flex>
          
-          <!-- Right side column - Booking  -->
+         <!-- Right side column - Booking  -->
           <v-flex xl12 lg12 md12 sm6 xs12>
-            <v-card>
-              <v-card-title class="d-block grey lighten-1">BOOKNING</v-card-title>
-              <v-card-text>
-                <div id="bokun-w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad">Loading...</div>
-              </v-card-text>
-            </v-card>
+            <booking-private :activity="activity"></booking-private>
           </v-flex>
-          <v-flex xl12 lg12 md12 sm6 xs12>
-            <!--            <v-card>
-              <v-card-title class="d-block grey lighten-1">Important Information</v-card-title>
-              <v-card-text>It's very important ....</v-card-text>
-            </v-card>
-            -->
-          </v-flex>
+
         </v-layout>
       </v-flex>
     </v-layout>
@@ -231,13 +220,18 @@
 
 <script>
 import AdventureMenu from "@/components/AdventureMenu.vue";
+import BookingPrivate from "@/components/BookingPrivate.vue";
 
 export default {
   components: {
-    AdventureMenu
+    AdventureMenu,
+    BookingPrivate
   },
   data() {
     return {
+
+      activity: "skiing",
+      
       packageItems: [
         { type: "Season:", content: "March - April" },
         { type: "Days:", content: "4 days/5 nights" },

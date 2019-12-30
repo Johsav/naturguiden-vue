@@ -9,9 +9,10 @@
       ref="form"
       v-model="valid"
       lazy-validation
+      form
+      class="pl-3"
       method="post"
       action="post.php"
-      form
       @submit.prevent
     >
       <v-text-field
@@ -33,22 +34,72 @@
 
       <v-text-field class="compact-form" v-model="phone" :rules="phoneRules" label="Phone"></v-text-field>
 
-      <v-form-text class="text-xs-left pt-3">I want to book the Open tour ..</v-form-text>
+      <div class="text-xs-left pt-3">I want to book a private {{activity}} tour ..</div>
 
-      <v-radio-group row>
-        <v-radio v-for="item in items" :key="item.item" :label="item.item" :value="item.item"></v-radio>
-      </v-radio-group>
+      <!-- START DATE ---------------------------->
+      <v-menu
+        ref="menu1"
+        v-model="menu1"
+        :close-on-content-click="false"
+        :return-value.sync="date1"
+        transition="scale-transition"
+        offset-y
+        min-width="290px"
+      >
+        <template v-slot:activator="{ on }">
+          <v-text-field
+            class="compact-form"
+            v-model="date1"
+            label="Start date"
+            prepend-icon="event"
+            readonly
+            v-on="on"
+          ></v-text-field>
+        </template>
+        <v-date-picker v-model="date1" no-title scrollable>
+          <v-spacer></v-spacer>
+          <v-btn text color="primary" @click="menu1 = false">Cancel</v-btn>
+          <v-btn text color="primary" @click="$refs.menu1.save(date1)">OK</v-btn>
+        </v-date-picker>
+      </v-menu>
 
-      <v-form-text class="text-xs-left pt-3">Send a Message or Request</v-form-text>
+      <!-- END DATE  ------------------------------->
+      <v-menu
+        ref="menu2"
+        v-model="menu2"
+        :close-on-content-click="false"
+        :return-value.sync="date2"
+        transition="scale-transition"
+        offset-y
+        min-width="290px"
+      >
+        <template v-slot:activator="{ on }">
+          <v-text-field
+            class="compact-form"
+            v-model="date2"
+            label="End date"
+            prepend-icon="event"
+            readonly
+            v-on="on"
+          ></v-text-field>
+        </template>
+        <v-date-picker v-model="date2" no-title scrollable>
+          <v-spacer></v-spacer>
+          <v-btn text color="primary" @click="menu2 = false">Cancel</v-btn>
+          <v-btn text color="primary" @click="$refs.menu2.save(date2)">OK</v-btn>
+        </v-date-picker>
+      </v-menu>
 
-      <v-text-field
+      <div class="text-xs-left pt-3">Send a Message or Request</div>
+
+      <v-textarea
         class="compact-form"
         v-model="message"
         :counter="500"
         :rules="messageRules"
         label="Message / Request"
         required
-      ></v-text-field>
+      ></v-textarea>
 
       <v-checkbox
         v-model="gdpr"
@@ -74,24 +125,13 @@ import axios from "axios";
 
 export default {
   components: {},
-
+  name: "booking-private",
+  props: {
+    activity: String
+  },  
+  
   data: () => ({
     valid: true,
-    submitted: false,
-
-    items: [
-      { item: "23 - 26 January: Skating Weekend, normal group" },
-      { item: "30 Jan - 2 Febr: Skating Weekend, good group" },
-      { item: "6 - 9 February: Skating Weekend, normal group" },
-      { item: "13 - 16 February: Skating Weekend, good group" },
-      { item: "20 - 23 February: Skating Weekend, normal group"},
-      { item: "20 - 23 February: Skating Weekend, good group"},
-      { item: "27 Febr - 1 March: Skating Weekend, normal group" },
-      { item: "6 - 11 April:  Winter adventure week" },
-      { item: "25 - 28 June: Kayak weekend" },
-      { item: "2 - 9 August:  Hiking 8 days" },
-      { item: "20 - 23 August:  Kayak weekend" }
-    ],
 
     name: "",
     nameRules: [
@@ -104,7 +144,8 @@ export default {
       v => /.+@.+\..+/.test(v) || "E-mail must be valid"
     ],
     phone: "",
-    phoneRules: [v => /^\d{12}$/.test(v) || "Phone must only contain digits"],
+    phoneRules: [v => /\d{7,}$/.test(v) || "Phone must only contain digits, and at least seven digits"],
+
     message: "",
     messageRules: [
       v => !!v || "A message is required",
@@ -112,7 +153,14 @@ export default {
         (v && v.length <= 500) || "The message must be less than 500 characters"
     ],
     gdpr: false,
-    checkbox: false
+    checkbox: false,
+    group: false,
+
+    date1: new Date().toISOString().substr(0, 10),
+    menu1: false,
+    date2: new Date().toISOString().substr(0, 10),
+    menu2: false,
+
   }),
 
   methods: {
@@ -125,8 +173,13 @@ export default {
           .post("/post.php", {
             name_: this.name,
             email_: this.email,
+            phone_: this.phone,
             message_: this.message,
+            date1_: this.date1,
+            date2_: this.date2,
+            group_: this.activity,
             gdpr_: this.gdpr
+
           })
           .then(function(response) {
             console.log(response);
