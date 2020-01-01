@@ -241,6 +241,7 @@ export default {
         }
       ],
        items_2: [
+        { title: "All our our adventures tour", link: "/adventures" },
         
         { title: "Nordic skating - Open tour", link: "/adventures/skating/weekend" },
         { title: "Nordic skating - Private tour", link: "/adventures/skating/private" },

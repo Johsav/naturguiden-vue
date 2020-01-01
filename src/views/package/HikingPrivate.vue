@@ -187,7 +187,7 @@
                     <v-layout row>
                       <v-card-text class="text-xs-right py-1 px-2">{{item.type}}</v-card-text>
                       <v-card-text class="text-xs-left py-1 px-2">
-                        <v-html>{{item.content}}</v-html>
+                        {{item.content}}
                       </v-card-text>
                     </v-layout>
                   </v-flex>

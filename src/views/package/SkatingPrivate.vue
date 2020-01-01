@@ -96,6 +96,7 @@
                 </tr>
               </v-simple-table>
               </v-card-text>
+              
               </v-flex>
               <v-card-title class="title pb-0">Pick up</v-card-title>
               <v-card-text>At Stockholm/Arlanda airport. Other locations possible after agreement.</v-card-text>
@@ -194,7 +195,7 @@
             <v-card>
               <v-card-title class="d-block grey lighten-1">
                 <div class="title">Nordic skating</div>
-                <div class="subheading">{{packageType.type}}</div>
+                <div class="subheading">{{packageType}}</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -203,7 +204,7 @@
                     <v-layout row>
                       <v-card-text class="text-xs-right py-1 px-2">{{item.type}}</v-card-text>
                       <v-card-text class="text-xs-left py-1 px-2">
-                        <v-html>{{item.content}}</v-html>
+                        {{item.content}}
                       </v-card-text>
                     </v-layout>
                   </v-flex>
@@ -238,6 +239,7 @@ export default {
     return {
 
         activity: "skating",
+        packageType: "private tour",
 
         days: [
         {
@@ -257,48 +259,29 @@ export default {
         }
       ],
 
-      packageType: {type: "private tour"},
-      packageItems: 
-      [
+      packageItems: [
         { type: "Season:", content: "December - March" },
         { type: "Days:", content: "4 days/3 nights" },
-        {
-          type: "Price:",
-          content:
-            "from 585 EUR"
-        },
+        { type: "Price:", content: "from 585 EUR" },
         { type: "Meeting point:", content: "Arlanda airport or place after agreement" },
-        {
-          type: "Lodging:",
-          content: "Hotel or Hostel"
-        }
+        { type: "Lodging:", content: "Hotel or Hostel" }
       ],
       accom: [
-        {
-          level: "Basic 1",
+        { level: "Basic 1",
           price: "from 622 EUR",
-          type: "single room 75 EUR extra"
-        },
-        {
-          level: "Basic 2",
+          type: "single room 75 EUR extra" },
+        { level: "Basic 2",
           price: "from 660 EUR",
-          type: "single room 75 EUR extra"
-        },
-        {
-          level: "Basic 3",
+          type: "single room 75 EUR extra" },
+        { level: "Basic 3",
           price: "from 855 EUR",
-          type: "single room 75 EUR extra"
-        },
-        {
-          level: "Comfort 1",
+          type: "single room 75 EUR extra" },
+        { level: "Comfort 1",
           price: "from 790 EUR",
-          type: "single room 183 EUR extra"
-        },
-        {
-          level: "Comfort 2",
+          type: "single room 183 EUR extra" },
+        { level: "Comfort 2",
           price: "from 988 EUR",
-          type: "single room 183 EUR extra"
-        }
+          type: "single room 183 EUR extra" }
       ],
       extra: [
         { level: "Basic 1:", price: "175 EUR" },
@@ -311,43 +294,7 @@ export default {
   }
 };
 
-/*Bokun script
-var w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad;
-(function(d, t) {
-  var host = "widgets.bokun.io";
-  var frameUrl =
-    "https://" +
-    host +
-    "/widgets/32023?bookingChannelUUID=3ccd59a6-631f-4273-a87f-8899f0037f8f&amp;activityId=86253&amp;lang=en&amp;ccy=SEK&amp;hash=w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad";
-  var s = d.createElement(t),
-    options = {
-      host: host,
-      frameUrl: frameUrl,
-      widgetHash: "w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad",
-      autoResize: true,
-      height: "",
-      width: "100%",
-      minHeight: 0,
-      async: true,
-      ssl: true,
-      affiliateTrackingCode: "",
-      transientSession: true,
-      cookieLifetime: 43200
-    };
-  s.src = "https://" + host + "/assets/javascripts/widgets/embedder.js";
-  s.onload = s.onreadystatechange = function() {
-    var rs = this.readyState;
-    if (rs) if (rs != "complete") if (rs != "loaded") return;
-    try {
-      w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad = new BokunWidgetEmbedder();
-      w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad.initialize(options);
-      w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad.display();
-    } catch (e) {}
-  };
-  var scr = d.getElementsByTagName(t)[0],
-    par = scr.parentNode;
-  par.insertBefore(s, scr);
-})(document, "script"); */
+
 
 
 </script>

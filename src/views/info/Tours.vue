@@ -30,7 +30,7 @@
                 <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-text>{{ item.title }}</v-list-tile-text>
+                {{ item.title }}
               </v-list-tile-content>
             </v-list-tile>
           </v-list>
@@ -45,7 +45,7 @@
                 <v-img contain height="16px" :src="require('@/assets/postbullets.png')"></v-img>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-text>{{ item.title }}</v-list-tile-text>
+                {{ item.title }}
               </v-list-tile-content>
             </v-list-tile>
           </v-list>

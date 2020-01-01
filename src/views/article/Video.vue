@@ -60,6 +60,21 @@
                   <v-card-text>Skating in Sweden, February 2019</v-card-text>
                 </v-card>
               </v-flex>
+
+              <v-flex class="mx-auto">
+                <v-card height="100%">
+                  <iframe
+                    :height="imageHeight"
+                    :width="imagewidth"
+                    src="https://www.youtube.com/embed/SdfL2nY-Xs8"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <v-card-text>Clean Bandit made this music video here in Sweden, on lake Vättern. And we had the honor to help</v-card-text>
+                </v-card>
+              </v-flex>
+
             </v-layout>
           </v-flex>
         </v-card>
