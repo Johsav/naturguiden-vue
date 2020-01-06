@@ -11,8 +11,6 @@
       lazy-validation
       form
       class="pl-3"
-      method="post"
-      action="post.php"
       @submit.prevent
     >
       <v-text-field

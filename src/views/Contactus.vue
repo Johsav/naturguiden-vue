@@ -48,9 +48,8 @@
               ref="form"
               v-model="valid"
               lazy-validation
-              method="post"
-              action="post.php"
               form
+              class="pl-3"
               @submit.prevent
             >
               <v-text-field v-model="name" :counter="10" :rules="nameRules" label="Name" required></v-text-field>

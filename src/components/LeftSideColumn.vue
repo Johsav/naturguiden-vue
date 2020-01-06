@@ -3,7 +3,7 @@
     <v-layout column>
       
       <v-flex>
-        <v-card router-link to="/adventures/kayak/weekend" height="100%">
+        <v-card router-link to="/adventures/skating/weekend" height="100%">
           <v-img
             class="white--text"
             height="300px"
@@ -11,13 +11,13 @@
           ></v-img>
           <v-card-text class="pb-0">Amazing skating on natural ice. Still possible to book a weekend tour.</v-card-text>
           <v-card-actions>
-            <v-btn flat color="orange" router-link to="/adventures/kayak/weekend">Join our skating tours!</v-btn>
+            <v-btn flat color="orange">Join our skating tours!</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
 
       <v-flex>
-        <v-card router-link to="/adventures/kayak/weekend" height="100%">
+        <v-card router-link to="/adventures/skiing/weekend" height="100%">
           <v-img
             class="white--text"
             height="300px"
@@ -25,7 +25,7 @@
           ></v-img>
           <v-card-text class="pb-0">Experience the fifth season. Cross country skiing in the Swedish mountains.</v-card-text>
           <v-card-actions>
-            <v-btn flat color="orange" router-link to="/adventures/kayak/weekend">Join our skiing tours!</v-btn>
+            <v-btn flat color="orange">Join our skiing tours!</v-btn>
           </v-card-actions>
         </v-card>
       </v-flex>
