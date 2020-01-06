@@ -1,22 +1,8 @@
 <template style="display:none">
   <v-app>
+
     <v-navigation-drawer v-model="drawer" temporary app>
-      <v-toolbar flat color="primary" dark app>
-        <v-list class="pa-0">
-          <v-list-tile>
-            <v-list-tile-content>
-              <v-list-tile-title class="text-xs-center">MENU</v-list-tile-title>
-            </v-list-tile-content>
-            <v-list-tile-action>
-              <v-icon @click.stop="drawer = false">close</v-icon>
-            </v-list-tile-action>
-          </v-list-tile>
-        </v-list>
-      </v-toolbar>
-
       <v-list class="pt-0" classdense>
-        <v-divider></v-divider>
-
         <v-list-tile v-for="item in drawerLinks" :key="item.title" :to="{path: item.link }">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -33,8 +19,6 @@
       <router-link to="/">
         <v-img :src="require('./assets/name.png')" height="48" width="156" contain></v-img>
       </router-link>
-
-      
 
       <!-- NY LÖSNING UTAN SUBMENU  ---->
       <v-menu offset-y>
@@ -136,7 +120,7 @@ export default {
         { title: "About us", link: "/about" },
         { title: "Contact us", link: "/contact" }
       ],
-      
+
       items_2: [
         { title: "All our our adventures tour", link: "/adventures" },
 
