@@ -84,11 +84,11 @@
               <v-flex class="grey lighten-3">
                 <v-card-title class="title pb-0">Join us on any of our weekend trips 2020</v-card-title>
                 <v-card-text>
-                  <b>Price: 695 EUR ( 37 EUR early season discount before 3 February)</b>
+                  <b>Price: 665 EUR ( 30 EUR early season discount before 3 February)</b>
                 </v-card-text>
                 <v-card-text class="pt-0">
                   Everything included, accommodation in hostels, shared double room.
-                  <br />Single room +75 EUR, sheets and towel +25 EUR (blanket and pillow is provided).
+                  <br />Single room +60 EUR, sheets and towel +20 EUR (blanket and pillow is provided).
                   <v-list class="pt-3 grey lighten-3">
                     <v-list-tile class="list-height" v-for="item in packageDates" :key="item.date">
                       <v-list-tile-action>
@@ -120,7 +120,7 @@
               </v-card-text>
 
               <v-card-title class="title pb-0">Accommodation: Youth Hostel, Self Catering</v-card-title>
-              <v-card-text>Youth hostels with two or four bed dormitory room with shared shower and toilet (normally two persons in each room). You need to bring sheets or duvet covers and towels. (Or you can have it included for 25 EUR extra) We prepare the meals together. All food is provided and included in the price.</v-card-text>
+              <v-card-text>Youth hostels with two or four bed dormitory room with shared shower and toilet (normally two persons in each room). You need to bring sheets or duvet covers and towels. (Or you can have it included for 20 EUR extra) We prepare the meals together. All food is provided and included in the price.</v-card-text>
 
               <v-card-title class="title pb-0">Personal equipment</v-card-title>
               <v-card-text>
@@ -135,7 +135,7 @@
               <v-card-text>
                 <p>We can provide you with the following but you need to make a reservation for it when you place your order:</p>
                 <p>Extra safety equipment: Helmet, knee pad, wrist and arm bow protectors -free of charge.</p>
-                <p>Sheets and towel: +25 EUR extra.</p>
+                <p>Sheets and towel: +20 EUR extra.</p>
               </v-card-text>
 
               <v-card-title class="title pb-0">About the skates</v-card-title>
@@ -288,7 +288,7 @@ export default {
         {
           type: "Price:",
           content:
-            "695 EUR early season discount 37 EUR \r\nsingle room +75 EUR \nsheets \nand towel +25 EUR"
+            "665 EUR early season discount 30 EUR \r\nsingle room +60 EUR \nsheets \nand towel +20 EUR"
         },
         { type: "Meeting point:", content: "Arlanda airport" },
         {
