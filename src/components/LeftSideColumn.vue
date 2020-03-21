@@ -4,39 +4,25 @@
       
 
       <v-flex>
-        <v-card router-link to="/adventures/skating/weekend" height="100%">
+        <v-card height="100%">
           <v-img
             class="white--text"
             height="300px"
-            :src="require('@/assets/images/500/skating007.jpg')"
+            :src="require('@/assets/images/500/skating008.jpg')"
           ><div class="subheading"></div></v-img>
-          <v-card-text class="pb-0"><p>2020-02-19</p>
-          <p>The strange winter in Sweden continues. Some days with temperatures below minus 7 and two days later plus 7 degrees. Still very good conditions for skating. A lot of good ice and no snow, but you have to travel about two hours north of Stockholm. Last weekend our guide Michel managed to find fantastic ice on Lake Nordellen near Hudiksvall.</p>
-
-          <p>We look forward to another three skating weekends, and it is still possible to join. Next week will be colder with temperatures below zero.</p>
-
-          <p>Later in March we move north for skiing. Here we have more snow than normal and we will probably have very good conditions for skiing in April.</p></v-card-text>
+          <v-card-text class="pb-0"><p>2020-03-20</p>
+          <p>We want to say thank's' to all our great guests that have been skating with us this winter. It have been a pleasure for us to meet you all.</p>
+          <p>Please visit the facebook group <a href="https://www.facebook.com/groups/2869668636431922/">"Naturguiden NordicSkating 2020"</a>
+          with great pictures from this winter.</p>
+          </v-card-text>
+          <!--
           <v-card-actions>
             <v-btn flat color="orange">Still possible to Join our skating tours!</v-btn>
           </v-card-actions>
+          -->
         </v-card>
       </v-flex>
 
-<!--
-      <v-flex>
-        <v-card router-link to="/adventures/skating/weekend" height="100%">
-          <v-img
-            class="white--text"
-            height="300px"
-            :src="require('@/assets/images/500/skating_2018_002.jpg')"
-          ></v-img>
-          <v-card-text class="pb-0">Amazing skating on natural ice. Still possible to book a weekend tour.</v-card-text>
-          <v-card-actions>
-            <v-btn flat color="orange">Join our skating tours!</v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-flex>
--->
       <v-flex>
         <v-card router-link to="/adventures/skiing/weekend" height="100%">
           <v-img
@@ -50,6 +36,21 @@
           </v-card-actions>
         </v-card>
       </v-flex>
+
+      <v-flex>
+        <v-card router-link to="/adventures/kayak/weekend" height="100%">
+          <v-img
+            class="white--text"
+            height="300px"
+            :src="require('@/assets/images/500/kayak003.jpg')"
+          ></v-img>
+          <v-card-text class="pb-0">Kayak tours on the Baltic sea, between islands and skerries. Camping on some island, make dinner over open fire, swim in the sea. </v-card-text>
+          <v-card-actions>
+            <v-btn flat color="orange">Join our kayak tours!</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
+
     </v-layout>
   </v-container>
 </template>
