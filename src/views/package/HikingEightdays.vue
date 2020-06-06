@@ -260,7 +260,8 @@ export default {
       ],
 
       packageDates: [
-        { date: "2 - 9 August:", level: "Hiking week" }
+        { date: "Canceled due to COVID-19", level: "" }
+        //{ date: "2 - 9 August:", level: "Hiking week" }
       ],
 
       days: [

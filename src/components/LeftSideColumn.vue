@@ -2,6 +2,40 @@
   <v-container class="pa-3">
     <v-layout column>
       
+      <v-flex>
+        <v-card router-link to="/adventures/kayak/weekend" height="100%">
+          <v-img
+            class="white--text"
+            height="300px"
+            :src="require('@/assets/images/500/kayak003.jpg')"
+          ></v-img>
+          <v-card-text class="pb-0"><p>2020-04-15</p>
+            <p>We are all influenced by Covid-19. Have canceled our open tours this summer. But you can still book a private tour. Kayaking in the archipelago or hiking in the mountains.</p>
+            <p>Hope, of course, that the situation changes soon so that we can offer open tours again.</p>
+          </v-card-text>
+          <!--
+          <v-card-actions>
+            <v-btn flat color="orange">Join our kayak tours!</v-btn>
+          </v-card-actions>
+          -->
+        </v-card>
+      </v-flex>
+
+      <v-flex>
+        <v-card router-link to="/adventures/skating/weekend" height="100%">
+          <v-img
+            class="white--text"
+            height="300px"
+            :src="require('@/assets/images/500/skating005.jpg')"
+          ></v-img>
+          <v-card-text class="pb-0"><p>2020-05-01</p>
+            <p>We hope for a normal winter with fantastic ice skating. Have already received the first bookings.</p>
+          </v-card-text>
+          <v-card-actions>
+            <v-btn flat color="orange">Join our skating tours!</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-flex>
 
       <v-flex>
         <v-card height="100%">
@@ -20,34 +54,6 @@
             <v-btn flat color="orange">Still possible to Join our skating tours!</v-btn>
           </v-card-actions>
           -->
-        </v-card>
-      </v-flex>
-
-      <v-flex>
-        <v-card router-link to="/adventures/skiing/weekend" height="100%">
-          <v-img
-            class="white--text"
-            height="300px"
-            :src="require('@/assets/images/500/skiing004.jpg')"
-          ></v-img>
-          <v-card-text class="pb-0">Experience the fifth season. Cross country skiing in the Swedish mountains.</v-card-text>
-          <v-card-actions>
-            <v-btn flat color="orange">Join our skiing tours!</v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-flex>
-
-      <v-flex>
-        <v-card router-link to="/adventures/kayak/weekend" height="100%">
-          <v-img
-            class="white--text"
-            height="300px"
-            :src="require('@/assets/images/500/kayak003.jpg')"
-          ></v-img>
-          <v-card-text class="pb-0">Kayak tours on the Baltic sea, between islands and skerries. Camping on some island, make dinner over open fire, swim in the sea. </v-card-text>
-          <v-card-actions>
-            <v-btn flat color="orange">Join our kayak tours!</v-btn>
-          </v-card-actions>
         </v-card>
       </v-flex>
 

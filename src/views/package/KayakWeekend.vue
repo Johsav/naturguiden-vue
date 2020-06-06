@@ -265,8 +265,9 @@ export default {
       ],
 
       packageDates: [
-        { date: "25 - 28 June:", level: "" },
-        { date: "20 - 23 August:", level: "" }
+        { date: "Canceled due to Covid-19", level: "" } //,
+        //{ date: "25 - 28 June:", level: "" },
+        //{ date: "20 - 23 August:", level: "" }
       ]
     };
   }

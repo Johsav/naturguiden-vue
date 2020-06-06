@@ -85,7 +85,7 @@
               <v-flex class="grey lighten-3">
               <v-card-title class="title pb-0">Price</v-card-title>
               <v-card-text class="pb-0">
-                <b>30 EUR early season discount</b> before 3 February
+                <b>37 EUR early season discount</b> before 4 February
               </v-card-text>
               <v-card-text>
               <v-simple-table>
@@ -262,33 +262,33 @@ export default {
       packageItems: [
         { type: "Season:", content: "December - March" },
         { type: "Days:", content: "4 days/3 nights" },
-        { type: "Price:", content: "from 600 EUR" },
+        { type: "Price:", content: "from 597 EUR" },
         { type: "Meeting point:", content: "Arlanda airport or place after agreement" },
         { type: "Lodging:", content: "Hotel or Hostel" }
       ],
       accom: [
         { level: "Basic 1",
-          price: "from 630 EUR",
-          type: "single room 60 EUR extra" },
+          price: "from 634 EUR",
+          type: "single room 73 EUR extra" },
         { level: "Basic 2",
-          price: "from 665 EUR",
-          type: "single room 60 EUR extra" },
+          price: "from 689 EUR",
+          type: "single room 73 EUR extra" },
         { level: "Basic 3",
-          price: "from 855 EUR",
-          type: "single room 60 EUR extra" },
+          price: "from 884 EUR",
+          type: "single room 73 EUR extra" },
         { level: "Comfort 1",
-          price: "from 770 EUR",
-          type: "single room 150 EUR extra" },
+          price: "from 799 EUR",
+          type: "single room 183 EUR extra" },
         { level: "Comfort 2",
-          price: "from 965 EUR",
-          type: "single room 150 EUR extra" }
+          price: "from 1000 EUR",
+          type: "single room 183 EUR extra" }
       ],
       extra: [
-        { level: "Basic 1:", price: "from 100 EUR" },
-        { level: "Basic 2:", price: "from 115 EUR" },
-        { level: "Basic 3:", price: "from 170 EUR" },
-        { level: "Comfort 1:", price: "from 175 EUR" },
-        { level: "Comfort 2:", price: "from 240 EUR" }
+        { level: "Basic 1:", price: "from 104 EUR" },
+        { level: "Basic 2:", price: "from 122 EUR" },
+        { level: "Basic 3:", price: "from 177 EUR" },
+        { level: "Comfort 1:", price: "from 177 EUR" },
+        { level: "Comfort 2:", price: "from 244 EUR" }
       ]
     };
   }

@@ -88,7 +88,7 @@
                 </p>
               </v-card-text>
               <v-flex class="grey lighten-3 pb-1">
-              <v-card-title class="title pb-0">Join us on our four days trip 2020</v-card-title>
+              <v-card-title class="title pb-0">Join us on our four days trip 2021</v-card-title>
               <v-card-text>
                 <b>Price: from 425 EUR (4 days/5 nights)</b>
               </v-card-text>
@@ -220,7 +220,7 @@
             <v-card>
               <v-card-title class="d-block grey lighten-1">
                 <div class="title">Scheduled dates</div>
-                <div class="subheading">open groups 2020</div>
+                <div class="subheading">open groups 2021</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -268,7 +268,7 @@ export default {
       ],
 
       packageDates: [
-        { date: "5 - 10 April:", level: "Cross country skiing" }
+        { date: "28 March - 2 April:", level: "Cross country skiing" }
       ],
 
       days: [

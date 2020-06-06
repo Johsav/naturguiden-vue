@@ -82,13 +82,13 @@
                 </p>
               </v-card-text>
               <v-flex class="grey lighten-3">
-                <v-card-title class="title pb-0">Join us on any of our weekend trips 2020</v-card-title>
+                <v-card-title class="title pb-0">Join us on any of our weekend trips 2021</v-card-title>
                 <v-card-text>
-                  <b>Price: 665 EUR ( 30 EUR early season discount before 3 February)</b>
+                  <b>Price: 689 EUR ( 37 EUR early season discount before 4 February)</b>
                 </v-card-text>
                 <v-card-text class="pt-0">
                   Everything included, accommodation in hostels, shared double room.
-                  <br />Single room +60 EUR, sheets and towel +20 EUR (blanket and pillow is provided).
+                  <br />Single room +73 EUR, sheets and towel +20 EUR (blanket and pillow is provided).
                   <v-list class="pt-3 grey lighten-3">
                     <v-list-tile class="list-height" v-for="item in packageDates" :key="item.date">
                       <v-list-tile-action>
@@ -226,7 +226,7 @@
             <v-card>
               <v-card-title class="d-block grey lighten-1">
                 <div class="title">Scheduled dates</div>
-                <div class="subheading">open groups 2020</div>
+                <div class="subheading">open groups 2021</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -288,7 +288,7 @@ export default {
         {
           type: "Price:",
           content:
-            "665 EUR early season discount 30 EUR \r\nsingle room +60 EUR \nsheets \nand towel +20 EUR"
+            "689 EUR early season discount 37 EUR \r\nsingle room +73 EUR \nsheets \nand towel +20 EUR"
         },
         { type: "Meeting point:", content: "Arlanda airport" },
         {
@@ -297,13 +297,11 @@ export default {
         }
       ],
       packageDates: [
-        { date: "23 - 26 January:", level: "Weekend for normal skaters" },
-        { date: "30 Jan - 2 Febr:", level: "Weekend for good skaters" },
-        { date: "6 - 9 February:", level: "Weekend for normal skaters" },
-        { date: "13 - 16 February:", level: "Weekend for good skaters" },
-        { date: "20 - 23 February:", level: "Weekend for normal skaters" },
-        { date: "20 - 23 February 2:", level: "Weekend for good skaters" },
-        { date: "27 Febr - 1 March:", level: "Weekend for normal skaters" }
+        { date: "28 - 31 January:", level: "Weekend for good skaters" },
+        { date: "4 - 7 February:", level: "Weekend for normal skaters" },
+        { date: "11 - 14 February:", level: "Weekend for good skaters" },
+        { date: "18 - 21 February:", level: "Weekend for normal skaters" },
+        { date: "25 - 28 February:", level: "Combiweekend two groups, good and normal" }
       ]
     };
   }

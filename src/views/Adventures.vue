@@ -35,7 +35,7 @@
           <v-card>
             <v-card-title class="d-block grey lighten-1">
               <div class="title">Scheduled dates</div>
-              <div class="subheading">open groups 2020</div>
+              <div class="subheading">open groups 2021</div>
             </v-card-title>
 
             <v-container fluid grid-list-sm>
@@ -50,12 +50,13 @@
             </v-container>
           </v-card>
 
-          <v-card>
-            <v-card-title class="d-block grey lighten-1">BOOKNING</v-card-title>
-            <v-card-text>
-              <div id="bokun-w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad">Loading...</div>
-            </v-card-text>
-          </v-card>
+           <!-- Right side column - Booking  -->
+          <v-flex xl12 lg12 md12 sm6 xs12>
+            <booking-open :items="packageDates"></booking-open>
+
+          </v-flex>
+
+
         </v-flex>
       </v-layout>
     </v-container>
@@ -63,13 +64,13 @@
 </template>
 
 <script>
-//import { nbind } from 'q';
-//import Bokun from "../components/Bokun/";
+import BookingOpen from "@/components/BookingOpen.vue";
 
 export default {
   components: {
-    
+    BookingOpen  
   },
+  
   methods: {
     getImgUrl(img) {
       return require("@/assets/images/" + img);
@@ -79,20 +80,15 @@ export default {
     return {
       drawer: null,
       packageDates: [
-        { date: "23 - 26 January:", level: "Skating Weekend, normal group" },
-        { date: "30 Jan - 2 Febr:", level: "Skating Weekend, good group" },
-        { date: "6 - 9 February:", level: "Skating Weekend, normal group" },
-        { date: "13 - 16 February:", level: "Skating Weekend, good group" },
+        { date: "", level: "No open tours for the summer 2020 due to COVID-19" },
+        { date: "28 - 31 January:", level: "Skating Weekend, good group" },
+        { date: "4 - 7 February:", level: "Skating Weekend, normal group" },
+        { date: "11 - 14 February:", level: "Skating Weekend, good group" },
         {
-          date: "20 - 23 February:",
+          date: "25 - 28 February:",
           level: "Skating Weekend, good and normal skaters - two groups"
         },
-        { date: "27 Febr - 1 March:", level: "Skating Weekend, normal group" },
-
-        { date: "6 - 11 April:", level: "Winter adventure week" },
-        { date: "25 - 28 June:", level: "Kayak weekend" },
-        { date: "2 - 9 August:", level: "Hiking 8 days" },
-        { date: "20 - 23 August:", level: "Kayak weekend" }
+        { date: "28 March - 2 April:", level: "Cross Country skiing" }
       ],
       packages: [
         {
@@ -157,46 +153,6 @@ export default {
     };
   }
 };
-
-
-/*Bokun script
-var w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad;
-(function(d, t) {
-  var host = "widgets.bokun.io";
-  var frameUrl =
-    "https://" +
-    host +
-    "/widgets/32023?bookingChannelUUID=3ccd59a6-631f-4273-a87f-8899f0037f8f&amp;activityId=86253&amp;lang=en&amp;ccy=SEK&amp;hash=w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad";
-  var s = d.createElement(t),
-    options = {
-      host: host,
-      frameUrl: frameUrl,
-      widgetHash: "w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad",
-      autoResize: true,
-      height: "",
-      width: "100%",
-      minHeight: 0,
-      async: true,
-      ssl: true,
-      affiliateTrackingCode: "",
-      transientSession: true,
-      cookieLifetime: 43200
-    };
-  s.src = "https://" + host + "/assets/javascripts/widgets/embedder.js";
-  s.onload = s.onreadystatechange = function() {
-    var rs = this.readyState;
-    if (rs) if (rs != "complete") if (rs != "loaded") return;
-    try {
-      w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad = new BokunWidgetEmbedder();
-      w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad.initialize(options);
-      w32023_a8213c1f_c7be_40bd_bf12_3597943dbaad.display();
-    } catch (e) {}
-  };
-  var scr = d.getElementsByTagName(t)[0],
-    par = scr.parentNode;
-  par.insertBefore(s, scr);
-})(document, "script");  */
-
 
 </script>
 
