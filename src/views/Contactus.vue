@@ -127,6 +127,9 @@ export default {
     checkbox: false
   }),
 
+  computed: {
+    console: () => console,
+  },
   methods: {
     reset() {
       this.$refs.form.reset();
@@ -139,13 +142,11 @@ export default {
           message_: this.message,
           gdpr_: this.gdpr
         })
-        .then(function(response) {
-          console.log(response);
+        .then(function() {
           alert('Thank you for getting in touch! \r\nWe appreciate you contacting us. We will get back in touch with you soon!');
           this.$refs.form.reset();
         })
         .catch(function(error) {
-          console.log(error);
           if (error.response)  {
             alert( 'oops .. something went wrong.\r\nTry again or send us a e-mail instead');
           }  
