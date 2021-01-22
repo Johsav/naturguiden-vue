@@ -1,0 +1,31 @@
+{
+    "cardContent":  [
+      {
+      "nr1": "1",
+      "route": "/adventures/skating/private",
+      "img1": "roxen2021.jpg",
+      "date": "2021-01-22",
+      "text1": "After a late start to the season, we finally have nice ice for skating. There will be a lot of skating this weekend.  Due to Covid-19 it's hard to arrange skating tours as we usually do. Our normal tours are canceled right now.  But we can offer guided skating tours in a different way from what we usually do.",
+      "text2": "You have to arrange the transports yourself. We find out where we are going to skate and meet you on the ice. If you need equipment, we will of course arrange it. We can also arrange accomodation, but we will not spend time with you in the evenings.",
+      "text3": "If you are intereted contact us right away.  info@naturguiden.com or +46 70 53 53630",
+      "action": ""
+      },
+      {
+      "nr1": "2",
+      "route": "/adventures/skating/weekend",
+      "img1": "ojon2020.jpg",
+      "date": "2020-11-05",
+      "text1": "An early start to the skating season, skating on the small lakes in the mountains. Good to skate again. But only for two days, then all the ice was gone again.",
+      "action": ""
+      },
+      {
+      "nr1": "3",
+      "route": "  ",
+      "img1": "skating008.jpg",
+      "date": "2020-03-20",
+      "text1": "We want to say thank's' to all our great guests that have been skating with us this winter. It have been a pleasure for us to meet you all. Please visit the facebook",
+      "action": ""
+      }
+    ]
+}   
+  
