@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import json from '/data.json';
+import json from '/public/json/data.json';
 //import axios from "axios";
 
 export default {
