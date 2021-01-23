@@ -1,3 +1,5 @@
+
+
 <template>
   <v-container class="pa-3">
     <v-layout column>
@@ -6,7 +8,9 @@
 
 
       <v-flex>
-        <v-card v-for="item in cardContent" :key="item.nr1" router-link :to = "item.route" height="100%">
+       
+      
+        <v-card v-for="item in json" :key="item.nr1" router-link :to = "item.route" height="100%">
           <v-img
             class="white--text"
             height="300px"
@@ -37,16 +41,24 @@
 </template>
 
 <script>
-import json from '/public/json/data.json';
-//import axios from "axios";
+//import json from '/public/json/data.json';
+import axios from "axios";
 
 export default {
+
   data() {
-    return json
+    return {
+      json:''
+    }
+  },
+  created(){
+    axios.get('./json/data.json')
+            .then((result) => {
+          this.json = result.data.cardContent;
+    });
   }
 };
 </script>
-
 <style scoped>
 .no-padding-right {
   padding-right: 0;
