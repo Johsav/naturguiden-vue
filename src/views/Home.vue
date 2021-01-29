@@ -55,11 +55,6 @@
             </v-layout>
           </v-flex>  
 
-          <!--  <v-card color="primary" class="white--text headline">
-              <v-card-text>
-                Our activities
-              </v-card-text>  
-          </v-card>-->
           <v-flex>
             <v-layout column>
               <v-flex>
@@ -292,33 +287,34 @@
               </v-flex>
             </v-layout>
           </v-flex>
+
+          <v-flex>
+            <v-layout row wrap>
+              <v-flex xs12 sm12 md6 lg6 xl6 d-flex>
+                <v-card color="blue-grey darken-2" class="white--text text-xs-left">
+                  <v-card-title primary-title class="display-1">Ecotourism</v-card-title>
+                  <v-card-text class="mb-2 subheading">
+                    Naturguiden is a Nature´s Best eco-certified tour operator
+                    Travel experience with quality, combined with strict environment and nature conservation measures, as well as a clear local connection.
+                    <br />Nature´s Best is a Swedish quality label for nature tourism and have six basic principals.
+                    <a class="white--text" href="https://naturesbestsweden.com/en/about-natures-best/"
+                    >Read more about Nature´s Best</a>
+                    <br />We have the regulated travel guarantees according to the requirements of the Package travel and linked travel arrangements regulations that allows you to get full refund of your payment to us if the tour will be cancelled by any reason.
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+              <v-flex xs12 sm12 md6 lg6 xl6 d-flex>
+                <v-card color="blue-grey darken-2" class="white--text text-xs-left">
+                  <v-card-title primary-title class="display-1">Your very own adventure</v-card-title>
+                  <v-card-text class="mb-2 subheading">
+                    Create your own adventure. Maybe you like to combine ice skating with ice climbing. Building a base camp in the forest. Ice skating and hiking in November.
+                    <br />We have for many years created unique adventures on requests from a lot of different groups.
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-flex>
         </v-flex>
-        <v-layout row wrap>
-          <v-flex xs12 sm12 md6 lg6 xl6 d-flex>
-            <v-card color="blue-grey darken-2" class="white--text text-xs-left">
-              <v-card-title primary-title class="display-1">Ecotourism</v-card-title>
-              <v-card-text class="mb-2 subheading">
-                Naturguiden is a Nature´s Best eco-certified tour operator
-                Travel experience with quality, combined with strict environment and nature conservation measures, as well as a clear local connection.
-                <br />Nature´s Best is a Swedish quality label for nature tourism and have six basic principals.
-                <a
-                  class="white--text"
-                  href="https://naturesbestsweden.com/en/about-natures-best/"
-                >Read more about Nature´s Best</a>
-                <br />We have the regulated travel guarantees according to the requirements of the Package travel and linked travel arrangements regulations that allows you to get full refund of your payment to us if the tour will be cancelled by any reason.
-              </v-card-text>
-            </v-card>
-          </v-flex>
-          <v-flex xs12 sm12 md6 lg6 xl6 d-flex>
-            <v-card color="blue-grey darken-2" class="white--text text-xs-left">
-              <v-card-title primary-title class="display-1">Your very own adventure</v-card-title>
-              <v-card-text class="mb-2 subheading">
-                Create your own adventure. Maybe you like to combine ice skating with ice climbing. Building a base camp in the forest. Ice skating and hiking in November.
-                <br />We have for many years created unique adventures on requests from a lot of different groups.
-              </v-card-text>
-            </v-card>
-          </v-flex>
-        </v-layout>
       </v-layout>
     </v-container>
   </div>
