@@ -197,7 +197,7 @@
             <v-card>
               <v-card-title class="d-block grey lighten-1">
                 <div class="title">Scheduled dates</div>
-                <div class="subheading">open groups 2020</div>
+                <div class="subheading">open groups 2021</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -265,7 +265,7 @@ export default {
       ],
 
       packageDates: [
-        { date: "Canceled due to Covid-19", level: "" } //,
+        { date: "Not yet decided", level: "" } //,
         //{ date: "25 - 28 June:", level: "" },
         //{ date: "20 - 23 August:", level: "" }
       ]

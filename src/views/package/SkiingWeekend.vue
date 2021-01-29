@@ -268,7 +268,7 @@ export default {
       ],
 
       packageDates: [
-        { date: "28 March - 2 April:", level: "Cross country skiing" }
+        { date: "28 March - 2 April:", level: "Canceled due to Covid-19" }
       ],
 
       days: [

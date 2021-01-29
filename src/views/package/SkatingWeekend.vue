@@ -297,11 +297,11 @@ export default {
         }
       ],
       packageDates: [
-        { date: "28 - 31 January:", level: "Weekend for good skaters" },
-        { date: "4 - 7 February:", level: "Weekend for normal skaters" },
-        { date: "11 - 14 February:", level: "Weekend for good skaters" },
-        { date: "18 - 21 February:", level: "Weekend for normal skaters" },
-        { date: "25 - 28 February:", level: "Combiweekend two groups, good and normal" }
+        { date: "28 - 31 January:", level: "Canceled due to Covid-19" },
+        { date: "4 - 7 February:", level: "Canceled due to Covid-19" },
+        { date: "11 - 14 February:", level: "Canceled due to Covid-19" },
+        { date: "18 - 21 February:", level: "Canceled due to Covid-19" },
+        { date: "25 - 28 February:", level: "Canceled due to Covid-19" }
       ]
     };
   }

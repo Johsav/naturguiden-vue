@@ -21,12 +21,40 @@
                     <v-card-title primary-title class="display-2">Adventure tours in Sweden</v-card-title>
                   </v-layout>
                   <v-card-text
-                    class="mb-5 subheading"
+                    class="mb-1 subheading"
                   >Join us on our tours. We have gathered our best outdoor experiences and are now offering all inclusive guided tours. Adventures for ordinary people that want to enjoy outdoor activities in the nature. We offer tours for small groups where we tailor each tour after the interests and wishes of the participants. Join a scheduled tour or book your own private tour together with your friends or family.</v-card-text>
+                  <v-card-text class="mb-5 subheading" >
+                  </v-card-text>  
                 </v-card>
               </v-flex>
             </v-layout>
           </v-flex>
+
+          <v-flex>
+            <v-layout fill-height row>
+              <v-flex xs12 sm12 md12 lg12 xl12 d-flex>
+                <v-card
+                  v-for="item in firstSide"
+                  :key="item.month"
+                  router-link :to = "item.route"
+                  :img="require('@/assets/images/1400/' + item.img1)"
+                > 
+                  <v-card-text primary-title class="text-xs-right white--text pb-0">
+                    {{item.month}}</v-card-text>
+                  <v-card-text class="text-xs-left subheading white--text ml-5 pa-0">
+                    {{item.heading}}
+                  </v-card-text>
+                  <v-card-text class=" subheading white--text pt-0">
+                    {{item.text1}}
+                  </v-card-text>
+                  <v-card-text class="white--text">
+                    {{item.text2}}
+                  </v-card-text>  
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-flex>  
+
           <!--  <v-card color="primary" class="white--text headline">
               <v-card-text>
                 Our activities
@@ -299,6 +327,7 @@
 <script>
 import LeftSideColumn from "../components/LeftSideColumn";
 import ConfiguredCarousel from "@/components/ConfiguredCarousel.vue";
+import axios from "axios";
 
 export default {
   components: {
@@ -310,8 +339,16 @@ export default {
       return require("@/assets/images/" + img);
     }
   },
+  created() {
+    axios.get('./json/firstside.json')
+      .then((result) => {
+        this.firstSide = result.data.firstSideCard;
+      });
+  },
+
   data() {
     return {
+      firstSide:'',
       carouselItems: [
         {
           src: require("@/assets/images/1400/Skating_1413_2.jpg"),

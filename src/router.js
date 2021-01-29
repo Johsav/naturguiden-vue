@@ -32,7 +32,12 @@ export default new Router({
     {
       path: '/contact',
       name: 'contact',
-      component: () => import(/* webpackChunkName: "skating-private" */ './views/Contactus.vue')
+      component: () => import(/* webpackChunkName: "contact-us" */ './views/Contactus.vue')
+    },
+    {
+      path: '/adventures/skating/corona',
+      name: 'skating-corona',
+      component: () => import(/* webpackChunkName: "skating-corona" */ './views/package/SkatingCorona.vue')
     },
     {
       path: '/adventures/skating/private',
@@ -75,7 +80,7 @@ export default new Router({
     {
       path: '/adventures/skiing/weekend',
       name: 'skiing-weekend',
-      component: () => import(/* webpackChunkName: "skiing-private" */ './views/package/SkiingWeekend.vue')
+      component: () => import(/* webpackChunkName: "skiing-weekend" */ './views/package/SkiingWeekend.vue')
     },
     {
       path: '/adventures/skiing/adventures',
@@ -105,12 +110,12 @@ export default new Router({
     {
       path: '/article',
       name: 'article',
-      component: () => import(/* webpackChunkName: "About Sweden" */ './views/article/Article.vue')
+      component: () => import(/* webpackChunkName: "Article" */ './views/article/Article.vue')
     },
     {
       path: '/video',
       name: 'video',
-      component: () => import(/* webpackChunkName: "About Sweden" */ './views/article/Video.vue')
+      component: () => import(/* webpackChunkName: "Video" */ './views/article/Video.vue')
     }
    /* {
       path: '/article/nationalgeographic',
