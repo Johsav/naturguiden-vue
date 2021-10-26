@@ -124,10 +124,6 @@ export default {
       items_2: [
         { title: "All our our adventures tour", link: "/adventures" },
 
-         {
-          title: "Nordic skating - Corona adopted tour",
-          link: "/adventures/skating/corona"
-        },
         {
           title: "Nordic skating - Open tour",
           link: "/adventures/skating/weekend"

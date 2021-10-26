@@ -83,7 +83,7 @@
               <v-flex class="grey lighten-3 pb-1">
                 <v-card-title class="title pb-0">Book your own hiking tour</v-card-title>
                 <v-card-text>
-                  <b>Price: from 425 EUR (4 days/3 nights)</b>
+                  <b>Price: from 445 EUR (4 days/3 nights)</b>
                 </v-card-text>
                 <v-card-text class="pt-0">
                   Everything included, accommodation in tent, normally two persons / tent.
@@ -224,13 +224,13 @@ export default {
 
       packageItems: [
         { type: "Season:", content: "June - September" },
-        { type: "Days:", content: "8 days/8 nights" },
-        { type: "Price:", content: "695 EUR" },
+        { type: "Days:", content: "4 days/3 nights" },
+        { type: "Price:", content: "445 EUR" },
         { type: "Meeting point:", content: "Ljungdalen" },
         { type: "Lodging:", content: "Tent" }
       ],
 
-      packageDates: [{ date: "2 - 9 August: Hiking week", level: "" }],
+      //packageDates: [{ date: "2 - 9 August: Hiking week", level: "" }],  Not for private tours
 
       days: [
         {

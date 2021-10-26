@@ -34,11 +34,7 @@ export default new Router({
       name: 'contact',
       component: () => import(/* webpackChunkName: "contact-us" */ './views/Contactus.vue')
     },
-    {
-      path: '/adventures/skating/corona',
-      name: 'skating-corona',
-      component: () => import(/* webpackChunkName: "skating-corona" */ './views/package/SkatingCorona.vue')
-    },
+    
     {
       path: '/adventures/skating/private',
       name: 'skating-private',

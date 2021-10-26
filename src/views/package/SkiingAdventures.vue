@@ -100,7 +100,7 @@
               <v-flex class="grey lighten-3 pb-1">
                 <v-card-title class="title pb-0">Winter adventures days</v-card-title>
                 <v-card-text>
-                  <b>Price: from 295 EUR (4 days/3 nights)</b>
+                  <b>Price: from 310 EUR (4 days/3 nights)</b>
                 </v-card-text>
                 <v-card-text class="pt-0">
                   Accommodation in double room. Breakfast, lunch or lunch package and dinner.
@@ -197,7 +197,7 @@ export default {
       packageItems: [
         { type: "Season:", content: "March - April" },
         { type: "Days:", content: "Chose any" },
-        { type: "Price:", content: "295 EUR (4 days/3 nights)" },
+        { type: "Price:", content: "310 EUR (4 days/3 nights)" },
         { type: "Meeting point:", content: "Ljungdalen" },
         { type: "Lodging:", content: "Mountain Lodge" }
       ],

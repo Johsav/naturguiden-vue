@@ -88,9 +88,9 @@
                 </p>
               </v-card-text>
               <v-flex class="grey lighten-3 pb-1">
-              <v-card-title class="title pb-0">Join us on our four days trip 2021</v-card-title>
+              <v-card-title class="title pb-0">Join us on our four days trip 2022</v-card-title>
               <v-card-text>
-                <b>Price: from 425 EUR (4 days/5 nights)</b>
+                <b>Price: from 730 EUR (4 days/5 nights)</b>
               </v-card-text>
               <v-card-text class="pt-0">
                 Everything included, accommodation in hostel and mountain lodge, normally two persons / room. But on some mountain lodges we might need to stay more people in each room. Sheets and towels are provided.
@@ -220,7 +220,7 @@
             <v-card>
               <v-card-title class="d-block grey lighten-1">
                 <div class="title">Scheduled dates</div>
-                <div class="subheading">open groups 2021</div>
+                <div class="subheading">open groups 2022</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -262,13 +262,13 @@ export default {
       packageItems: [
         { type: "Season:", content: "March - April" },
         { type: "Days:", content: "4 days/5 nights" },
-        { type: "Price:", content: "695 EUR"},
+        { type: "Price:", content: "730 EUR"},
         { type: "Meeting point:", content: "Ljungdalen" },
         { type: "Lodging:", content: "Mountain Lodge" }
       ],
 
       packageDates: [
-        { date: "28 March - 2 April:", level: "Canceled due to Covid-19" }
+        { date: "29 March - 3 April:", level: "Cross country skiing" }
       ],
 
       days: [

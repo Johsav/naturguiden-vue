@@ -79,13 +79,13 @@
                   More information under
                   <router-link to="/accommodation">accommodation</router-link>
                 </p>Sheets and towel are not included if you stay in hostel (B1, B2 or B3),
-                <br />+20 EUR extra if you don't bring your own.
+                <br />+24 EUR extra if you don't bring your own.
               </v-card-text>
 
               <v-flex class="grey lighten-3">
               <v-card-title class="title pb-0">Price</v-card-title>
               <v-card-text class="pb-0">
-                <b>37 EUR early season discount</b> before 4 February
+                <b>37 EUR early season discount</b> before 3 February
               </v-card-text>
               <v-card-text>
               <v-simple-table>
@@ -117,7 +117,7 @@
               <v-card-text>
                 <p>We can provide you with the following but you need to make a reservation for it when you place your order:</p>
                 <p>Extra safety equipment: Helmet, knee pad, wrist and arm bow protectors -free of charge.</p>
-                <p>Sheets and towel: +20 EUR extra.</p>
+                <p>Sheets and towel: +24 EUR extra.</p>
               </v-card-text>
 
               <v-card-title class="title pb-0">About the skates</v-card-title>
@@ -262,25 +262,25 @@ export default {
       packageItems: [
         { type: "Season:", content: "December - March" },
         { type: "Days:", content: "4 days/3 nights" },
-        { type: "Price:", content: "from 597 EUR" },
+        { type: "Price:", content: "from 613 EUR" },
         { type: "Meeting point:", content: "Arlanda airport or place after agreement" },
         { type: "Lodging:", content: "Hotel or Hostel" }
       ],
       accom: [
         { level: "Basic 1",
-          price: "from 634 EUR",
+          price: "from 650 EUR",
           type: "single room 73 EUR extra" },
         { level: "Basic 2",
-          price: "from 689 EUR",
+          price: "from 705 EUR",
           type: "single room 73 EUR extra" },
         { level: "Basic 3",
-          price: "from 884 EUR",
+          price: "from 895 EUR",
           type: "single room 73 EUR extra" },
         { level: "Comfort 1",
-          price: "from 799 EUR",
+          price: "from 815 EUR",
           type: "single room 183 EUR extra" },
         { level: "Comfort 2",
-          price: "from 1000 EUR",
+          price: "from 1015 EUR",
           type: "single room 183 EUR extra" }
       ],
       extra: [

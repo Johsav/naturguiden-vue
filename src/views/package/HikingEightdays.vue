@@ -80,9 +80,9 @@
               </v-card-text>
 
               <v-flex class="grey lighten-3">
-              <v-card-title class="title pb-0">Join us on our eight days trip 2020</v-card-title>
+              <v-card-title class="title pb-0">Join us on our eight days trip 2022</v-card-title>
               <v-card-text>
-                <b>Price: 695 EUR</b>
+                <b>Price: 730 EUR</b>
               </v-card-text>
               <v-card-text class="pt-0">
                 Everything included, accommodation in tent, normally two persons / tent.
@@ -212,7 +212,7 @@
             <v-card>
               <v-card-title class="d-block grey lighten-1">
                 <div class="title">Scheduled dates</div>
-                <div class="subheading">open groups 2021</div>
+                <div class="subheading">open groups 2022</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -254,14 +254,14 @@ export default {
       packageItems: [
         { type: "Season:", content: "June - September" },
         { type: "Days:", content: "8 days/8 nights" },
-        { type: "Price:", content: "695 EUR"},
+        { type: "Price:", content: "730 EUR"},
         { type: "Meeting point:", content: "Ljungdalen" },
         { type: "Lodging:", content: "Tent" }
       ],
 
       packageDates: [
-        { date: "Not yet decided", level: "" }
-        //{ date: "2 - 9 August:", level: "Hiking week" }
+        //{ date: "Not yet decided", level: "" }
+        { date: "1 - 8 August:", level: "Hiking week" }
       ],
 
       days: [

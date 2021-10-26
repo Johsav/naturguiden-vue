@@ -77,7 +77,7 @@
               <v-flex class="grey lighten-3">
               <v-card-title class="title pb-0">Book your own skating tour</v-card-title>
               <v-card-text>
-                <b>Price: from 490 EUR (4 day/ 3 nights)</b>
+                <b>Price: from 515 EUR (4 day/ 3 nights)</b>
               </v-card-text>
               <v-card-text class="pt-0">
                 Everything included, accommodation in tent, normally two persons / tent.
@@ -88,7 +88,7 @@
               </v-card-text>
               <v-card-text class="pt-0">
                 If you like to stay longer than 4 days
-                <br />You pay from: 75 EUR/day (depending on number of participants) 
+                <br />You pay from: 80 EUR/day (depending on number of participants) 
               </v-card-text>
               </v-flex>
 
@@ -238,14 +238,15 @@ export default {
       packageItems: [
         { type: "Season:", content: "May - October" },
         { type: "Days:", content: "4 days/3 nights" },
-        { type: "Price:", content: "From 490 EUR"},
+        { type: "Price:", content: "From 515 EUR"},
         { type: "Meeting point:", content: "Trosa harbour south of Stockholm or other place after agreement" },
         { type: "Lodging:", content: "Tent in the archipelago" }
       ],
 
+      //Not valid for private tours
       packageDates: [
-        { date: "25 - 28 June:", level: "" },
-        { date: "20 - 23 August:", level: "" }
+        { date: "xx - yy June:", level: "" },
+        { date: "xx - yy August:", level: "" }
       ]
 
     };

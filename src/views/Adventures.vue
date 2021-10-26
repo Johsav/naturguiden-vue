@@ -35,7 +35,7 @@
           <v-card>
             <v-card-title class="d-block grey lighten-1">
               <div class="title">Scheduled dates</div>
-              <div class="subheading">open groups 2021</div>
+              <div class="subheading">open groups 2022</div>
             </v-card-title>
 
             <v-container fluid grid-list-sm>
@@ -80,15 +80,15 @@ export default {
     return {
       drawer: null,
       packageDates: [
-        { date: "", level: "No open tours for the summer 2020 due to COVID-19" },
-        { date: "28 - 31 January:", level: "Skating Weekend, good group" },
-        { date: "4 - 7 February:", level: "Skating Weekend, normal group" },
-        { date: "11 - 14 February:", level: "Skating Weekend, good group" },
-        {
-          date: "25 - 28 February:",
-          level: "Skating Weekend, good and normal skaters - two groups"
-        },
-        { date: "28 March - 2 April:", level: "Cross Country skiing" }
+        { date: "27 - 30 January:", level: "Skating Weekend, good group" },
+        { date: "3 - 6 February:", level: "Skating Weekend, normal group" },
+        { date: "10 - 13 February:", level: "Skating Weekend, good group" },
+        { date: "17 - 20 February:", level: "Skating Weekend, normal group" },
+        { date: "25 - 28 February:", level: "Skating Weekend, good and normal skaters - two groups" },
+        { date: "29 March - 3 April:", level: "Cross Country skiing" },
+        { date: "23 - 26 June:", level: "Kayak weekend" },
+        { date: "1 - 8 August:", level: "Hiking week" },
+        { date: "25 - 28 August:", level: "Kayak weekend" }
       ],
       packages: [
         {

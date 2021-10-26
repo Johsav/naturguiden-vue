@@ -82,13 +82,13 @@
                 </p>
               </v-card-text>
               <v-flex class="grey lighten-3">
-                <v-card-title class="title pb-0">Join us on any of our weekend trips 2021</v-card-title>
+                <v-card-title class="title pb-0">Join us on any of our weekend trips 2022</v-card-title>
                 <v-card-text>
-                  <b>Price: 689 EUR ( 37 EUR early season discount before 4 February)</b>
+                  <b>Price: 705 EUR ( 37 EUR early season discount before 4 February)</b>
                 </v-card-text>
                 <v-card-text class="pt-0">
                   Everything included, accommodation in hostels, shared double room.
-                  <br />Single room +73 EUR, sheets and towel +20 EUR (blanket and pillow is provided).
+                  <br />Single room +73 EUR, sheets and towel +24 EUR (blanket and pillow is provided).
                   <v-list class="pt-3 grey lighten-3">
                     <v-list-tile class="list-height" v-for="item in packageDates" :key="item.date">
                       <v-list-tile-action>
@@ -135,7 +135,7 @@
               <v-card-text>
                 <p>We can provide you with the following but you need to make a reservation for it when you place your order:</p>
                 <p>Extra safety equipment: Helmet, knee pad, wrist and arm bow protectors -free of charge.</p>
-                <p>Sheets and towel: +20 EUR extra.</p>
+                <p>Sheets and towel: +24 EUR extra.</p>
               </v-card-text>
 
               <v-card-title class="title pb-0">About the skates</v-card-title>
@@ -226,7 +226,7 @@
             <v-card>
               <v-card-title class="d-block grey lighten-1">
                 <div class="title">Scheduled dates</div>
-                <div class="subheading">open groups 2021</div>
+                <div class="subheading">open groups 2022</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -288,7 +288,7 @@ export default {
         {
           type: "Price:",
           content:
-            "689 EUR early season discount 37 EUR \r\nsingle room +73 EUR \nsheets \nand towel +20 EUR"
+            "705 EUR early season discount 37 EUR \r\nsingle room +73 EUR \nsheets \nand towel +24 EUR"
         },
         { type: "Meeting point:", content: "Arlanda airport" },
         {
@@ -297,11 +297,11 @@ export default {
         }
       ],
       packageDates: [
-        { date: "28 - 31 January:", level: "Canceled due to Covid-19" },
-        { date: "4 - 7 February:", level: "Canceled due to Covid-19" },
-        { date: "11 - 14 February:", level: "Canceled due to Covid-19" },
-        { date: "18 - 21 February:", level: "Canceled due to Covid-19" },
-        { date: "25 - 28 February:", level: "Canceled due to Covid-19" }
+        { date: "27 - 30 January:", level: "Good skaters" },
+        { date: "3 - 6 February:", level: "Normal skaters" },
+        { date: "10 - 13 February:", level: "Good skaters" },
+        { date: "17 - 20 February:", level: "Normal skaters" },
+        { date: "24 - 27 February:", level: "Combiweekend, good and normal" }
       ]
     };
   }

@@ -73,9 +73,9 @@
               </v-card-text>
 
               <v-flex class="grey lighten-3">    
-              <v-card-title class="title pb-0">Join us on any of our weekend trips 2020</v-card-title>
+              <v-card-title class="title pb-0">Join us on any of our weekend trips 2022</v-card-title>
               <v-card-text>
-                <b>Price: 490 EUR</b>
+                <b>Price: 515 EUR</b>
               </v-card-text>
               <v-card-text class="pt-0">
                 Everything included, accommodation in tent, normally two persons / tent.
@@ -197,7 +197,7 @@
             <v-card>
               <v-card-title class="d-block grey lighten-1">
                 <div class="title">Scheduled dates</div>
-                <div class="subheading">open groups 2021</div>
+                <div class="subheading">open groups 2022</div>
               </v-card-title>
 
               <v-container fluid grid-list-sm>
@@ -259,15 +259,15 @@ export default {
       packageItems: [
         { type: "Season:", content: "May - October" },
         { type: "Days:", content: "4 days/3 nights" },
-        { type: "Price:", content: "490 EUR"},
+        { type: "Price:", content: "515 EUR"},
         { type: "Meeting point:", content: "Trosa harbour south of Stockholm" },
         { type: "Lodging:", content: "Tent in the archipelago" }
       ],
 
       packageDates: [
-        { date: "Not yet decided", level: "" } //,
-        //{ date: "25 - 28 June:", level: "" },
-        //{ date: "20 - 23 August:", level: "" }
+        //{ date: "Not yet decided", level: "" } //,
+        { date: "23 - 26 June:", level: "" },
+        { date: "25 - 28 August:", level: "" }
       ]
     };
   }

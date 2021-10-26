@@ -90,7 +90,7 @@
               <v-flex class="grey lighten-3 pb-1">
               <v-card-title class="title pb-0">Book your own cross country ski adventure</v-card-title>
               <v-card-text>
-                <b>Price: from 425 EUR (4 days/5 nights)</b>
+                <b>Price: from 730 EUR (4 days/5 nights)</b>
               </v-card-text>
               <v-card-text class="pt-0">
                 Everything included, accommodation in hostel and mountain lodge, normally two persons / room. But on some mountain lodges we might need to stay more people in each room. Sheets and towels are provided.
@@ -235,11 +235,12 @@ export default {
       packageItems: [
         { type: "Season:", content: "March - April" },
         { type: "Days:", content: "4 days/5 nights" },
-        { type: "Price:", content: "695 EUR"},
+        { type: "Price:", content: "730 EUR"},
         { type: "Meeting point:", content: "Ljungdalen" },
         { type: "Lodging:", content: "Mountain Lodge" }
       ],
-
+      
+      //Not valid for private tours
       packageDates: [
         { date: "2 - 9 August: Hiking week", level: "" }
       ],
