@@ -5,25 +5,17 @@
       "route": "/adventures/skating/private",
       "img1": "stortjarn_202110.jpg",
       "date": "2021-10-30",
-      "text1": "Where have all the ice gone, long time passing? Nine plus degrees, but we still managed to find a frozen lake high up in the mountains. Longing for lower temperatures, which we will hopefully get at the end of the week.",
+      "text1": "Where have all the ice gone, long time passing? Plus nine degrees, but we still managed to find a frozen lake high up in the mountains. Longing for lower temperatures, which we will hopefully get at the end of the week.",
       "text2": "But still, skating premier in oktober. Not so bad.",
       "text3": "And no longer any travel restrictions to Sweden from European countries and the USA. You need a Covid certificate or a negative test result.",
       "action": "Is it time to book your skating weekend tour?"
       },
       {
       "nr1": "2",
-      "route": "/adventures/skating/weekend",
-      "img1": "ojon2020.jpg",
-      "date": "2020-11-05",
-      "text1": "An early start to the skating season, skating on the small lakes in the mountains. Good to skate again. But only for two days, then all the ice was gone again.",
-      "action": ""
-      },
-      {
-      "nr1": "3",
-      "route": "  ",
-      "img1": "skating008.jpg",
-      "date": "2020-03-20",
-      "text1": "We want to say thank's' to all our great guests that have been skating with us this winter. It have been a pleasure for us to meet you all. Please visit the facebook",
+      "route": "/adventures/kayak/weekend",
+      "img1": "kayak_2021.jpg",
+      "date": "2020-08-15",
+      "text1": "Finally a guided kayak tour again. The long covid break is soon over, hopefully.",
       "action": ""
       }
     ]
